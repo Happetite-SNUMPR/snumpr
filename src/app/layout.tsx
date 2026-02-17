@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SNUMPR Lab",
-  description: "어쩌고저쩌고",
+  description: "We study visual perception and machine reasoning.",
 };
 
 const figtree = Figtree({
@@ -21,9 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={figtree.variable}>
-      <Navbar />
-      <body>{children}</body>
+    <html lang="ko" className={`${figtree.variable} no-scrollbar`}>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,0 +1,59 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: var(--footer-height);
+  padding: 3.6rem 6.4rem;
+  border-top: 1px solid var(--divider-gray);
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.logo {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.labName {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--black);
+  letter-spacing: -0.03em;
+}
+
+.rightSection {
+  display: flex;
+  gap: 8rem;
+  margin-right: 2.4rem;
+}
+
+.officeRow {
+  display: flex;
+  gap: 3.6rem;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.infoTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--black);
+  letter-spacing: -0.03em;
+}
+
+.infoText {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--black);
+  letter-spacing: -0.03em;
+}

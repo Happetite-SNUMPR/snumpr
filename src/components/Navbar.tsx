@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Navbar.module.css";
+import { GithubIcon, HuggingFaceIcon } from "./Icons";
 
 export default function Navbar() {
   return (
@@ -18,14 +19,14 @@ export default function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Github
+          <GithubIcon className={styles.icon} />
         </a>
         <a
           href="https://huggingface.co/SNUMPR"
           target="_blank"
           rel="noopener noreferrer"
         >
-          HuggingFace
+          <HuggingFaceIcon className={`${styles.icon} ${styles.huggingFace}`} />
         </a>
       </nav>
     </header>

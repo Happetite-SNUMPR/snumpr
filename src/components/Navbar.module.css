@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   height: var(--nav-height);
-  padding: 0 2rem;
-  border-bottom: 1px solid var(--gray);
+  padding: 0 3.6rem;
+  border-bottom: 1px solid var(--divider-gray);
 }
 
 .logo {
@@ -16,7 +16,7 @@
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 3.6rem;
 }
 
 .nav a {
@@ -26,4 +26,14 @@
 }
 .nav a:hover {
   text-decoration: underline;
+}
+
+.icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: var(--black);
+}
+
+.huggingFace {
+  width: 2rem;
 }
