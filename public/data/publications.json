@@ -1,0 +1,73 @@
+[
+  {
+    "title": "Risk-adaptive Activation Steering for Safe Multimodal Large Language Models",
+    "authors": [
+      "Jonghyun Park",
+      "Minhyuk Seo",
+      "Jonghyun Choi"
+    ],
+    "journalsInfo": "arXiv 2510 / CVPR 2025 Workshop of MLLM - Oral & Best Paper Award",
+    "thumbnailUrl": "https://picsum.photos/seed/high1/1200/800",
+    "links": [
+      { "label": "PDF", "url": "https://arxiv.org/pdf/2510.xxxxx" },
+      { "label": "PDF(Workshop Version)", "url": "https://arxiv.org/pdf/2510.xxxxx_v1" },
+      { "label": "Webpage", "url": "https://snumpr.github.io/risk-adaptive" }
+    ],
+    "tags": ["arXiv", "CVPR"],
+    "datedYear": 2025
+  },
+  {
+    "title": "OASIS: Online Sample Selection for Continual Visual Instruction Tuning",
+    "authors": [
+      "Minjee Lee",
+      "Minhyuk Seo",
+      "Tingyu Qu",
+      "Tinne Tuytelaars",
+      "Jonghyun Choi"
+    ],
+    "journalsInfo": "arXiv 2506",
+    "thumbnailUrl": "https://picsum.photos/seed/high2/1200/800",
+    "links": [
+      { "label": "PDF", "url": "https://arxiv.org/pdf/2506.xxxxx" }
+    ],
+    "tags": ["arXiv"],
+    "datedYear": 2025
+  },
+  {
+    "title": "Long-Tailed Recognition on Binary Networks by Calibrating A Pre-trained Model",
+    "authors": [
+      "Jihun Kim",
+      "Dahyun Kim",
+      "Hyungrok Jung",
+      "Taeil Oh",
+      "Jonghyun Choi"
+    ],
+    "journalsInfo": "arXiv 2404",
+    "thumbnailUrl": "https://picsum.photos/seed/high3/1200/800",
+    "links": [
+      { "label": "PDF", "url": "https://arxiv.org/pdf/2404.xxxxx" }
+    ],
+    "tags": ["arXiv"],
+    "datedYear": 2024
+  },
+  {
+    "title": "DialNav: Multi-turn Dialog Navigation with a Remote Guide",
+    "authors": [
+      "Lookyoung Han",
+      "Hyunji Min",
+      "Gyeom Hwangbo",
+      "Jonghyun Choi",
+      "Paul Hongsuck Seo"
+    ],
+    "journalsInfo": "ICCV 2025",
+    "thumbnailUrl": "https://picsum.photos/seed/high4/1200/800",
+    "links": [
+      { "label": "PDF", "url": "https://openaccess.thecvf.com/content/ICCV2025/..." },
+      { "label": "Code", "url": "https://github.com/snumpirl/DialNav" },
+      { "label": "Data", "url": "https://huggingface.co/datasets/snumpirl/DialNav" },
+      { "label": "Webpage", "url": "https://snumpr.github.io/dialnav" }
+    ],
+    "tags": ["ICCV"],
+    "datedYear": 2025
+  }
+]

@@ -1,0 +1,79 @@
+.main {
+  padding: 0 3.2rem;
+}
+
+.mainTitle {
+  font-size: 6.4rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-weight: 500;
+  padding: 6.4rem 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  padding: 2.4rem 0;
+  height: 24rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+}
+
+.articleTitle {
+  width: 48rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--black);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.image {
+  height: 100%;
+  aspect-ratio: 1.5;
+  object-fit: contain;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.details {
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--text-gray);
+}
+
+.aside {
+  height: fit-content;
+  align-self: flex-end;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  justify-content: end;
+}
+
+.iconLinkWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  border-radius: 1.2rem;
+  background-color: var(--divider-gray);
+  gap: 0.2rem;
+  text-decoration: none;
+}
