@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 4.8rem;
+  margin: 8rem 0 8rem 6rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--divider);
+}

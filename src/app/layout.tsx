@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Figtree } from 'next/font/google';
+import localFont from 'next/font/local';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -17,13 +18,18 @@ const figtree = Figtree({
   variable: '--font-figtree',
 });
 
+const ppFormula = localFont({
+  src: "../fonts/PPFormula-Medium.woff2",
+  variable: "--font-ppformula",
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${figtree.variable} no-scrollbar`}>
+    <html lang="ko" className={`${figtree.variable} ${ppFormula.variable} no-scrollbar`}>
       <body>
         <NuqsAdapter>
           <Navbar />

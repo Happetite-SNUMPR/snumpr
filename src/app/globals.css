@@ -8,7 +8,7 @@
   --nav-height: 8rem;
   --footer-height: 30rem;
 
-  --font-main: var(--font-figtree), sans-serif;
+  --font-main: var(--font-ppformula), sans-serif;
 }
 
 html,
@@ -25,7 +25,6 @@ html {
 
 body {
   font-family: var(--font-main);
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
 

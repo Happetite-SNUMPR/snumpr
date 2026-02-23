@@ -1,7 +1,9 @@
+import Title from "@/components/Title";
+
 export default function JoinUsPage() {
   return (
     <div>
-      <span>Join Us Page</span>
+      <Title title="Join Us" />
     </div>
   );
 }
