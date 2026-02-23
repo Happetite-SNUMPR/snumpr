@@ -1,5 +1,7 @@
 .section {
   padding: 3.2rem 0rem 7.2rem 0rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .sectionTitle {
