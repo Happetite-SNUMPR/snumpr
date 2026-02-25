@@ -60,20 +60,21 @@ export default function PublicationList({ publications }: PublicationListProps) 
   }, [publications, filters]);
 
   return (
-    <>
-      <section>
+    <div className={styles.container}>
+      <section className={styles.filters}>
         <PublicationFilterController
           options={options}
           filters={filters}
           setFilters={setFilters}
+          countResults={filteredPublications.length}
         />
       </section>
-      <section className={styles.section}>
+      <section className={styles.publications}>
         {filteredPublications.map((pub) => (
           <PublicationItemView pub={pub} key={pub.title} />
         ))}
       </section>
-    </>
+    </div>
   );
 }
 
@@ -99,12 +100,14 @@ type PublicationFilterControllerProps = {
   options: PublicationFilterOptions;
   filters: PublicationFilterOptions;
   setFilters: ReturnType<typeof usePublicationFilters>['setFilters'];
+  countResults: number;
 };
 
 function PublicationFilterController({
   options,
   filters,
   setFilters,
+  countResults,
 }: PublicationFilterControllerProps) {
   const handleChange =
     (filterName: keyof PublicationFilterOptions) =>
@@ -118,29 +121,37 @@ function PublicationFilterController({
       setFilters({ [filterName]: Array.from(selected) });
     };
 
-  const a = filters as PublicationFilterOptions;
   return (
-    <div>
-      <p>
-        <Image src="filter.svg" alt="filter" width={16} height={16} /> Filters
-      </p>
-      {filterLabels.map((l) => (
-        <div key={l}>
-          {l}
-          {options[l].map((o) => (
-            <label key={`${l}-${o}`}>
-              <input
-                type="checkbox"
-                name={o}
-                checked={(filters as PublicationFilterOptions)[l].includes(o)}
-                onChange={handleChange(l)}
-              />
-              {o}
-            </label>
-          ))}
+    <>
+      <div className={styles.filtersTitleWrapper}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <Image src="filter.svg" alt="filter" width={32} height={32} />
+          <span className={styles.filtersTitle}>Filters</span>
         </div>
-      ))}
-    </div>
+        <p className={styles.resultsText}>{countResults} Results</p>
+      </div>
+      <div className={styles.filtersWrapper}>
+        {filterLabels.map((l) => (
+          <details key={l}>
+            <summary className={styles.summary}>{l}</summary>
+            <div className={styles.details}>
+              {options[l].map((o) => (
+                <label key={`${l}-${o}`} className={styles.checkboxLabel}>
+                  <input
+                    type="checkbox"
+                    name={o}
+                    checked={(filters as PublicationFilterOptions)[l].includes(o)}
+                    onChange={handleChange(l)}
+                    style={{ marginRight: '1.2rem' }}
+                  />
+                  {o}
+                </label>
+              ))}
+            </div>
+          </details>
+        ))}
+      </div>
+    </>
   );
 }
 
@@ -151,15 +162,15 @@ function PublicationItemView({ pub }: { pub: PublicationItemWithCited }) {
       <div className={styles.infoWrapper}>
         <p className={styles.articleTitle}>{pub.title}</p>
         <div className={styles.detailsWrapper}>
-          <p className={styles.details}>{pub.authors.join(', ')}</p>
-          <p className={styles.details}>{pub.journalsInfo}</p>
+          <p className={styles.authorsText}>{pub.authors.join(', ')}</p>
+          <p className={styles.journalsText}>{pub.journalsInfo}</p>
+          <div className={styles.linksWrapper}>
+            {pub.links.map(({ label, url }) => (
+              <IconLink label={label} href={url} key={`${label}-${url}`} />
+            ))}
+          </div>
         </div>
       </div>
-      <aside className={styles.aside}>
-        {pub.links.map(({ label, url }) => (
-          <IconLink label={label} href={url} key={`${label}-${url}`} />
-        ))}
-      </aside>
     </article>
   );
 }
@@ -168,7 +179,7 @@ function IconLink({ label, href }: { label: string; href: string }) {
   return (
     <a href={href} className={styles.iconLinkWrapper}>
       <Icon label={label} />
-      <span className={styles.details}>{label}</span>
+      <span className={styles.linkLabel}>{label}</span>
     </a>
   );
 }

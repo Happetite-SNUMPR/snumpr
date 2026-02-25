@@ -1,35 +1,47 @@
 .main {
-  padding: 0 3.2rem;
+  padding: 0 1rem;
 }
 
-.mainTitle {
-  font-size: 6.4rem;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  font-weight: 500;
-  padding: 6.4rem 0;
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
 }
 
-.section {
+.filters {
+  width: 29.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+  padding-left: 5rem;
+  padding-top: 1.4rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.publications {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 .article {
-  padding: 2.4rem 0;
-  height: 24rem;
+  height: 24.5rem;
+  padding: 2.4rem 0 3rem 0;
+  border-bottom: 1px solid var(--divider-gray);
   display: flex;
   flex-direction: row;
-  gap: 3.2rem;
+  gap: 2rem;
 }
 
 .articleTitle {
-  width: 48rem;
-  font-size: 3.2rem;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 500;
   color: var(--black);
-  letter-spacing: -0.03em;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .image {
@@ -47,24 +59,31 @@
 .detailsWrapper {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  justify-content: space-between;
 }
 
-.details {
-  font-size: 1.6rem;
+.authorsText {
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--blue);
+}
+
+.journalsText {
+  font-size: 1.5rem;
   letter-spacing: -0.03em;
   line-height: 1;
   color: var(--text-gray);
+  margin-top: 0.8rem;
+  vertical-align: bottom;
 }
 
-.aside {
-  height: fit-content;
-  align-self: flex-end;
-  flex: 1;
+.linksWrapper {
+  height: 3rem;
   display: flex;
   flex-direction: row;
   gap: 1.2rem;
-  justify-content: end;
+  margin-top: 1.2rem;
 }
 
 .iconLinkWrapper {
@@ -76,4 +95,69 @@
   background-color: var(--divider-gray);
   gap: 0.2rem;
   text-decoration: none;
+}
+
+.linkLabel {
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--black);
+  font-family: Figtree;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.filtersTitleWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.filtersTitle {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+.resultsText {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  vertical-align: middle;
+  margin-top: 1.5rem;
+  color: var(--blue);
+}
+
+.filtersWrapper {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.summary {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  vertical-align: bottom;
+  margin-bottom: 1.3rem;
+}
+
+.checkboxLabel {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  vertical-align: bottom;
+  color: var(--text-gray);
 }
