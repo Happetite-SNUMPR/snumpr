@@ -1,0 +1,369 @@
+{
+  "labName": "SNU Machine Perception and Reasoning Lab",
+  "members": {
+    "faculty_and_researchers": [
+      {
+        "name": "Jonghyun Choi",
+        "position": "Associate Professor",
+        "image": "/images/people/jonghyunchoi.jpg",
+        "website": "https://ppolon.github.io",
+        "email": "jonghyunchoi@snu.ac.kr",
+        "github": "http://github.com/jchoivision"
+      },
+      {
+        "name": "Mohammad Mostafavi",
+        "position": "PostDoc Researcher",
+        "image": "/images/people/mohammadmostafavi.jpg",
+        "website": "https://smmmmi.github.io/",
+        "email": "mostafavi.isfahani@gmail.com",
+        "github": "http://github.com/smmmmi"
+      },
+      {
+        "name": "Minhyuk Seo",
+        "position": "Post-Master Researcher (also w/ KU Leuven)",
+        "image": "/images/people/minhyukseo.jpg",
+        "website": "https://dbd05088.github.io/",
+        "email": "dbd05088@naver.com",
+        "github": "http://github.com/dbd05088"
+      }
+    ],
+    "graduate_students": [
+      {
+        "name": "Byeonghwi Kim",
+        "position": "Ph.D. Student",
+        "image": "/images/people/byeonghwi.jpg",
+        "website": "https://bhkim94.github.io/",
+        "email": "byeonghwikim@snu.ac.kr",
+        "github": "http://github.com/bhkim94"
+      },
+      {
+        "name": "Daechul Ahn",
+        "position": "Ph.D. Student",
+        "image": "/images/people/daechulahn.jpg",
+        "website": "https://dcahn12.github.io",
+        "email": "daechulahn@snu.ac.kr",
+        "github": "http://github.com/dcahn12"
+      },
+      {
+        "name": "Seongwon Jo",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/seongwonjo.jpg",
+        "website": "https://seongwon980.github.io/",
+        "email": "seongwoncho@snu.ac.kr",
+        "github": "http://github.com/seongwon980"
+      },
+      {
+        "name": "Minjae Lee",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/minjaelee.png",
+        "website": "https://98minjae.github.io/",
+        "email": "mj1020@snu.ac.kr",
+        "github": "http://github.com/98minjae"
+      },
+      {
+        "name": "San Kim",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/sankim.jpg",
+        "website": "https://mounkim.github.io/",
+        "email": "00sankim@snu.ac.kr",
+        "github": "http://github.com/mounKim"
+      },
+      {
+        "name": "Taeheon Kim",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/taeheonkim.jpg",
+        "website": "https://ta3h30nk1m.github.io/",
+        "email": "thkim0305@snu.ac.kr",
+        "github": "http://github.com/ta3h30nk1m"
+      },
+      {
+        "name": "Jimin Nam",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/jiminnam.jpg",
+        "website": "https://charlottejruby.github.io/",
+        "email": "jimin.nam@snu.ac.kr",
+        "github": "http://github.com/charlottejruby"
+      },
+      {
+        "name": "Hyeonbeom Choi",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/hyeonbeomchoi.jpeg",
+        "website": "https://hyeonbeomchoi.github.io/",
+        "email": "gusqja1228@snu.ac.kr",
+        "github": "http://github.com/HyeonbeomChoi"
+      },
+      {
+        "name": "Jonghyun Park",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/jonghyunpark.jpg",
+        "website": "https://jonghyun813.github.io/profile/",
+        "email": "jonghyun.park@snu.ac.kr",
+        "github": "http://github.com/jonghyun813"
+      },
+      {
+        "name": "Hyunwoo Je",
+        "position": "Ph.D. Student",
+        "image": "/images/people/hyunwooje.jpg",
+        "website": null,
+        "email": "hyunwoo.je@snu.ac.kr",
+        "github": null
+      },
+      {
+        "name": "Seungyeon Jwa",
+        "position": "MS/Ph.D. Student (Off to NAVER)",
+        "image": "/images/people/seungyeonjwa.jpg",
+        "website": "https://seungyeonlj.github.io/",
+        "email": "amyj97@snu.ac.kr",
+        "github": "http://github.com/seungyeonlj"
+      },
+      {
+        "name": "Youhan Lee",
+        "position": "MS Student",
+        "image": "/images/people/youhanlee.jpg",
+        "website": null,
+        "email": "sts08104@snu.ac.kr",
+        "github": "http://github.com/youhanLee"
+      },
+      {
+        "name": "Reokyoung Kim",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/reokyoungkim.jpg",
+        "website": null,
+        "email": "reokyoungkim@snu.ac.kr",
+        "github": "http://github.com/rlafurud"
+      },
+      {
+        "name": "Taewook Kang",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/taewookkang.jpg",
+        "website": "https://twkang43.github.io",
+        "email": "tw.kang@snu.ac.kr",
+        "github": "http://github.com/twkang43"
+      },
+      {
+        "name": "Donghyun Shin",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/donghyunshin.jpg",
+        "website": null,
+        "email": "dawnme@snu.ac.kr",
+        "github": "http://github.com/Donghyun1228"
+      },
+      {
+        "name": "Jimin Ryu",
+        "position": "MS/Ph.D. Student",
+        "image": "/images/people/jiminryu.jpg",
+        "website": null,
+        "email": "steve0221@snu.ac.kr",
+        "github": "http://github.com/nick11967"
+      }
+    ],
+    "undergraduate_interns": [
+      {
+        "name": "Sungkyung Kim",
+        "position": "SNU ECE",
+        "image": "/images/people/sungkyungkim.jpg",
+        "website": null,
+        "email": "sk0428@snu.ac.kr",
+        "github": "http://github.com/waitzkin"
+      },
+      {
+        "name": "Minjae Lee (B)",
+        "position": "SNU CSE",
+        "image": "/images/people/minjaelee-b.jpg",
+        "website": null,
+        "email": "herry123435@snu.ac.kr",
+        "github": "http://github.com/herry123435"
+      },
+      {
+        "name": "Sanghyun Hahn",
+        "position": "SNU ASE",
+        "image": "/images/people/sanghyunhahn.jpg",
+        "website": null,
+        "email": "steve0221@snu.ac.kr",
+        "github": "http://github.com/hshhahn"
+      }
+    ],
+    "robots": [
+      {
+        "name": "UR10e",
+        "position": "SNU ASRI",
+        "image": "/images/people/ur10e.jpg"
+      },
+      {
+        "name": "Stretch-3",
+        "position": "SNU ASRI",
+        "image": "/images/people/stretch-3.jpg"
+      }
+    ],
+    "administrative_staff": [
+      {
+        "name": "Sukyoung Lee",
+        "position": "Administrative Staff",
+        "image": "/images/people/sukyounglee.jpg",
+        "email": "happysy@snu.ac.kr"
+      }
+    ],
+    "alumni_graduate": [
+      {
+        "name": "Taewoong Kim",
+        "degree": "Yonsei MS, 2025",
+        "current": "Research Engineer @ Samsung Research",
+        "website": "https://twoongg.github.io/"
+      },
+      {
+        "name": "Jinyeon Kim",
+        "degree": "Yonsei MS, 2025",
+        "current": "Researcher @ SNUMPR  Research Scientist @ KRAFTON AI",
+        "website": "https://jinyeonkim.github.io/"
+      },
+      {
+        "name": "Yura Choi",
+        "degree": "Yonsei MS, 2025",
+        "current": "Intern @ Huawei London  PhD Student @ Imperial College London, UK",
+        "website": "https://yuuraa.github.io"
+      },
+      {
+        "name": "Seokjun Moon",
+        "degree": "Yonsei MS, 2025",
+        "current": "Engineer @ Hyundai Mobis"
+      },
+      {
+        "name": "Minhyuk Seo",
+        "degree": "Yonsei MS, 2024",
+        "current": "Researcher @ SNUMPR  Visiting Researcher @ KU Leuven, Belgium"
+      },
+      {
+        "name": "Cheolhong Min",
+        "degree": "Yonsei MS, 2024",
+        "current": "PhD Student @ SNU CSE GS"
+      },
+      {
+        "name": "Jimin Sohn",
+        "degree": "GIST MS, 2024. Co-advised by Jeany Son",
+        "current": "NAVER  LG Innotek"
+      },
+      {
+        "name": "Hyunseo Koh",
+        "degree": "GIST MS, 2023",
+        "current": "In military service"
+      },
+      {
+        "name": "Jihun Kim",
+        "degree": "GIST MS, 2023",
+        "current": "Minds and company (Mil. Oblig.)"
+      },
+      {
+        "name": "Dahyun Kim",
+        "degree": "GIST MS, 2022",
+        "current": "Upstage (Mil. Oblig.)  Twelve Labs."
+      },
+      {
+        "name": "YeongWoo Nam",
+        "degree": "GIST MS, 2022",
+        "current": "Saige Research (Mil. Oblig.)"
+      },
+      {
+        "name": "Taeil Oh",
+        "degree": "GIST MS, 2022",
+        "current": "Alsemy"
+      },
+      {
+        "name": "Mohammad Mostafavi",
+        "degree": "GIST Ph.D., 2021, co-advised by Prof. Kuk-Jin Yoon (KAIST)",
+        "current": "Research Scientist @ Lunit  SNUMPR Post-Doc"
+      },
+      {
+        "name": "Dongmin Kang",
+        "degree": "GIST MS, 2021",
+        "current": "Researcher @ GIST AI Institute (Mil. Oblig.)  SI Analytics (Mil. Oblig.)"
+      },
+      {
+        "name": "Jinwoo Nam",
+        "degree": "GIST MS, 2021",
+        "current": "Knowre Inc. (Mil. Oblig.)"
+      },
+      {
+        "name": "Yeonsik Jo",
+        "degree": "GIST MS, 2021",
+        "current": "Research Engineer @ LG AI Research"
+      }
+    ],
+    "alumni_undergraduate": [
+      {
+        "name": "Chaeeun Lee",
+        "degree": "SKKU BS, 2025",
+        "current": "SNU GS AI"
+      },
+      {
+        "name": "Jaehong Min",
+        "degree": "SNU BS, 2025",
+        "current": "TBD"
+      },
+      {
+        "name": "Yu Yeong Kim",
+        "degree": "GIST BS, 2023",
+        "current": "KAIST GS AI"
+      },
+      {
+        "name": "Daneul Kim",
+        "degree": "GIST BS, 2023",
+        "current": "SNU GS AI"
+      },
+      {
+        "name": "Pratham Sahu",
+        "degree": "IITK BS, 2025?",
+        "current": "TBD"
+      },
+      {
+        "name": "Divyam Goel",
+        "degree": "IITR BS, 2023",
+        "current": "CMU RI MS"
+      },
+      {
+        "name": "Suvaansh Bhambri",
+        "degree": "IITR BS, 2022",
+        "current": "Adobe India"
+      },
+      {
+        "name": "Sunoh Lee",
+        "degree": "GIST BS, 2022",
+        "current": "Researcher @ ADD (Mil. Oblig.)"
+      },
+      {
+        "name": "Ashish Sinha",
+        "degree": "IITR BS, 2021",
+        "current": "Grad. Student @ Simon Fraser University"
+      },
+      {
+        "name": "Daeun Kyung",
+        "degree": "GIST BS, 2021",
+        "current": "Grad. student @ KAIST GS AI"
+      },
+      {
+        "name": "Kunal Pratap Singh",
+        "degree": "IITR BS, 2021",
+        "current": "Predoctoral Young Investigator @ AI2  Ph.D. Student @ EPFL"
+      },
+      {
+        "name": "Jaeyoung Ahn",
+        "degree": "GIST BS, 2021",
+        "current": "Deeping Source Inc."
+      },
+      {
+        "name": "Dahyun Kim",
+        "degree": "GIST BS, 2020",
+        "current": "Join our lab"
+      },
+      {
+        "name": "Donggun Lee",
+        "degree": "GIST BS, 2020",
+        "current": "Grad. student @ POSTECH Graphics Lab."
+      },
+      {
+        "name": "Jihwan Bae",
+        "degree": "GIST BS, 2020",
+        "current": "Researcher @ ADD (Mil. Oblig.)"
+      }
+    ]
+  }
+}
