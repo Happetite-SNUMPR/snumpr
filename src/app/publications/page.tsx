@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import publications from '../../../public/data/publications.json';
 import PublicationList from './PublicationList';
 import styles from './Publication.module.css';
@@ -7,7 +8,9 @@ export default function PublicationsPage() {
   return (
     <main className={styles.main}>
       <Title title="Publications" />
-      <PublicationList publications={publications} />
+      <Suspense>
+        <PublicationList publications={publications} />
+      </Suspense>
     </main>
   );
 }
