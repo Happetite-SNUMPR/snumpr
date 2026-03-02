@@ -14,7 +14,9 @@
       { "label": "Webpage", "url": "https://snumpr.github.io/risk-adaptive" }
     ],
     "tags": ["arXiv", "CVPR"],
-    "datedYear": 2025
+    "year": 2025,
+    "venues":["Journal"],
+    "recognized": "recognized"
   },
   {
     "title": "OASIS: Online Sample Selection for Continual Visual Instruction Tuning",
@@ -31,7 +33,9 @@
       { "label": "PDF", "url": "https://arxiv.org/pdf/2506.xxxxx" }
     ],
     "tags": ["arXiv"],
-    "datedYear": 2025
+    "year": 2025,
+    "venues":["Conference"],
+    "recognized": "unrecognized"
   },
   {
     "title": "Long-Tailed Recognition on Binary Networks by Calibrating A Pre-trained Model",
@@ -48,7 +52,9 @@
       { "label": "PDF", "url": "https://arxiv.org/pdf/2404.xxxxx" }
     ],
     "tags": ["arXiv"],
-    "datedYear": 2024
+    "year": 2024,
+    "venues":["Workshop"],
+    "recognized": "unrecognized"
   },
   {
     "title": "DialNav: Multi-turn Dialog Navigation with a Remote Guide",
@@ -68,6 +74,8 @@
       { "label": "Webpage", "url": "https://snumpr.github.io/dialnav" }
     ],
     "tags": ["ICCV"],
-    "datedYear": 2025
+    "year": 2025,
+    "venues":["Journal"],
+    "recognized": "recognized"
   }
 ]

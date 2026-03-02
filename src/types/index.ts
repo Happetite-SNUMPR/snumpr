@@ -19,5 +19,7 @@ export interface PublicationItem {
   thumbnailUrl: string;
   links: { label: string; url: string }[];
   tags: string[];
-  datedYear: number;
+  year: number;
+  venues: string[];
+  recognized: string;
 }

@@ -10,53 +10,15 @@ interface PublicationListProps {
   publications: PublicationItem[];
 }
 
-interface PublicationItemWithCited extends PublicationItem {
-  cited?: number;
-}
-
 export default function PublicationList({ publications }: PublicationListProps) {
   const { filters, setFilters } = usePublicationFilters();
 
   const options = useMemo(() => {
-    const datedYears = new Set<string>();
-    const authors = new Set<string>();
-    const tags = new Set<string>();
-
-    publications.forEach((pub) => {
-      datedYears.add(pub.datedYear.toString());
-      pub.authors.forEach((author) => authors.add(author));
-      pub.tags.forEach((tag) => tags.add(tag));
-    });
-
-    return {
-      datedYears: Array.from(datedYears).sort().reverse(),
-      authors: Array.from(authors).sort(),
-      tags: Array.from(tags).sort(),
-    };
+    return findPossibleOptions(publications);
   }, [publications]);
 
   const filteredPublications = useMemo(() => {
-    return publications.filter((pub) => {
-      // Filter by Years (Exact match in array)
-      if (
-        filters.datedYears.length !== 0 &&
-        !filters.datedYears.includes(pub.datedYear.toString())
-      ) {
-        return false;
-      }
-      // Filter by Authors (Intersection)
-      if (
-        filters.authors.length !== 0 &&
-        !pub.authors.some((author) => filters.authors.includes(author))
-      ) {
-        return false;
-      }
-      // Filter by Tags (Intersection)
-      if (filters.tags.length !== 0 && !pub.tags.some((tag) => filters.tags.includes(tag))) {
-        return false;
-      }
-      return true;
-    });
+    return filterPublications(publications, filters);
   }, [publications, filters]);
 
   return (
@@ -78,9 +40,11 @@ export default function PublicationList({ publications }: PublicationListProps) 
   );
 }
 
-const filterLabels = ['datedYears', 'authors', 'tags'] as const;
+const filterLabels = ['recognized', 'year', 'venues', 'authors', 'tags'] as const;
 const publicationFiltersSchema = {
-  datedYears: parseAsArrayOf(parseAsString).withDefault([]),
+  recognized: parseAsArrayOf(parseAsString).withDefault([]),
+  year: parseAsArrayOf(parseAsString).withDefault([]),
+  venues: parseAsArrayOf(parseAsString).withDefault([]),
   authors: parseAsArrayOf(parseAsString).withDefault([]),
   tags: parseAsArrayOf(parseAsString).withDefault([]),
 };
@@ -90,6 +54,65 @@ type PublicationFilterOptions = {
     (typeof publicationFiltersSchema)[K]['parseServerSide']
   >;
 };
+
+function filterPublications(
+  publications: PublicationItem[],
+  filters: PublicationFilterOptions,
+): PublicationItem[] {
+  return publications.filter((pub) => {
+    // Filter by Recognized (Exact match in array)
+    if (filters.recognized.length !== 0 && !filters.recognized.includes(pub.recognized)) {
+      return false;
+    }
+    // Filter by Years (Exact match in array)
+    if (filters.year.length !== 0 && !filters.year.includes(pub.year.toString())) {
+      return false;
+    }
+    // Filter by Venues (Intersection)
+    if (
+      filters.venues.length !== 0 &&
+      !pub.venues.some((author) => filters.venues.includes(author))
+    ) {
+      return false;
+    }
+    // Filter by Authors (Intersection)
+    if (
+      filters.authors.length !== 0 &&
+      !pub.authors.some((author) => filters.authors.includes(author))
+    ) {
+      return false;
+    }
+    // Filter by Tags (Intersection)
+    if (filters.tags.length !== 0 && !pub.tags.some((tag) => filters.tags.includes(tag))) {
+      return false;
+    }
+    return true;
+  });
+}
+
+function findPossibleOptions(publications: PublicationItem[]) {
+  const recognized = new Set<string>();
+  const year = new Set<string>();
+  const venues = new Set<string>();
+  const authors = new Set<string>();
+  const tags = new Set<string>();
+
+  publications.forEach((pub) => {
+    recognized.add(pub.recognized);
+    year.add(pub.year.toString());
+    pub.venues.forEach((venue) => venues.add(venue));
+    pub.authors.forEach((author) => authors.add(author));
+    pub.tags.forEach((tag) => tags.add(tag));
+  });
+
+  return {
+    recognized: Array.from(recognized).sort(),
+    year: Array.from(year).sort().reverse(),
+    venues: Array.from(venues).sort(),
+    authors: Array.from(authors).sort(),
+    tags: Array.from(tags).sort(),
+  };
+}
 
 function usePublicationFilters() {
   const [filters, setFilters] = useQueryStates(publicationFiltersSchema);
@@ -125,15 +148,15 @@ function PublicationFilterController({
     <>
       <div className={styles.filtersTitleWrapper}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Image src="filter.svg" alt="filter" width={32} height={32} />
+          <Image src="/icons/publication/filter.svg" alt="filter" width={32} height={32} />
           <span className={styles.filtersTitle}>Filters</span>
         </div>
         <p className={styles.resultsText}>{countResults} Results</p>
       </div>
       <div className={styles.filtersWrapper}>
         {filterLabels.map((l) => (
-          <details key={l}>
-            <summary className={styles.summary}>{l}</summary>
+          <details key={l} open>
+            <summary className={styles.summary}>{camelToTitle(l)}</summary>
             <div className={styles.details}>
               {options[l].map((o) => (
                 <label key={`${l}-${o}`} className={styles.checkboxLabel}>
@@ -155,7 +178,7 @@ function PublicationFilterController({
   );
 }
 
-function PublicationItemView({ pub }: { pub: PublicationItemWithCited }) {
+function PublicationItemView({ pub }: { pub: PublicationItem }) {
   return (
     <article className={styles.article}>
       <img src={pub.thumbnailUrl} className={styles.image} />
@@ -186,7 +209,24 @@ function IconLink({ label, href }: { label: string; href: string }) {
 
 function Icon({ label }: { label: string }) {
   if (label.toLowerCase().startsWith('pdf')) {
-    return <Image src="file.svg" alt={label} width={16} height={16} />;
+    return <Image src="/icons/publication/file.svg" alt={label} width={16} height={16} />;
   }
-  return <Image src="globe.svg" alt={label} width={16} height={16} />;
+  return <Image src="/icons/publication/globe.svg" alt={label} width={16} height={16} />;
+}
+
+/**
+ * Converts a camelCase string to Title Case.
+ * Example: "helloWorld" -> "Hello World"
+ */
+function camelToTitle(text: string): string {
+  if (!text) return text;
+
+  return (
+    text
+      // 1. Insert a space before all caps
+      .replace(/([A-Z])/g, ' $1')
+      // 2. Capitalize the first letter and trim potential leading space
+      .replace(/^./, (str) => str.toUpperCase())
+      .trim()
+  );
 }

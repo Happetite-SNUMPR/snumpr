@@ -49,3 +49,40 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* 1. Remove the default solid arrow */
+summary {
+  list-style: none; /* For most modern browsers */
+  display: flex; /* Helps alignment */
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5em;
+}
+
+/* For Safari (it uses a non-standard pseudo-element) */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* 2. Add the custom line icon */
+summary::before {
+  content: '';
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-bottom: 0.125em solid black;
+  border-right: 0.125em solid black;
+
+  /* 1. Initial State: Pointing Right */
+  transform: translateY(-0.125em) rotate(-45deg);
+
+  /* 2. Set the pivot point to the center */
+  transform-origin: center;
+  transition: transform 0.2s ease-out;
+}
+
+/* 3. Open State: Pointing Down */
+details[open] summary::before {
+  /* Translate Y handles the optical "jump" when rotating */
+  transform: translateY(-0.25em) rotate(45deg);
+}
