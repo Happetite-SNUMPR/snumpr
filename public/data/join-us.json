@@ -3,7 +3,7 @@
     "title": "Join Us",
     "description": "We are a team of researchers and engineers who are serious in machine learning and computer vision.\nHere are our answers to some of frequently asked questions regarding joining our group.",
     "featuredImage": {
-      "imageUrl": "https://picsum.photos/seed/homecoming/1200/800",
+      "imageUrl": "/images/join-us/homecoming.webp",
       "caption": "The first homecoming @ Gangnam, Seoul",
       "date": "(May 28, 2024)"
     }
@@ -31,7 +31,31 @@
     {
       "id": "info-4",
       "title": "Collaborations",
-      "content": "We work closely with Allen Institute for AI (AI2), computer science at University of Washington, Harvard medical school via Massachusetts General Hospital, computer science at University of Minnesota, Twin City, and computer science at University of Maryland, College Park."
+      "contentParts": [
+        { "text": "We work closely with " },
+        { "text": "Allen Institute for AI (AI2)", "url": "https://allenai.org/" },
+        { "text": ", " },
+        {
+          "text": "computer science at University of Washington",
+          "url": "https://www.cs.washington.edu/"
+        },
+        { "text": ", " },
+        {
+          "text": "Harvard medical school via Massachusetts General Hospital",
+          "url": "https://www.massgeneral.org/"
+        },
+        { "text": ", " },
+        {
+          "text": "computer science at University of Minnesota, Twin City",
+          "url": "https://cse.umn.edu/cs"
+        },
+        { "text": ", and " },
+        {
+          "text": "computer science at University of Maryland, College Park",
+          "url": "https://www.cs.umd.edu/"
+        },
+        { "text": "." }
+      ]
     }
   ],
   "researchSection": {

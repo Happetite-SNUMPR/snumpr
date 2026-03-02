@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
-        <div className={styles.logo}>snumpr lab.</div>
+        <img src="/logo.svg" alt="snumpr lab" width={192} height={34} className={styles.logo} />
         <p className={styles.labName}>
           Seoul National University
           <br />

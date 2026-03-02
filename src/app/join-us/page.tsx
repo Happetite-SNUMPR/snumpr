@@ -35,7 +35,25 @@ export default function JoinUsPage() {
           {joinUsData.infoBlocks.map((block) => (
             <div key={block.id} className={styles.infoRow}>
               <h3 className={styles.infoTitle}>{block.title}</h3>
-              <p className={styles.infoContent}>{block.content}</p>
+              <p className={styles.infoContent}>
+                {'contentParts' in block
+                  ? (block.contentParts as { text: string; url?: string }[]).map((part, i) =>
+                      part.url ? (
+                        <a
+                          key={i}
+                          href={part.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.infoLink}
+                        >
+                          {part.text}
+                        </a>
+                      ) : (
+                        <span key={i}>{part.text}</span>
+                      ),
+                    )
+                  : block.content}
+              </p>
             </div>
           ))}
         </div>

@@ -19,9 +19,14 @@ const figtree = Figtree({
 });
 
 const ppFormula = localFont({
-  src: "../fonts/PPFormula-Medium.woff2",
-  variable: "--font-ppformula",
-})
+  src: '../fonts/PPFormula-Medium.woff2',
+  variable: '--font-ppformula',
+});
+
+const ppFormulaNarrow = localFont({
+  src: '../fonts/PPFormulaNarrow.woff2',
+  variable: '--font-ppformulanarrow',
+});
 
 export default function RootLayout({
   children,
@@ -29,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${figtree.variable} ${ppFormula.variable} no-scrollbar`}>
+    <html lang="ko" className={`${figtree.variable} ${ppFormula.variable} ${ppFormulaNarrow.variable} no-scrollbar`}>
       <body>
         <NuqsAdapter>
           <Navbar />

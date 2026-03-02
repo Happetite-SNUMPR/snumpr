@@ -42,9 +42,7 @@ function MemberCard({ member }: { member: Member }) {
       <div className={styles.imageWrapper}>
         <img className={styles.image} src={member.image} alt={member.name} />
       </div>
-      <span className={`${styles.name} ${member.name.length > 15 ? styles.nameSmall : ''}`}>
-        {member.name}
-      </span>
+      <span className={styles.name}>{member.name}</span>
       <span className={styles.position}>{member.position}</span>
       {links.length > 0 && (
         <div className={styles.links}>

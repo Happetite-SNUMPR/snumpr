@@ -3,15 +3,12 @@
   align-items: center;
   justify-content: space-between;
   height: var(--nav-height);
-  padding: 0 3.6rem;
+  padding: 0 4rem;
   border-bottom: 1px solid var(--divider-gray);
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--black);
-  text-decoration: none;
+  margin-top: 0.6rem;
 }
 
 .nav {
@@ -21,8 +18,10 @@
 
 .nav a {
   font-size: 1.6rem;
+  font-family: var(--font-secondary);
   color: var(--black);
   text-decoration: none;
+  letter-spacing: -0.03em;
 }
 .nav a:hover {
   text-decoration: underline;
