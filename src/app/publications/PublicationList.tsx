@@ -181,7 +181,9 @@ function PublicationFilterController({
 function PublicationItemView({ pub }: { pub: PublicationItem }) {
   return (
     <article className={styles.article}>
-      <img src={pub.thumbnailUrl} className={styles.image} />
+      <div className={styles.imageWrapper}>
+        <img src={pub.thumbnailUrl} className={styles.image} />
+      </div>
       <div className={styles.infoWrapper}>
         <p className={styles.articleTitle}>{pub.title}</p>
         <div className={styles.detailsWrapper}>
@@ -209,9 +211,25 @@ function IconLink({ label, href }: { label: string; href: string }) {
 
 function Icon({ label }: { label: string }) {
   if (label.toLowerCase().startsWith('pdf')) {
-    return <Image src="/icons/publication/file.svg" alt={label} width={16} height={16} />;
+    return (
+      <Image
+        src="/icons/publication/file.svg"
+        alt={label}
+        width={16}
+        height={16}
+        color="#212121"
+      />
+    );
   }
-  return <Image src="/icons/publication/globe.svg" alt={label} width={16} height={16} />;
+  return (
+    <Image
+      src="/icons/publication/globe.svg"
+      alt={label}
+      width={16}
+      height={16}
+      color="#212121"
+    />
+  );
 }
 
 /**

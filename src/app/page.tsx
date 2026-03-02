@@ -1,62 +1,119 @@
-import Hero from '@/components/home/Hero';
-import LatestNews from '@/components/home/LatestNews';
-import Highlights from '@/components/home/Highlights';
-import type { NewsItem, HighlightItem } from '@/types';
+'use client';
 
-const MOCK_NEWS: NewsItem[] = [
-  {
-    id: '1',
-    title: 'News Title',
-    details: 'News details',
-    imageUrl: 'https://picsum.photos/seed/news1/1200/800',
-  },
-  {
-    id: '2',
-    title: 'News Title 2',
-    details: 'News details 2',
-    imageUrl: 'https://picsum.photos/seed/news2/1200/800',
-  },
-];
+import { useState } from 'react';
+import styles from './page.module.css';
+import newsData from '../../public/data/news.json';
+import highlightsData from '../../public/data/highlights.json';
+import { NewsItem, HighlightItem } from '../types';
 
-const MOCK_HIGHLIGHTS: HighlightItem[] = [
-  {
-    id: 'h1',
-    title: 'Highlight 1',
-    details: 'News details',
-    imageUrl: 'https://picsum.photos/seed/high1/1200/800',
-  },
-  {
-    id: 'h2',
-    title: 'Highlight 2',
-    details: 'News details',
-    imageUrl: 'https://picsum.photos/seed/high2/1200/800',
-  },
-  {
-    id: 'h3',
-    title: 'Highlight 3',
-    details: 'News details',
-    imageUrl: 'https://picsum.photos/seed/high3/1200/800',
-  },
-  {
-    id: 'h4',
-    title: 'Highlight 4',
-    details: 'News details',
-    imageUrl: 'https://picsum.photos/seed/high4/1200/800',
-  },
-  {
-    id: 'h5',
-    title: 'Highlight 5',
-    details: 'News details',
-    imageUrl: 'https://picsum.photos/seed/high5/1200/800',
-  },
-];
+const news: NewsItem[] = newsData;
+const highlights: HighlightItem[] = highlightsData;
 
 export default function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    if (currentIndex < news.length - 1) {
+      setCurrentIndex((prev) => prev + 1);
+    }
+  };
+
+  const handlePrev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex((prev) => prev - 1);
+    }
+  };
+
   return (
     <main>
-      <Hero />
-      <LatestNews news={MOCK_NEWS} />
-      <Highlights highlights={MOCK_HIGHLIGHTS} />
+      {/* Hero */}
+      <section className={styles.hero}>
+        <img src="/images/hero.png" alt="" className={styles.bgImage} />
+        <div className={styles.bgOverlay} />
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>
+            We study
+            <br />
+            <span className={styles.accent}>visual perception</span>
+            <br />
+            and <span className={styles.accent}>machine reasoning.</span>
+          </h1>
+          <p className={styles.heroSubtitle}>
+            We read, code, discuss and write about computer vision,
+            <br />
+            machine learning, natural language processing and robotics.
+          </p>
+        </div>
+      </section>
+
+      {/* Latest News */}
+      {news.length > 0 && (
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Latest News</h2>
+
+          <div className={styles.sliderArea}>
+            <button
+              className={styles.arrowBtn}
+              onClick={handlePrev}
+              disabled={currentIndex === 0}
+              aria-label="Previous"
+            >
+              <img src="/icons/home/arrow.svg" alt="Previous" className={styles.arrowIcon} />
+            </button>
+
+            <div className={styles.sliderContainer}>
+              <div
+                className={styles.sliderTrack}
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                {news.map((item) => (
+                  <div key={item.id} className={styles.slideItem}>
+                    <div className={styles.newsImageWrapper}>
+                      <img src={item.imageUrl} alt={item.title} className={styles.image} />
+                    </div>
+                    <div className={styles.info}>
+                      <h3 className={styles.title}>{item.title}</h3>
+                      <p className={styles.details}>{item.details}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <button
+              className={styles.arrowBtn}
+              onClick={handleNext}
+              disabled={currentIndex === news.length - 1}
+              aria-label="Next"
+            >
+              <img
+                src="/icons/home/arrow.svg"
+                alt="Next"
+                className={styles.arrowIcon}
+                style={{ transform: 'rotate(180deg)' }}
+              />
+            </button>
+          </div>
+        </section>
+      )}
+
+      {/* Highlights */}
+      <section className={`${styles.section} ${styles.highlightsSection}`}>
+        <h2 className={styles.sectionTitle}>Highlights</h2>
+        <div className={styles.highlightsGrid}>
+          {highlights.map((item) => (
+            <article key={item.id} className={styles.highlightCard}>
+              <div className={styles.highlightImageWrapper}>
+                <img src={item.imageUrl} alt={item.title} className={styles.image} />
+              </div>
+              <div className={styles.info}>
+                <h3 className={styles.title}>{item.title}</h3>
+                <p className={styles.details}>{item.details}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

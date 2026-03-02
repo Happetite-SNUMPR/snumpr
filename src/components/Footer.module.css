@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   height: var(--footer-height);
-  padding: 4.8rem 6.4rem;
+  padding: 4.8rem 4.8rem;
   border-top: 1px solid var(--divider-gray);
 }
 

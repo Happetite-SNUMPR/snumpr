@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: var(--font-main);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   -webkit-font-smoothing: antialiased;
 }
 

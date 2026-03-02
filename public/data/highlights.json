@@ -1,0 +1,32 @@
+[
+  {
+    "id": "h1",
+    "title": "Highlight 1",
+    "details": "News details",
+    "imageUrl": "https://picsum.photos/seed/high1/1200/800"
+  },
+  {
+    "id": "h2",
+    "title": "Highlight 2",
+    "details": "News details",
+    "imageUrl": "https://picsum.photos/seed/high2/1200/800"
+  },
+  {
+    "id": "h3",
+    "title": "Highlight 3",
+    "details": "News details",
+    "imageUrl": "https://picsum.photos/seed/high3/1200/800"
+  },
+  {
+    "id": "h4",
+    "title": "Highlight 4",
+    "details": "News details",
+    "imageUrl": "https://picsum.photos/seed/high4/1200/800"
+  },
+  {
+    "id": "h5",
+    "title": "Highlight 5",
+    "details": "News details",
+    "imageUrl": "https://picsum.photos/seed/high5/1200/800"
+  }
+]
