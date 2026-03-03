@@ -41,11 +41,11 @@
 }
 
 .caption {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .date {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--text-gray);
 }
 
@@ -105,7 +105,7 @@
 }
 
 .cardDesc {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--text-gray);
   line-height: 1.5;
 }
@@ -119,7 +119,6 @@
   text-decoration: none;
   border-radius: 12px;
   font-size: 1.6rem;
-  font-family: var(--font-figtree);
   font-weight: 500;
   margin-top: 1.6rem;
   gap: 0.6rem;

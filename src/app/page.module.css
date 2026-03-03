@@ -37,10 +37,9 @@
 
 .heroTitle {
   font-size: 6rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.05;
-  letter-spacing: -0.03em;
-  color: var(--black);
+  letter-spacing: -0.045em;
   margin-bottom: 4.8rem;
 }
 
@@ -50,7 +49,7 @@
 
 .heroSubtitle {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: var(--black);
 }

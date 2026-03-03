@@ -11,21 +11,9 @@ export const metadata: Metadata = {
   description: 'We study visual perception and machine reasoning.',
 };
 
-const figtree = Figtree({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'], // Regular, Medium, SemiBold
-  style: ['normal', 'italic'],
-  variable: '--font-figtree',
-});
-
-const ppFormula = localFont({
-  src: '../fonts/PPFormula-Medium.woff2',
-  variable: '--font-ppformula',
-});
-
-const ppFormulaNarrow = localFont({
-  src: '../fonts/PPFormulaNarrow.woff2',
-  variable: '--font-ppformulanarrow',
+const pretendard = localFont({
+  src: '../fonts/PretendardVariable.woff2',
+  variable: '--font-pretendard',
 });
 
 export default function RootLayout({
@@ -34,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${figtree.variable} ${ppFormula.variable} ${ppFormulaNarrow.variable} no-scrollbar`}>
+    <html lang="ko" className={`${pretendard.variable} no-scrollbar`}>
       <body>
         <NuqsAdapter>
           <Navbar />

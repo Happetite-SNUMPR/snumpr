@@ -41,14 +41,12 @@
 
 .name {
   font-size: 1.6rem;
-  font-family: var(--font-ppformulanarrow), sans-serif;
   font-weight: 600;
-  letter-spacing: 0.01em;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 
 .position {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-style: italic;
   color: var(--text-gray);
   line-height: 1.4rem;
@@ -93,7 +91,7 @@
 }
 
 .alumniSubtitle {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--text-gray);
 }
 
@@ -105,22 +103,22 @@
 .alumniRow {
   display: grid;
   grid-template-columns: 18rem auto auto;
-  gap: 4.8rem;
+  gap: 3.6rem;
   padding: 0.3rem 0;
 }
 
 .alumniName {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .alumniNameLink {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--black);
   text-decoration: underline;
 }
 
 .alumniDegree {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
