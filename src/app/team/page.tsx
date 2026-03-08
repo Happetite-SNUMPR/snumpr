@@ -1,4 +1,5 @@
 import Title from '@/components/Title';
+import FadeIn from '@/components/FadeIn';
 import styles from './page.module.css';
 import peopleData from '../../../public/data/people.json';
 
@@ -111,26 +112,34 @@ function AlumniSection({
 export default function TeamPage() {
   return (
     <div className={styles.pageContainer}>
-      <Title title="Our Team" />
+      <FadeIn>
+        <Title title="Our Team" />
+      </FadeIn>
       {sections.map(({ key, title }) => {
         const members = peopleData.members[key] as Member[];
         return (
-          <section key={key} className={styles.section}>
-            <h2 className={styles.sectionTitle}>{title}</h2>
-            <div className={styles.grid}>
-              {members.map((member) => (
-                <MemberCard key={member.name} member={member} />
-              ))}
-            </div>
-          </section>
+          <FadeIn key={key}>
+            <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>{title}</h2>
+              <div className={styles.grid}>
+                {members.map((member) => (
+                  <MemberCard key={member.name} member={member} />
+                ))}
+              </div>
+            </section>
+          </FadeIn>
         );
       })}
-      <AlumniSection title="Alumni" members={peopleData.members.alumni_graduate as Alumnus[]} />
-      <AlumniSection
-        title="Alumni"
-        subtitle="(Undergraduate Interns)"
-        members={peopleData.members.alumni_undergraduate as Alumnus[]}
-      />
+      <FadeIn>
+        <AlumniSection title="Alumni" members={peopleData.members.alumni_graduate as Alumnus[]} />
+      </FadeIn>
+      <FadeIn>
+        <AlumniSection
+          title="Alumni"
+          subtitle="(Undergraduate Interns)"
+          members={peopleData.members.alumni_undergraduate as Alumnus[]}
+        />
+      </FadeIn>
     </div>
   );
 }

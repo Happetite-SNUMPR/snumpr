@@ -1,9 +1,13 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--white, #fff);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: var(--nav-height);
-  padding: 0 4rem;
+  padding: 0 4.8rem;
   border-bottom: 1px solid var(--divider-gray);
 }
 
@@ -13,7 +17,7 @@
 
 .nav {
   display: flex;
-  gap: 3.6rem;
+  gap: 4.8rem;
 }
 
 .nav a {
@@ -21,15 +25,20 @@
   font-family: var(--font-secondary);
   color: var(--black);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 .nav a:hover {
-  text-decoration: underline;
+  color: var(--blue);
 }
 
 .icon {
   width: 1.8rem;
   height: 1.8rem;
   color: var(--black);
+  transition: color 0.3s ease;
+}
+.icon :hover {
+  color: var(--blue);
 }
 
 .huggingFace {
