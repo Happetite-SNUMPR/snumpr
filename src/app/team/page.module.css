@@ -4,8 +4,20 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .pageContainer {
+    padding: 0 1.8rem;
+  }
+}
+
 .section {
   margin-bottom: 6.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    margin-bottom: 1.8rem;
+  }
 }
 
 .sectionTitle {
@@ -14,15 +26,37 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.8rem;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 5.4rem 3.6rem;
 }
 
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding-bottom: 3.6rem;
+  }
 }
 
 .imageWrapper {
@@ -77,10 +111,24 @@
   border-top: 1px solid var(--divider-gray);
 }
 
+@media screen and (max-width: 768px) {
+  .alumniSection {
+    margin-bottom: 2.6rem;
+    padding-top: 3.2rem;
+  }
+}
+
 .alumniHeader {
   display: flex;
   gap: 2.4rem;
   margin-bottom: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  .alumniHeader {
+    gap: 1.6rem;
+    flex-direction: column;
+  }
 }
 
 .alumniTitle {
@@ -95,6 +143,20 @@
   color: var(--text-gray);
 }
 
+@media screen and (max-width: 768px) {
+  .alumniTitle {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    min-width: 0;
+  }
+
+  .alumniSubtitle {
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+    color: var(--text-gray);
+  }
+}
+
 .alumniList {
   display: flex;
   flex-direction: column;
@@ -105,6 +167,15 @@
   grid-template-columns: 18rem auto auto;
   gap: 3.6rem;
   padding: 0.3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .alumniRow {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.2rem;
+    padding: 0;
+  }
 }
 
 .alumniName {
@@ -121,4 +192,14 @@
 
 .alumniDegree {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .alumniName,
+  .alumniNameLink,
+  .alumniDegree {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 160%;
+  }
 }

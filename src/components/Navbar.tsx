@@ -18,7 +18,7 @@ export default function Navbar() {
           <GithubIcon className={styles.icon} />
         </a>
         <a href="https://huggingface.co/SNUMPR" target="_blank" rel="noopener noreferrer">
-          <HuggingFaceIcon className={`${styles.icon} ${styles.huggingFace}`} />
+          <HuggingFaceIcon className={styles.icon} />
         </a>
       </nav>
     </header>

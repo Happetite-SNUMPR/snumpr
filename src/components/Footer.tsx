@@ -1,10 +1,10 @@
-import styles from "./Footer.module.css";
+import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
-        <img src="/logo.svg" alt="snumpr lab" width={192} height={34} className={styles.logo} />
+        <img src="/logo.svg" alt="snumpr lab" className={styles.logo} />
         <p className={styles.labName}>
           Seoul National University
           <br />
@@ -23,18 +23,16 @@ export default function Footer() {
             08826, South Korea
           </p>
         </div>
-        <div className={styles.officeRow}>
-          <div className={styles.infoBlock}>
-            <h4 className={styles.infoTitle}>Office 1</h4>
-            <p className={styles.infoText}>
-              Engineering Building 2<br />
-              (302) 510-2
-            </p>
-          </div>
-          <div className={styles.infoBlock}>
-            <h4 className={styles.infoTitle}>Office 2</h4>
-            <p className={styles.infoText}>ASRI (133) 411/412</p>
-          </div>
+        <div className={styles.infoBlock}>
+          <h4 className={styles.infoTitle}>Office 1</h4>
+          <p className={styles.infoText}>
+            Engineering Building 2<br />
+            (302) 510-2
+          </p>
+        </div>
+        <div className={styles.infoBlock}>
+          <h4 className={styles.infoTitle}>Office 2</h4>
+          <p className={styles.infoText}>ASRI (133) 411/412</p>
         </div>
       </div>
     </footer>

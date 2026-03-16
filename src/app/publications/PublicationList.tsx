@@ -2,7 +2,6 @@
 
 import { PublicationItem } from '@/types';
 import styles from './Publication.module.css';
-import Image from 'next/image';
 import { parseAsArrayOf, parseAsString, useQueryStates } from 'nuqs';
 import { useMemo } from 'react';
 
@@ -148,7 +147,7 @@ function PublicationFilterController({
     <>
       <div className={styles.filtersTitleWrapper}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Image src="/icons/publication/filter.svg" alt="filter" width={32} height={32} />
+          <img src="/icons/publication/filter.svg" alt="filter" className={styles.filterIcon} />
           <span className={styles.filtersTitle}>Filters</span>
         </div>
         <p className={styles.resultsText}>{countResults} Results</p>
@@ -181,8 +180,11 @@ function PublicationFilterController({
 function PublicationItemView({ pub }: { pub: PublicationItem }) {
   return (
     <article className={styles.article}>
-      <div className={styles.imageWrapper}>
-        <img src={pub.thumbnailUrl} className={styles.image} />
+      <div className={styles.imageTitleWrapper}>
+        <div className={styles.imageWrapper}>
+          <img src={pub.thumbnailUrl} className={styles.image} />
+        </div>
+        <p className={styles.articleTitle}>{pub.title}</p>
       </div>
       <div className={styles.infoWrapper}>
         <p className={styles.articleTitle}>{pub.title}</p>
@@ -212,21 +214,19 @@ function IconLink({ label, href }: { label: string; href: string }) {
 function Icon({ label }: { label: string }) {
   if (label.toLowerCase().startsWith('pdf')) {
     return (
-      <Image
+      <img
         src="/icons/publication/file.svg"
         alt={label}
-        width={16}
-        height={16}
+        className={styles.icon}
         color="#212121"
       />
     );
   }
   return (
-    <Image
+    <img
       src="/icons/publication/globe.svg"
       alt={label}
-      width={16}
-      height={16}
+      className={styles.icon}
       color="#212121"
     />
   );

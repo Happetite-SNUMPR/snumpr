@@ -12,9 +12,22 @@
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .titleContainer {
+    height: 9rem;
+  }
+}
+
 .title {
   letter-spacing: -0.025em;
   font-size: 4.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    letter-spacing: -0.03em;
+    font-size: 3.6rem;
+  }
 }
 
 .divider {

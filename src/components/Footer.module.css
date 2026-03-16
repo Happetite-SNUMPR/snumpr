@@ -1,9 +1,14 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  height: var(--footer-height);
   padding: 4.8rem 4.8rem;
   border-top: 1px solid var(--divider-gray);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2.4rem;
+  }
 }
 
 .leftSection {
@@ -12,10 +17,26 @@
   gap: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+  .leftSection {
+    gap: 1rem;
+  }
+}
+
 .logo {
   font-size: 3.2rem;
   font-weight: 600;
   color: var(--black);
+  width: auto;
+  height: 3.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 14.6rem;
+    height: auto;
+    padding-top: 1rem;
+  }
 }
 
 .labName {
@@ -25,15 +46,25 @@
   color: var(--black);
 }
 
+@media screen and (max-width: 768px) {
+  .labName {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 130%;
+  }
+}
+
 .rightSection {
   display: flex;
   gap: 5.6rem;
   margin-right: 2.4rem;
 }
 
-.officeRow {
-  display: flex;
-  gap: 8.4rem;
+@media screen and (max-width: 768px) {
+  .rightSection {
+    gap: 1rem;
+    flex-direction: column;
+  }
 }
 
 .infoBlock {
@@ -51,4 +82,18 @@
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 120%;
+}
+
+@media screen and (max-width: 768px) {
+  .infoTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 130%;
+  }
+
+  .infoText {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 130%;
+  }
 }
