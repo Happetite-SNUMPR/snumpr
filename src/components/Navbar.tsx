@@ -12,6 +12,7 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <Link href="/team">Team</Link>
         <Link href="/publications">Publications</Link>
+        <Link href="/gallery">Gallery</Link>
         <Link href="/join-us">Join Us</Link>
 
         <a href="https://github.com/snumprlab" target="_blank" rel="noopener noreferrer">

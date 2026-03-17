@@ -12,6 +12,14 @@ export interface HighlightItem {
   imageUrl: string;
 }
 
+export interface GalleryItem {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  images: string[];
+}
+
 export interface PublicationItem {
   title: string;
   authors: string[];

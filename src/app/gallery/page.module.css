@@ -1,0 +1,160 @@
+.container {
+  padding: 0 3.2rem 8rem;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem 3.2rem;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Carousel */
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  background-color: var(--divider-gray);
+  border: 1px solid var(--divider-gray);
+}
+
+.carouselTrack {
+  display: flex;
+  height: 100%;
+  will-change: transform;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.carouselSlide {
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100%;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay arrows */
+.carouselArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.8rem;
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.carouselArrow:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.carouselArrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.carouselArrowRight {
+  left: auto;
+  right: 0.8rem;
+}
+
+.carouselArrow img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Page counter */
+.pageCounter {
+  position: absolute;
+  bottom: 0.8rem;
+  right: 0.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+  pointer-events: none;
+}
+
+/* Card info */
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-top: 1.2rem;
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.categoryBadge {
+  align-self: flex-start;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0.3rem 1rem;
+  letter-spacing: 0.1;
+  border-radius: 1rem;
+  margin-top: 0.2rem;
+}
+
+.cardDescription {
+  font-size: 1.4rem;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1.8rem 4.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .cardTitle {
+    font-size: 1.6rem;
+  }
+
+  .categoryBadge {
+    font-size: 1.1rem;
+  }
+
+  .cardDescription {
+    font-size: 1.3rem;
+  }
+}
