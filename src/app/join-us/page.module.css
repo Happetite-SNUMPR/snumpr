@@ -31,7 +31,6 @@
   .sectionTitle {
     font-size: 2rem;
     line-height: 1;
-    letter-spacing: -0.02em;
     margin-bottom: 1.2rem;
   }
 }
@@ -88,12 +87,10 @@
 @media screen and (max-width: 768px) {
   .caption {
     font-size: 1.4rem;
-    letter-spacing: -0.02em;
     margin-bottom: 0.4rem;
   }
   .date {
     font-size: 1rem;
-    letter-spacing: -0.03em;
   }
 }
 
@@ -152,7 +149,6 @@
 @media screen and (max-width: 768px) {
   .infoTitle {
     font-size: 1.6rem;
-    letter-spacing: -0.02em;
   }
   .infoContent {
     font-size: 1.2rem;
@@ -212,7 +208,6 @@
 @media screen and (max-width: 768px) {
   .cardTitle {
     font-size: 1.6rem;
-    letter-spacing: -0.02em;
   }
   .cardDesc {
     font-size: 1.2rem;
@@ -250,7 +245,6 @@
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     font-size: 1.2rem;
-    letter-spacing: -0.03em;
     margin-top: 0;
     gap: 0.5rem;
   }

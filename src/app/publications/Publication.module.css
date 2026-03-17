@@ -80,7 +80,6 @@
     font-size: 2rem;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: -0.02em;
   }
 }
 
@@ -141,7 +140,6 @@
 
 .authorsText {
   font-size: 2rem;
-  letter-spacing: -0.03em;
   line-height: 1;
   color: var(--blue);
   font-family: var(--font-secondary);
@@ -150,7 +148,6 @@
 
 .journalsText {
   font-size: 1.5rem;
-  letter-spacing: -0.03em;
   line-height: 1;
   color: var(--text-gray);
   font-weight: 500;
@@ -195,7 +192,6 @@
 
 .linkLabel {
   font-size: 1.4rem;
-  letter-spacing: -0.03em;
   line-height: 1;
   color: #212121;
   font-family: var(--font-secondary);
@@ -230,7 +226,6 @@
   font-weight: 500;
   font-size: 2.8rem;
   font-family: var(--font-secondary);
-  letter-spacing: -0.03em;
   margin-left: 0.2rem;
   text-align: center;
 }
@@ -244,7 +239,6 @@
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1;
-  letter-spacing: -0.03em;
   font-family: var(--font-secondary);
   vertical-align: middle;
   margin-top: 1.2rem;
@@ -307,10 +301,8 @@
 @media screen and (max-width: 768px) {
   .summary {
     font-size: 1.2rem;
-    letter-spacing: -0.03em;
   }
   .checkboxLabel {
     font-size: 1rem;
-    letter-spacing: -0.03em;
   }
 }

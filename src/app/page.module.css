@@ -45,7 +45,7 @@
   font-size: 6rem;
   font-weight: 500;
   line-height: 1.05;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.025em;
   margin-bottom: 4.8rem;
 }
 
@@ -57,7 +57,7 @@
   .heroTitle {
     font-size: 3.6rem;
     line-height: 1;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
     margin-bottom: 0.5em;
   }
 }
@@ -100,7 +100,6 @@
   font-size: 4rem;
   font-weight: 500;
   color: var(--black);
-  letter-spacing: -0.03em;
   margin-bottom: 3.2rem;
 }
 
@@ -135,11 +134,9 @@
 @media screen and (max-width: 768px) {
   .title {
     font-size: 1.2rem;
-    letter-spacing: -0.02em;
   }
   .details {
     font-size: 0.8rem;
-    letter-spacing: -0.05em;
     font-weight: 400;
   }
 }
