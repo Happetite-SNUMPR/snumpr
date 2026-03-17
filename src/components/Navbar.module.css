@@ -5,7 +5,6 @@
   background-color: var(--white, #fff);
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: var(--nav-height);
   padding: 0 4.8rem;
   border-bottom: 1px solid var(--divider-gray);
@@ -13,22 +12,65 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    padding: 0 1.8rem;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 2rem 1.8rem 1.4rem 1.8rem;
+    gap: 1.2rem;
+  }
+}
+
+.topRow {
+  display: contents;
+}
+
+@media screen and (max-width: 768px) {
+  .topRow {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 .logo {
   margin-top: 0.6rem;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  order: 1;
+  margin-left: 4.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    order: 0;
+    margin-left: 0;
+  }
 }
 
 .nav {
   display: flex;
   gap: 4.8rem;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
   .nav {
-    gap: 1.2rem;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
   }
 }
 
@@ -55,7 +97,7 @@
   color: var(--black);
   transition: color 0.3s ease;
 }
-.icon :hover {
+.icon:hover {
   color: var(--blue);
 }
 
