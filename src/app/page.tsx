@@ -14,20 +14,16 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    if (currentIndex < news.length - 1) {
-      setCurrentIndex((prev) => prev + 1);
-    }
+    setCurrentIndex((prev) => (prev + 1) % news.length);
   };
 
   const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex((prev) => prev - 1);
-    }
+    setCurrentIndex((prev) => (prev - 1 + news.length) % news.length);
   };
 
   return (
-    <main>
-      {/* Hero */}
+    <main className={styles.main}>
+      {/* Hero - commented out
       <FadeIn>
         <section className={styles.hero}>
           <img src="/images/hero.png" alt="" className={styles.bgImage} />
@@ -48,20 +44,14 @@ export default function Home() {
           </div>
         </section>
       </FadeIn>
+      */}
 
       {/* Latest News */}
       {news.length > 0 && (
         <FadeIn>
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Latest News</h2>
-
+          <section className={`${styles.section} ${styles.newsSection}`}>
             <div className={styles.sliderArea}>
-              <button
-                className={styles.arrowBtn}
-                onClick={handlePrev}
-                disabled={currentIndex === 0}
-                aria-label="Previous"
-              >
+              <button className={styles.arrowBtn} onClick={handlePrev} aria-label="Previous">
                 <img src="/icons/home/arrow.svg" alt="Previous" className={styles.arrowIcon} />
               </button>
 
@@ -84,12 +74,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <button
-                className={styles.arrowBtn}
-                onClick={handleNext}
-                disabled={currentIndex === news.length - 1}
-                aria-label="Next"
-              >
+              <button className={styles.arrowBtn} onClick={handleNext} aria-label="Next">
                 <img
                   src="/icons/home/arrow.svg"
                   alt="Next"

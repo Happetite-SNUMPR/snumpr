@@ -129,6 +129,204 @@
   line-height: 1.5;
 }
 
+/* Modal overlay */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.modalContent {
+  position: relative;
+  background: var(--white);
+  border-radius: 1.6rem;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.modalContent::-webkit-scrollbar {
+  width: 0;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  width: 3.6rem;
+  height: 3.6rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--black);
+  transition: background 0.2s;
+}
+
+.modalCloseBtn:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Modal image area */
+.modalImageArea {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 1.6rem 1.6rem 0 0;
+  background-color: var(--divider-gray);
+}
+
+.modalImageTrack {
+  display: flex;
+  height: 100%;
+  will-change: transform;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.modalImageSlide {
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100%;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.modalArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modalArrow:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.modalArrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.modalArrowRight {
+  left: auto;
+  right: 1.2rem;
+}
+
+.modalArrow img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.modalPageCounter {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: 1.3rem;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  pointer-events: none;
+}
+
+/* Modal info */
+.modalInfo {
+  padding: 2.4rem 3.2rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.modalTitle {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.modalDate {
+  font-size: 1.4rem;
+  color: var(--text-gray);
+}
+
+.modalLabel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.05em;
+  margin-top: 1.2rem;
+}
+
+.modalDescription {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--black);
+}
+
+.modalLocation {
+  font-size: 1.4rem;
+  color: var(--text-gray);
+}
+
+/* Thumbnail strip */
+.thumbnailStrip {
+  display: flex;
+  gap: 0.8rem;
+  overflow-x: auto;
+  padding: 0.4rem 0 0.8rem;
+}
+
+.thumbnail {
+  flex: 0 0 auto;
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  border: 2px solid transparent;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  transition: border-color 0.2s;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.thumbnailActive {
+  border-color: var(--blue);
+}
+
 /* Responsive */
 @media screen and (max-width: 1024px) {
   .grid {
@@ -156,5 +354,22 @@
 
   .cardDescription {
     font-size: 1.3rem;
+  }
+
+  .modalOverlay {
+    padding: 1rem;
+  }
+
+  .modalInfo {
+    padding: 1.8rem 2rem 2.4rem;
+  }
+
+  .modalTitle {
+    font-size: 2rem;
+  }
+
+  .thumbnail {
+    width: 5.6rem;
+    height: 5.6rem;
   }
 }

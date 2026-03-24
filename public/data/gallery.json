@@ -4,6 +4,8 @@
     "title": "2025 Annual Workshop",
     "description": "Organizing the Lab Annual Workshop",
     "category": "Lab Events",
+    "date": "January 15, 2025",
+    "location": "Seoul, Korea",
     "images": [
       "https://picsum.photos/seed/workshop1/800/600",
       "https://picsum.photos/seed/workshop2/800/600",
@@ -16,6 +18,8 @@
     "title": "EMNLP 2025",
     "description": "Attending to EMNLP 2025 at Suzhou, China",
     "category": "Conference",
+    "date": "November 5, 2025",
+    "location": "Suzhou, China",
     "images": [
       "https://picsum.photos/seed/emnlp1/800/600",
       "https://picsum.photos/seed/emnlp2/800/600"
@@ -26,6 +30,8 @@
     "title": "2025 Autumn Picnic",
     "description": "Lab Autumn Picnic",
     "category": "Social Events",
+    "date": "October 20, 2025",
+    "location": "Seoul, Korea",
     "images": [
       "https://picsum.photos/seed/picnic1/800/600"
     ]
