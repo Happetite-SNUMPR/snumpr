@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { Work_Sans } from 'next/font/google';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -15,13 +16,18 @@ const pretendard = localFont({
   variable: '--font-pretendard',
 });
 
+const workSans = Work_Sans({
+  subsets: ['latin'],
+  variable: '--font-work-sans',
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${pretendard.variable} no-scrollbar`}>
+    <html lang="ko" className={`${pretendard.variable} ${workSans.variable} no-scrollbar`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>

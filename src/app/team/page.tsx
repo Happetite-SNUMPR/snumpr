@@ -131,7 +131,10 @@ export default function TeamPage() {
         );
       })}
       <FadeIn>
-        <AlumniSection title="Alumni" members={peopleData.members.alumni_graduate as Alumnus[]} />
+        <AlumniSection
+          title="Alumni"
+          members={peopleData.members.alumni_graduate as Alumnus[]}
+        />
       </FadeIn>
       <FadeIn>
         <AlumniSection
