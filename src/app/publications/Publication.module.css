@@ -50,11 +50,17 @@
 
 .article {
   height: 24.5rem;
-  padding: 2.4rem 0 3rem 0;
+  padding: 2.4rem 1.2rem 3rem 1.2rem;
   border-bottom: 1px solid var(--divider-gray);
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  border-radius: 1.2rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.article:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 @media screen and (max-width: 768px) {

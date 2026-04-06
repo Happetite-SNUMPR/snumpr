@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
-import { Work_Sans } from 'next/font/google';
+import { Figtree, Work_Sans } from 'next/font/google';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -11,9 +10,9 @@ export const metadata: Metadata = {
   description: 'We study visual perception and machine reasoning.',
 };
 
-const pretendard = localFont({
-  src: '../fonts/PretendardVariable.woff2',
-  variable: '--font-pretendard',
+const figtree = Figtree({
+  subsets: ['latin'],
+  variable: '--font-figtree',
 });
 
 const workSans = Work_Sans({
@@ -27,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${pretendard.variable} ${workSans.variable} no-scrollbar`}>
+    <html lang="ko" className={`${figtree.variable} ${workSans.variable} no-scrollbar`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
