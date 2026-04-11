@@ -28,8 +28,8 @@ export interface PublicationItem {
   journalsInfo: string;
   thumbnailUrl: string;
   links: { label: string; url: string }[];
-  tags: string[];
-  year: number;
-  venues: string[];
+  researchTopic: string[];
+  year: string;
+  publicationType: string[];
   recognized: string;
 }

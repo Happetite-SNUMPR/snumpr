@@ -13,9 +13,9 @@
       { "label": "PDF(Workshop Version)", "url": "https://arxiv.org/pdf/2510.xxxxx_v1" },
       { "label": "Webpage", "url": "https://snumpr.github.io/risk-adaptive" }
     ],
-    "tags": ["arXiv", "CVPR"],
-    "year": 2025,
-    "venues":["Journal"],
+    "researchTopic": ["Text"],
+    "year": "Preprint",
+    "publicationType":["Journal"],
     "recognized": "recognized"
   },
   {
@@ -32,9 +32,9 @@
     "links": [
       { "label": "PDF", "url": "https://arxiv.org/pdf/2506.xxxxx" }
     ],
-    "tags": ["arXiv"],
-    "year": 2025,
-    "venues":["Conference"],
+    "researchTopic": ["Vision"],
+    "year": "2025",
+    "publicationType":["Conference"],
     "recognized": "unrecognized"
   },
   {
@@ -51,9 +51,9 @@
     "links": [
       { "label": "PDF", "url": "https://arxiv.org/pdf/2404.xxxxx" }
     ],
-    "tags": ["arXiv"],
-    "year": 2024,
-    "venues":["Workshop"],
+    "researchTopic": ["AI"],
+    "year": "2024",
+    "publicationType":["Workshop"],
     "recognized": "unrecognized"
   },
   {
@@ -73,9 +73,9 @@
       { "label": "Data", "url": "https://huggingface.co/datasets/snumpirl/DialNav" },
       { "label": "Webpage", "url": "https://snumpr.github.io/dialnav" }
     ],
-    "tags": ["ICCV"],
-    "year": 2025,
-    "venues":["Journal"],
+    "researchTopic": ["Text"],
+    "year": "2025",
+    "publicationType":["Journal"],
     "recognized": "recognized"
   }
 ]

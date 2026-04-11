@@ -2,8 +2,8 @@
 
 import { PublicationItem } from '@/types';
 import styles from './Publication.module.css';
-import { parseAsArrayOf, parseAsString, useQueryStates } from 'nuqs';
-import { useMemo } from 'react';
+import { parseAsString, useQueryStates } from 'nuqs';
+import { useMemo, useEffect, useRef, useState } from 'react';
 
 interface PublicationListProps {
   publications: PublicationItem[];
@@ -17,72 +17,81 @@ export default function PublicationList({ publications }: PublicationListProps) 
   }, [publications]);
 
   const filteredPublications = useMemo(() => {
-    return filterPublications(publications, filters);
+    return filterPublications(publications, filters).reduce<Record<string, PublicationItem[]>>(
+      (acc, pub) => {
+        const year = pub.year;
+        if (!acc[year]) acc[year] = [];
+        acc[year].push(pub);
+        return acc;
+      },
+      {},
+    );
   }, [publications, filters]);
+  const sortedGroups = Object.entries(filteredPublications).sort((a, b) => {
+    return b[0].localeCompare(a[0]);
+  });
 
   return (
     <div className={styles.container}>
-      <section className={styles.filters}>
+      <section className={styles.years}>
+        <YearAnchors options={options} />
+      </section>
+      <section className={styles.publications}>
         <PublicationFilterController
           options={options}
           filters={filters}
           setFilters={setFilters}
-          countResults={filteredPublications.length}
         />
-      </section>
-      <section className={styles.publications}>
-        {filteredPublications.map((pub) => (
-          <PublicationItemView pub={pub} key={pub.title} />
+        {sortedGroups.map(([year, publications]) => (
+          <section key={year} className={styles.pubYearSection}>
+            <h2 className={styles.pubYearTitle} id={year}>
+              {year}
+            </h2>
+
+            <div className={styles.pubYearList}>
+              {publications.map((pub) => (
+                <PublicationItemView pub={pub} key={pub.title} />
+              ))}
+            </div>
+          </section>
         ))}
       </section>
     </div>
   );
 }
 
-const filterLabels = ['recognized', 'year', 'venues', 'authors', 'tags'] as const;
+const filterLabels = ['researchTopic', 'publicationType'] as const;
 const publicationFiltersSchema = {
-  recognized: parseAsArrayOf(parseAsString).withDefault([]),
-  year: parseAsArrayOf(parseAsString).withDefault([]),
-  venues: parseAsArrayOf(parseAsString).withDefault([]),
-  authors: parseAsArrayOf(parseAsString).withDefault([]),
-  tags: parseAsArrayOf(parseAsString).withDefault([]),
+  publicationType: parseAsString.withDefault(''),
+  researchTopic: parseAsString.withDefault(''),
 };
 
-type PublicationFilterOptions = {
+type PublicationFilter = {
   [K in keyof typeof publicationFiltersSchema]: ReturnType<
     (typeof publicationFiltersSchema)[K]['parseServerSide']
   >;
 };
+type PublicationFilterOptions = {
+  [K in keyof typeof publicationFiltersSchema]: NonNullable<
+    ReturnType<(typeof publicationFiltersSchema)[K]['parseServerSide']>
+  >[];
+} & { year: string[] };
 
 function filterPublications(
   publications: PublicationItem[],
-  filters: PublicationFilterOptions,
+  filters: PublicationFilter,
 ): PublicationItem[] {
   return publications.filter((pub) => {
-    // Filter by Recognized (Exact match in array)
-    if (filters.recognized.length !== 0 && !filters.recognized.includes(pub.recognized)) {
-      return false;
-    }
-    // Filter by Years (Exact match in array)
-    if (filters.year.length !== 0 && !filters.year.includes(pub.year.toString())) {
-      return false;
-    }
-    // Filter by Venues (Intersection)
     if (
-      filters.venues.length !== 0 &&
-      !pub.venues.some((author) => filters.venues.includes(author))
+      filters.publicationType &&
+      !pub.publicationType.some((v) => filters.publicationType === v)
     ) {
       return false;
     }
-    // Filter by Authors (Intersection)
     if (
-      filters.authors.length !== 0 &&
-      !pub.authors.some((author) => filters.authors.includes(author))
+      filters.researchTopic &&
+      !pub.researchTopic.some((researchTopic) => filters.researchTopic === researchTopic)
     ) {
-      return false;
-    }
-    // Filter by Tags (Intersection)
-    if (filters.tags.length !== 0 && !pub.tags.some((tag) => filters.tags.includes(tag))) {
       return false;
     }
     return true;
@@ -90,26 +99,20 @@ function filterPublications(
 }
 
 function findPossibleOptions(publications: PublicationItem[]) {
-  const recognized = new Set<string>();
   const year = new Set<string>();
-  const venues = new Set<string>();
-  const authors = new Set<string>();
-  const tags = new Set<string>();
+  const publicationType = new Set<string>();
+  const researchTopic = new Set<string>();
 
   publications.forEach((pub) => {
-    recognized.add(pub.recognized);
-    year.add(pub.year.toString());
-    pub.venues.forEach((venue) => venues.add(venue));
-    pub.authors.forEach((author) => authors.add(author));
-    pub.tags.forEach((tag) => tags.add(tag));
+    year.add(pub.year);
+    pub.publicationType.forEach((v) => publicationType.add(v));
+    pub.researchTopic.forEach((v) => researchTopic.add(v));
   });
 
   return {
-    recognized: Array.from(recognized).sort(),
     year: Array.from(year).sort().reverse(),
-    venues: Array.from(venues).sort(),
-    authors: Array.from(authors).sort(),
-    tags: Array.from(tags).sort(),
+    publicationType: Array.from(publicationType).sort(),
+    researchTopic: Array.from(researchTopic).sort(),
   };
 }
 
@@ -120,60 +123,117 @@ function usePublicationFilters() {
 
 type PublicationFilterControllerProps = {
   options: PublicationFilterOptions;
-  filters: PublicationFilterOptions;
+  filters: PublicationFilter;
   setFilters: ReturnType<typeof usePublicationFilters>['setFilters'];
-  countResults: number;
 };
+
+function YearAnchors({ options }: { options: PublicationFilterOptions }) {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault(); // Prevent the harsh URL jump
+
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start', // Aligns the top of the element to the top of the viewport
+      });
+
+      // Optional: Update URL hash without jumping
+      window.history.pushState(null, '', `#${id}`);
+    }
+  };
+
+  return (
+    <>
+      <div className={styles.yearsWrapper}>
+        <span className={styles.yearTitle}>Year</span>
+        <div className={styles.yearDetails}>
+          {options['year'].map((o) => (
+            <a
+              key={o}
+              href={`#${o}`}
+              className={styles.yearLink}
+              onClick={(e) => handleScroll(e, o)}
+            >
+              {o}
+            </a>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
 
 function PublicationFilterController({
   options,
   filters,
   setFilters,
-  countResults,
 }: PublicationFilterControllerProps) {
-  const handleChange =
-    (filterName: keyof PublicationFilterOptions) =>
-    (event: React.ChangeEvent<HTMLInputElement>) => {
-      const selected = new Set(filters[filterName]);
-      if (event.target.checked) {
-        selected.add(event.target.name);
-      } else {
-        selected.delete(event.target.name);
+  const [openFilter, setOpenFilter] = useState<string | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setOpenFilter(null);
       }
-      setFilters({ [filterName]: Array.from(selected) });
     };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleSelect = (filterName: keyof PublicationFilterOptions, value: string) => {
+    setFilters((prev) => ({
+      ...prev,
+      [filterName]: value,
+    }));
+    setOpenFilter(null); // Close after selection
+  };
+
+  const toggleDropdown = (label: string) => {
+    setOpenFilter(openFilter === label ? null : label);
+  };
 
   return (
-    <>
-      <div className={styles.filtersTitleWrapper}>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="/icons/publication/filter.svg" alt="filter" className={styles.filterIcon} />
-          <span className={styles.filtersTitle}>Filters</span>
-        </div>
-        <p className={styles.resultsText}>{countResults} Results</p>
-      </div>
-      <div className={styles.filtersWrapper}>
-        {filterLabels.map((l) => (
-          <details key={l} open>
-            <summary className={styles.summary}>{camelToTitle(l)}</summary>
-            <div className={styles.details}>
-              {options[l].map((o) => (
-                <label key={`${l}-${o}`} className={styles.checkboxLabel}>
-                  <input
-                    type="checkbox"
-                    name={o}
-                    checked={(filters as PublicationFilterOptions)[l].includes(o)}
-                    onChange={handleChange(l)}
-                    style={{ marginRight: '1.2rem' }}
-                  />
-                  {o}
-                </label>
-              ))}
+    <div className={styles.filtersWrapper} ref={containerRef}>
+      {filterLabels.map((l) => {
+        const currentValue = (filters as any)[l] || '';
+        const isOpen = openFilter === l;
+
+        return (
+          <div key={l} className={styles.filterGroup}>
+            <span className={styles.filterTitle}>{camelToTitle(l)}</span>
+
+            <div className={styles.customSelectWrapper}>
+              <div
+                className={`${styles.filterDropdown} ${isOpen ? styles.active : ''}`}
+                onClick={() => toggleDropdown(l)}
+              >
+                {currentValue || 'All'}
+              </div>
+
+              {isOpen && (
+                <ul className={styles.optionsList}>
+                  <li className={styles.optionItem} onClick={() => handleSelect(l, '')}>
+                    All
+                  </li>
+                  {options[l].map((o) => (
+                    <li
+                      key={o}
+                      className={styles.optionItem}
+                      onClick={() => handleSelect(l, o)}
+                    >
+                      {o}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
-          </details>
-        ))}
-      </div>
-    </>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
@@ -213,23 +273,9 @@ function IconLink({ label, href }: { label: string; href: string }) {
 
 function Icon({ label }: { label: string }) {
   if (label.toLowerCase().startsWith('pdf')) {
-    return (
-      <img
-        src="/icons/publication/file.svg"
-        alt={label}
-        className={styles.icon}
-        color="#212121"
-      />
-    );
+    return <img src="/icons/publication/file.svg" alt={label} className={styles.icon} />;
   }
-  return (
-    <img
-      src="/icons/publication/globe.svg"
-      alt={label}
-      className={styles.icon}
-      color="#212121"
-    />
-  );
+  return <img src="/icons/publication/globe.svg" alt={label} className={styles.icon} />;
 }
 
 /**

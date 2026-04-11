@@ -14,6 +14,13 @@ export default function JoinUsPage() {
       <FadeIn>
         <section className={styles.section}>
           <p className={styles.heroDescription}>{joinUsData.titleSection.description}</p>
+        </section>
+      </FadeIn>
+
+      <FadeIn>
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>{joinUsData.teamInterestSection.title}</h2>
+          <p className={styles.description}>{joinUsData.teamInterestSection.description}</p>
           <div className={styles.imageWrapper}>
             <img
               src={joinUsData.titleSection.featuredImage.imageUrl}
@@ -27,13 +34,6 @@ export default function JoinUsPage() {
               <span className={styles.date}>{joinUsData.titleSection.featuredImage.date}</span>
             </div>
           </div>
-        </section>
-      </FadeIn>
-
-      <FadeIn>
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>{joinUsData.teamInterestSection.title}</h2>
-          <p className={styles.description}>{joinUsData.teamInterestSection.description}</p>
         </section>
       </FadeIn>
 

@@ -1,16 +1,23 @@
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
-        <img src="/logo.svg" alt="snumpr lab" className={styles.logo} />
-        <p className={styles.labName}>
-          Seoul National University
+        <Image
+          src="/snu-logo.svg"
+          alt="snumpr lab"
+          className={styles.logo}
+          width={22}
+          height={34}
+        />
+        <p>
+          <span className={styles.labName}>
+            Machine Perception <br /> & Reasoning Lab.
+          </span>
           <br />
-          Machine Perception and
-          <br />
-          Reasoning Laboratory
+          <span>Seoul National University</span>
         </p>
       </div>
 

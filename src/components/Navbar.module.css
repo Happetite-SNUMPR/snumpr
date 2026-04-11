@@ -10,39 +10,27 @@
   border-bottom: 1px solid var(--divider-gray);
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    padding: 2rem 1.8rem 1.4rem 1.8rem;
-    gap: 1.2rem;
-  }
-}
-
 .topRow {
   display: contents;
 }
 
-@media screen and (max-width: 768px) {
-  .topRow {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+.logoTitle {
+  font-size: 1.8rem;
+  color: var(--black);
+  font-weight: 600;
+  margin-left: 1rem;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 1024px) {
+  .logoTitle {
+    font-size: 1.4rem;
   }
 }
 
 .logo {
-  margin-top: 0.6rem;
+  text-decoration: none;
   margin-right: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .logo {
-    margin-top: 0;
-    margin-right: 0;
-  }
 }
 
 .icons {
@@ -53,25 +41,10 @@
   margin-left: 4.8rem;
 }
 
-@media screen and (max-width: 768px) {
-  .icons {
-    order: 0;
-    margin-left: 0;
-  }
-}
-
 .nav {
   display: flex;
   gap: 4.8rem;
   align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  .nav {
-    width: 100%;
-    justify-content: space-between;
-    gap: 0;
-  }
 }
 
 .nav a {
@@ -85,12 +58,6 @@
   color: var(--blue);
 }
 
-@media screen and (max-width: 768px) {
-  .nav a {
-    font-size: 1.2rem;
-  }
-}
-
 .icon {
   width: auto;
   height: 1.8rem;
@@ -101,8 +68,84 @@
   color: var(--blue);
 }
 
-@media screen and (max-width: 768px) {
-  .icon {
-    height: 1.4rem;
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between; /* Even spacing */
+  width: 2.4rem;
+  height: 1.8rem; /* Adjusted height for closer lines */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 110;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px; /* Uniform thin lines */
+  background: var(--black);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Middle line fix: Ensure it has the same height/weight */
+.hamburger span:nth-child(2) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: row; /* Keep logo and hamburger on one line */
+    justify-content: space-between;
+    height: var(--nav-height);
+    padding: 0 1.8rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .topRow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .icons {
+    display: none; /* Usually hidden on mobile to save space, or moved inside nav */
+  }
+
+  /* Navigation Dropdown Overlay */
+  .nav {
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    height: 0; /* Closed state */
+    overflow: hidden;
+    border-bottom: none;
+    height: auto;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navOpen {
+    border-bottom: 1px solid var(--divider-gray);
+    padding: 2rem 0;
+    transform: scaleY(1);
+  }
+
+  .nav a {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.8rem; /* Larger touch targets */
+    border-bottom: 1px solid #f5f5f5;
   }
 }

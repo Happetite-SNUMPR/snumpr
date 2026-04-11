@@ -90,15 +90,15 @@ function AlumniSection({
                     href={member.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.alumniNameLink}
+                    className={`${styles.alumniText} ${styles.alumniTextLink}`}
                   >
                     {member.name}
                   </a>
                 ) : (
-                  <span className={styles.alumniName}>{member.name}</span>
+                  <span className={styles.alumniText}>{member.name}</span>
                 )}
               </span>
-              <span className={styles.alumniDegree}>
+              <span className={styles.alumniText}>
                 ({member.degree}) {member.current}
               </span>
             </div>

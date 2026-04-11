@@ -52,7 +52,7 @@ export default function Home() {
           <section className={`${styles.section} ${styles.newsSection}`}>
             <div className={styles.sliderArea}>
               <button className={styles.arrowBtn} onClick={handlePrev} aria-label="Previous">
-                <img src="/icons/home/arrow.svg" alt="Previous" className={styles.arrowIcon} />
+                <img src="/icons/home/arrow.svg" alt="Previous" />
               </button>
 
               <div className={styles.sliderContainer}>
@@ -74,11 +74,14 @@ export default function Home() {
                 </div>
               </div>
 
-              <button className={styles.arrowBtn} onClick={handleNext} aria-label="Next">
+              <button
+                className={`${styles.arrowBtn} ${styles.arrowBtnRight}`}
+                onClick={handleNext}
+                aria-label="Next"
+              >
                 <img
                   src="/icons/home/arrow.svg"
                   alt="Next"
-                  className={styles.arrowIcon}
                   style={{ transform: 'rotate(180deg)' }}
                 />
               </button>
