@@ -6,19 +6,12 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
         <Image
-          src="/snu-logo.svg"
+          src="/SNUMPR logo.svg"
           alt="snumpr lab"
           className={styles.logo}
-          width={22}
-          height={34}
+          width={300}
+          height={80}
         />
-        <p>
-          <span className={styles.labName}>
-            Machine Perception <br /> & Reasoning Lab.
-          </span>
-          <br />
-          <span>Seoul National University</span>
-        </p>
       </div>
 
       <div className={styles.rightSection}>

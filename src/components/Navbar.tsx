@@ -5,6 +5,7 @@ import styles from './Navbar.module.css';
 import { GithubIcon, HuggingFaceIcon } from './Icons';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -16,9 +17,14 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <div className={styles.topRow}>
-        <Link href="/" className={styles.logo}>
-          <img src="/snu-logo.svg" alt="snumpr lab" width={12} height={19} />
-          <span className={styles.logoTitle}>Machine Perception & Reasoning Lab.</span>
+        <Link href="/" className={styles.logoWrapper}>
+          <Image
+            src="/SNUMPR logo horizontal.svg"
+            className={styles.logo}
+            alt="snumpr lab"
+            width={300}
+            height={17}
+          />
         </Link>
 
         {/* Hamburger Button - Only visible on mobile via CSS */}

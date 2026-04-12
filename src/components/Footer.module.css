@@ -7,43 +7,20 @@
 
 @media screen and (max-width: 1024px) {
   .footer {
-    padding: 2.4rem;
+    padding: 1.8rem;
   }
 }
 
 .leftSection {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .leftSection {
-    gap: 1rem;
-  }
+  max-width: calc(50vw - 5rem);
 }
 
 .logo {
-  font-size: 3.2rem;
-  font-weight: 600;
-  color: var(--black);
-  width: auto;
-  height: 3.4rem;
+  width: 100%;
+  height: fit-content;
   margin-top: 0.5rem;
-}
-
-.labName {
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 120%;
-  color: var(--text-gray);
-  margin-bottom: 0.5rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .labName {
-    font-size: 1.5rem;
-  }
 }
 
 .rightSection {

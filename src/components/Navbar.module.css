@@ -14,23 +14,12 @@
   display: contents;
 }
 
-.logoTitle {
-  font-size: 1.8rem;
-  color: var(--black);
-  font-weight: 600;
-  margin-left: 1rem;
-  vertical-align: bottom;
-}
-
-@media screen and (max-width: 1024px) {
-  .logoTitle {
-    font-size: 1.4rem;
-  }
+.logoWrapper {
+  margin-right: auto;
 }
 
 .logo {
-  text-decoration: none;
-  margin-right: auto;
+  max-width: calc(100vw - 8rem);
 }
 
 .icons {
