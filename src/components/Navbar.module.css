@@ -20,6 +20,7 @@
   width: 100vw;
   height: 1px;
   background-color: var(--divider-gray);
+  opacity: 0.6;
 }
 
 .topRow {
