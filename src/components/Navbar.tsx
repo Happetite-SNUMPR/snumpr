@@ -5,7 +5,6 @@ import styles from './Navbar.module.css';
 import { GithubIcon, HuggingFaceIcon } from './Icons';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import Image from 'next/image';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -17,14 +16,8 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <div className={styles.topRow}>
-        <Link href="/" className={styles.logoWrapper}>
-          <Image
-            src="/SNUMPR logo horizontal.svg"
-            className={styles.logo}
-            alt="snumpr lab"
-            width={300}
-            height={17}
-          />
+        <Link href="/" className={styles.logoWrapper} aria-label="snumpr lab">
+          <span className={styles.logo} role="img" aria-hidden="true" />
         </Link>
 
         {/* Hamburger Button - Only visible on mobile via CSS */}
@@ -49,24 +42,24 @@ export default function Navbar() {
       </div>
 
       <nav className={`${styles.nav} ${isOpen ? styles.navOpen : ''}`} onClick={closeMenu}>
-        <Link href="/team" style={{ color: pathname === '/team' ? '#3928C8' : undefined }}>
+        <Link href="/team" className={pathname === '/team' ? styles.active : undefined}>
           Team
         </Link>
         <Link
           href="/publications"
-          style={{ color: pathname === '/publications' ? '#3928C8' : undefined }}
+          className={pathname === '/publications' ? styles.active : undefined}
         >
           Publications
         </Link>
         <Link
           href="/gallery"
-          style={{ color: pathname === '/gallery' ? '#3928C8' : undefined }}
+          className={pathname === '/gallery' ? styles.active : undefined}
         >
           Gallery
         </Link>
         <Link
           href="/join-us"
-          style={{ color: pathname === '/join-us' ? '#3928C8' : undefined }}
+          className={pathname === '/join-us' ? styles.active : undefined}
         >
           Join Us
         </Link>

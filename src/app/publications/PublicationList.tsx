@@ -247,15 +247,15 @@ function PublicationItemView({ pub }: { pub: PublicationItem }) {
         <p className={styles.articleTitle}>{pub.title}</p>
       </div>
       <div className={styles.infoWrapper}>
-        <p className={styles.articleTitle}>{pub.title}</p>
         <div className={styles.detailsWrapper}>
+          <p className={styles.articleTitle}>{pub.title}</p>
           <p className={styles.authorsText}>{pub.authors.join(', ')}</p>
           <p className={styles.journalsText}>{pub.journalsInfo}</p>
-          <div className={styles.linksWrapper}>
-            {pub.links.map(({ label, url }) => (
-              <IconLink label={label} href={url} key={`${label}-${url}`} />
-            ))}
-          </div>
+        </div>
+        <div className={styles.linksWrapper}>
+          {pub.links.map(({ label, url }) => (
+            <IconLink label={label} href={url} key={`${label}-${url}`} />
+          ))}
         </div>
       </div>
     </article>

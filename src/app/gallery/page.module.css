@@ -15,10 +15,6 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  transition: transform 0.2s ease;
-}
-.card:hover {
-  transform: translateY(-4px);
 }
 
 /* Carousel */
@@ -30,6 +26,11 @@
   border-radius: 1.6rem;
   background-color: var(--divider-gray);
   border: 1px solid var(--divider-gray);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover .carouselWrapper {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .carouselTrack {

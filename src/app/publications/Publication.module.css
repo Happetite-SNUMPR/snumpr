@@ -86,7 +86,8 @@
 }
 
 .articleTitle {
-  font-size: 2.4rem;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
   font-weight: 500;
   color: var(--black);
   line-height: 1.1;
@@ -94,9 +95,10 @@
 
 @media screen and (max-width: 1024px) {
   .articleTitle {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 500;
-    line-height: 1;
+    line-height: 1.1;
+    margin-bottom: 0.6rem;
   }
 }
 
@@ -152,7 +154,7 @@
 .detailsWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 0.8rem;
 }
 
 .authorsText {
@@ -161,25 +163,27 @@
   color: var(--blue);
   font-family: var(--font-secondary);
   font-weight: 500;
+  margin-bottom: 0.2rem;
 }
 
 .journalsText {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1;
   color: var(--text-gray);
   font-weight: 500;
-  margin-top: 1rem;
   vertical-align: bottom;
   font-family: var(--font-secondary);
 }
 
 @media screen and (max-width: 1024px) {
+  .detailsWrapper {
+    gap: 0.5rem;
+  }
   .authorsText {
     font-size: 1.2rem;
   }
   .journalsText {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -200,10 +204,10 @@
   background-color: var(--bg-gray);
   gap: 0.3rem;
   text-decoration: none;
-  transition: transform 0.4s ease;
+  transition: box-shadow 0.2s ease;
 }
 .iconLinkWrapper:hover {
-  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
 }
 
 .icon {
@@ -253,7 +257,7 @@
 }
 
 .filterTitle {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--text-gray);
   margin-bottom: 1rem;
@@ -269,7 +273,7 @@
   border: 1px solid transparent;
   border-radius: 8px;
   padding: 0.75rem 1rem 0.75rem 2.8rem; /* Space for the icon */
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--text-gray);
   cursor: pointer;
   position: relative;
@@ -313,7 +317,7 @@
 
 .optionItem {
   padding: 0.7rem 2rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--text-gray);
   cursor: pointer;
   transition: background 0.2s;
@@ -327,13 +331,13 @@
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.8rem;
 }
 
 .yearDetails {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 1.4rem;
 }
 
 .yearTitle {
@@ -354,6 +358,10 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
+}
+
+.yearLink:hover {
+  color: var(--blue);
 }
 
 @media screen and (max-width: 1024px) {
