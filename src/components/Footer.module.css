@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 4.8rem 3.2rem 7.2rem;
   max-width: 1350px;
   margin: 0 auto;
@@ -32,9 +33,7 @@
 }
 
 .logo {
-  width: 100%;
-  height: fit-content;
-  margin-top: 0.5rem;
+  display: block;
 }
 
 .rightSection {

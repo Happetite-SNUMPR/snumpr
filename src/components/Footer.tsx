@@ -6,11 +6,11 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
         <Image
-          src="/SNUMPR logo.svg"
+          src="/logo_1.svg"
           alt="snumpr lab"
           className={styles.logo}
-          width={300}
-          height={80}
+          width={500}
+          height={100}
         />
       </div>
 

@@ -33,12 +33,12 @@
 
 .logo {
   display: block;
-  width: 30rem;
-  height: 1.7rem;
+  width: 32rem;
+  height: 2.8rem;
   max-width: calc(100vw - 8rem);
   background-color: var(--black);
-  -webkit-mask: url('/SNUMPR%20logo%20horizontal.svg') no-repeat left center / contain;
-  mask: url('/SNUMPR%20logo%20horizontal.svg') no-repeat left center / contain;
+  -webkit-mask: url('/logo_1.svg') no-repeat left center / contain;
+  mask: url('/logo_1.svg') no-repeat left center / contain;
   transition: background-color 0.3s ease;
 }
 
