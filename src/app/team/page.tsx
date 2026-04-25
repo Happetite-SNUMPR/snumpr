@@ -1,3 +1,6 @@
+'use client';
+
+import Image from 'next/image';
 import Title from '@/components/Title';
 import FadeIn from '@/components/FadeIn';
 import styles from './page.module.css';
@@ -38,13 +41,37 @@ function MemberCard({ member }: { member: Member }) {
     { url: member.github, label: 'GitHub', icon: '/icons/team/github.svg' },
   ].filter((link) => link.url);
 
-  return (
-    <div className={styles.card}>
+  const body = (
+    <>
       <div className={styles.imageWrapper}>
-        <img className={styles.image} src={member.image} alt={member.name} />
+        <Image
+          src={member.image}
+          alt={member.name}
+          fill
+          sizes="(max-width: 1024px) 33vw, 22rem"
+          className={styles.image}
+        />
       </div>
       <span className={styles.name}>{member.name}</span>
       <span className={styles.position}>{member.position}</span>
+    </>
+  );
+
+  return (
+    <div className={`${styles.card} ${member.website ? styles.cardClickable : ''}`}>
+      {member.website ? (
+        <a
+          href={member.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.cardLink}
+          aria-label={member.name}
+        >
+          {body}
+        </a>
+      ) : (
+        body
+      )}
       {links.length > 0 && (
         <div className={styles.links}>
           {links.map((link) => (
@@ -109,40 +136,80 @@ function AlumniSection({
   );
 }
 
+function SectionAnchors() {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.history.pushState(null, '', `#${id}`);
+    }
+  };
+
+  return (
+    <div className={styles.anchorWrapper}>
+      <span className={styles.anchorTitle}>Team</span>
+      <div className={styles.anchorList}>
+        {sections.map(({ key, title }) => (
+          <a
+            key={key}
+            href={`#${key}`}
+            className={styles.anchorLink}
+            onClick={(e) => handleScroll(e, key)}
+          >
+            {title}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function TeamPage() {
   return (
     <div className={styles.pageContainer}>
       <FadeIn>
         <Title title="Our Team" />
       </FadeIn>
-      {sections.map(({ key, title }) => {
-        const members = peopleData.members[key] as Member[];
-        return (
-          <FadeIn key={key}>
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>{title}</h2>
-              <div className={styles.grid}>
-                {members.map((member) => (
-                  <MemberCard key={member.name} member={member} />
-                ))}
-              </div>
-            </section>
+      <div className={styles.contentWrapper}>
+        <aside className={styles.anchorPanel}>
+          <FadeIn>
+            <SectionAnchors />
           </FadeIn>
-        );
-      })}
-      <FadeIn>
-        <AlumniSection
-          title="Alumni"
-          members={peopleData.members.alumni_graduate as Alumnus[]}
-        />
-      </FadeIn>
-      <FadeIn>
-        <AlumniSection
-          title="Alumni"
-          subtitle="(Undergraduate Interns)"
-          members={peopleData.members.alumni_undergraduate as Alumnus[]}
-        />
-      </FadeIn>
+        </aside>
+        <div className={styles.mainContent}>
+          {sections.map(({ key, title }) => {
+            const members = peopleData.members[key] as Member[];
+            return (
+              <FadeIn key={key}>
+                <section className={styles.section}>
+                  <h2 id={key} className={styles.sectionTitle}>
+                    {title}
+                  </h2>
+                  <div className={styles.grid}>
+                    {members.map((member) => (
+                      <MemberCard key={member.name} member={member} />
+                    ))}
+                  </div>
+                </section>
+              </FadeIn>
+            );
+          })}
+          <FadeIn>
+            <AlumniSection
+              title="Alumni"
+              members={peopleData.members.alumni_graduate as Alumnus[]}
+            />
+          </FadeIn>
+          <FadeIn>
+            <AlumniSection
+              title="Alumni"
+              subtitle="(Undergraduate Interns)"
+              members={peopleData.members.alumni_undergraduate as Alumnus[]}
+            />
+          </FadeIn>
+        </div>
+      </div>
     </div>
   );
 }

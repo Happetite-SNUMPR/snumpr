@@ -1,32 +1,44 @@
 [
   {
     "id": "h1",
-    "title": "Highlight 1",
-    "details": "News details",
-    "imageUrl": "https://picsum.photos/seed/high1/1200/800"
+    "title": "Open-World Neural Navigation",
+    "details": "Real-time neural maps for unfamiliar indoor environments.",
+    "imageUrl": "/images/highlights/highlight1.jpg"
   },
   {
     "id": "h2",
-    "title": "Highlight 2",
-    "details": "News details",
-    "imageUrl": "https://picsum.photos/seed/high2/1200/800"
+    "title": "Compositional Vision-Language Reasoning",
+    "details": "A training objective that improves compositional generalization.",
+    "imageUrl": "/images/highlights/highlight2.jpg"
   },
   {
     "id": "h3",
-    "title": "Highlight 3",
-    "details": "News details",
-    "imageUrl": "https://picsum.photos/seed/high3/1200/800"
+    "title": "Long-Form Video Memory Transformers",
+    "details": "Memory-augmented transformers reasoning over hour-long videos.",
+    "imageUrl": "/images/highlights/highlight3.jpg"
   },
   {
     "id": "h4",
-    "title": "Highlight 4",
-    "details": "News details",
-    "imageUrl": "https://picsum.photos/seed/high4/1200/800"
+    "title": "Self-Supervised Medical Imaging",
+    "details": "Cutting radiology annotation cost by 10x via contrastive pretraining.",
+    "imageUrl": "/images/highlights/highlight1.jpg"
   },
   {
     "id": "h5",
-    "title": "Highlight 5",
-    "details": "News details",
-    "imageUrl": "https://picsum.photos/seed/high5/1200/800"
+    "title": "Diffusion Policies for Manipulation",
+    "details": "Diffusion action models for bimanual robot hands.",
+    "imageUrl": "/images/highlights/highlight2.jpg"
+  },
+  {
+    "id": "h6",
+    "title": "Causal Discovery from Video",
+    "details": "Learning causal graphs directly from raw video.",
+    "imageUrl": "/images/highlights/highlight3.jpg"
+  },
+  {
+    "id": "h7",
+    "title": "On-Device Multimodal Inference",
+    "details": "Running 7B-parameter VLMs on a single mobile GPU.",
+    "imageUrl": "/images/highlights/highlight1.jpg"
   }
 ]

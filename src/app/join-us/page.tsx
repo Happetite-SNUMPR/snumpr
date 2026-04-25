@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Title from '@/components/Title';
 import FadeIn from '@/components/FadeIn';
 import joinUsData from '../../../public/data/join-us.json';
@@ -22,9 +23,12 @@ export default function JoinUsPage() {
           <h2 className={styles.sectionTitle}>{joinUsData.teamInterestSection.title}</h2>
           <p className={styles.description}>{joinUsData.teamInterestSection.description}</p>
           <div className={styles.imageWrapper}>
-            <img
+            <Image
               src={joinUsData.titleSection.featuredImage.imageUrl}
               alt={joinUsData.titleSection.featuredImage.caption}
+              width={1600}
+              height={1067}
+              sizes="(max-width: 1024px) 100vw, 80vw"
               className={styles.image}
             />
             <div className={styles.captionArea}>

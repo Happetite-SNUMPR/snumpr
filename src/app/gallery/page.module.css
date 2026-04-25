@@ -41,6 +41,7 @@
 }
 
 .carouselSlide {
+  position: relative;
   flex: 0 0 100%;
   min-width: 0;
   height: 100%;
@@ -228,6 +229,7 @@
 }
 
 .modalImageSlide {
+  position: relative;
   flex: 0 0 100%;
   min-width: 0;
   height: 100%;
@@ -334,6 +336,7 @@
 }
 
 .thumbnail {
+  position: relative;
   flex: 0 0 auto;
   width: 7.2rem;
   height: 7.2rem;

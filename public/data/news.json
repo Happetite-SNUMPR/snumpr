@@ -1,14 +1,26 @@
 [
   {
     "id": "1",
-    "title": "News Title",
-    "details": "News details",
-    "imageUrl": "https://picsum.photos/seed/news1/1200/800"
+    "title": "Four Papers at CVPR 2026",
+    "details": "Four papers from our lab will be presented at CVPR 2026 in Nashville.",
+    "imageUrl": "/images/news/news1.jpg"
   },
   {
     "id": "2",
-    "title": "News Title 2",
-    "details": "News details 2",
-    "imageUrl": "https://picsum.photos/seed/news2/1200/800"
+    "title": "NeurIPS 2025 Honorable Mention",
+    "details": "Our work on compositional vision-language reasoning won an Honorable Mention.",
+    "imageUrl": "/images/news/news2.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Embodied AI Summer Workshop",
+    "details": "A week-long workshop bringing together embodied AI researchers across Korea.",
+    "imageUrl": "/images/news/news3.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Welcoming Spring 2026 Students",
+    "details": "Five new MS and PhD students are joining MPR Lab this spring.",
+    "imageUrl": "/images/news/news4.jpg"
   }
 ]

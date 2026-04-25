@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import Image from 'next/image';
 import styles from './page.module.css';
 import galleryData from '../../../public/data/gallery.json';
 import { GalleryItem } from '../../types';
@@ -31,9 +32,11 @@ function GalleryCard({ item, onClick }: { item: GalleryItem; onClick: () => void
         >
           {item.images.map((src, i) => (
             <div key={i} className={styles.carouselSlide}>
-              <img
+              <Image
                 src={src}
                 alt={`${item.title} ${i + 1}`}
+                fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
                 className={styles.carouselImage}
                 loading={i === 0 ? undefined : 'lazy'}
               />
@@ -115,9 +118,11 @@ function GalleryModal({ item, onClose }: { item: GalleryItem; onClose: () => voi
           >
             {item.images.map((src, i) => (
               <div key={i} className={styles.modalImageSlide}>
-                <img
+                <Image
                   src={src}
                   alt={`${item.title} ${i + 1}`}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 900px"
                   className={styles.modalImage}
                   loading={i === 0 ? undefined : 'lazy'}
                 />
@@ -172,7 +177,12 @@ function GalleryModal({ item, onClose }: { item: GalleryItem; onClose: () => voi
                     className={`${styles.thumbnail} ${i === currentIndex ? styles.thumbnailActive : ''}`}
                     onClick={() => setCurrentIndex(i)}
                   >
-                    <img src={src} alt={`${item.title} thumbnail ${i + 1}`} />
+                    <Image
+                      src={src}
+                      alt={`${item.title} thumbnail ${i + 1}`}
+                      fill
+                      sizes="7.2rem"
+                    />
                   </button>
                 ))}
               </div>

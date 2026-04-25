@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from './page.module.css';
 import newsData from '../../public/data/news.json';
 import highlightsData from '../../public/data/highlights.json';
@@ -9,6 +11,7 @@ import FadeIn from '../components/FadeIn';
 
 const news: NewsItem[] = newsData;
 const highlights: HighlightItem[] = highlightsData;
+const HIGHLIGHTS_PREVIEW_COUNT = 4;
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -60,14 +63,17 @@ export default function Home() {
                   className={styles.sliderTrack}
                   style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
-                  {news.map((item) => (
+                  {news.map((item, idx) => (
                     <div key={item.id} className={styles.slideItem}>
                       <div className={styles.newsImageWrapper}>
-                        <img src={item.imageUrl} alt={item.title} className={styles.image} />
-                      </div>
-                      <div className={styles.info}>
-                        <h3 className={styles.title}>{item.title}</h3>
-                        <p className={styles.details}>{item.details}</p>
+                        <Image
+                          src={item.imageUrl}
+                          alt={item.title}
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 1280px"
+                          className={styles.image}
+                          priority={idx === 0}
+                        />
                       </div>
                     </div>
                   ))}
@@ -86,6 +92,27 @@ export default function Home() {
                 />
               </button>
             </div>
+
+            <div className={styles.infoRow}>
+              <div className={styles.info}>
+                <h3 className={styles.title}>{news[currentIndex].title}</h3>
+                <p className={styles.details}>{news[currentIndex].details}</p>
+              </div>
+
+              <div className={styles.dots} role="tablist" aria-label="News pagination">
+                {news.map((item, idx) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    className={`${styles.dot} ${idx === currentIndex ? styles.dotActive : ''}`}
+                    onClick={() => setCurrentIndex(idx)}
+                    aria-label={`Go to slide ${idx + 1}`}
+                    aria-selected={idx === currentIndex}
+                    role="tab"
+                  />
+                ))}
+              </div>
+            </div>
           </section>
         </FadeIn>
       )}
@@ -93,12 +120,37 @@ export default function Home() {
       {/* Highlights */}
       <FadeIn>
         <section className={`${styles.section} ${styles.highlightsSection}`}>
-          <h2 className={styles.sectionTitle}>Highlights</h2>
+          <div className={styles.highlightsHeader}>
+            <h2 className={styles.sectionTitle}>Highlights</h2>
+            <Link href="/highlights" className={styles.seeAllLink}>
+              <span className={styles.seeAllText}>See all</span>
+              <svg
+                className={styles.seeAllArrow}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="5" y1="12" x2="18" y2="12" />
+                <polyline points="13,7 18,12 13,17" />
+              </svg>
+            </Link>
+          </div>
           <div className={styles.highlightsGrid}>
-            {highlights.map((item) => (
+            {highlights.slice(0, HIGHLIGHTS_PREVIEW_COUNT).map((item, idx) => (
               <article key={item.id} className={styles.highlightCard}>
                 <div className={styles.highlightImageWrapper}>
-                  <img src={item.imageUrl} alt={item.title} className={styles.image} />
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 28rem"
+                    className={styles.image}
+                    priority={idx < 2}
+                  />
                 </div>
                 <div className={styles.info}>
                   <h3 className={styles.title}>{item.title}</h3>

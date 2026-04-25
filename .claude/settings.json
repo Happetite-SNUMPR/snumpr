@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('public/data/publications.json'\\)\\); print\\(f'entries: {len\\(d\\)}'\\); print\\('all local:', all\\(p['thumbnailUrl'].startswith\\('/images/'\\) for p in d\\)\\)\")",
+      "Bash(curl -s http://localhost:3000 -o /tmp/page.html -w \"HTTP: %{http_code}\\\\n\")",
+      "Read(//tmp/**)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}

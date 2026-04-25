@@ -2,8 +2,9 @@
 
 import { PublicationItem } from '@/types';
 import styles from './Publication.module.css';
-import { parseAsString, useQueryStates } from 'nuqs';
+import { parseAsArrayOf, parseAsString, useQueryStates } from 'nuqs';
 import { useMemo, useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 interface PublicationListProps {
   publications: PublicationItem[];
@@ -42,19 +43,21 @@ export default function PublicationList({ publications }: PublicationListProps) 
           filters={filters}
           setFilters={setFilters}
         />
-        {sortedGroups.map(([year, publications]) => (
-          <section key={year} className={styles.pubYearSection}>
-            <h2 className={styles.pubYearTitle} id={year}>
-              {year}
-            </h2>
+        <FilteredList signature={JSON.stringify(filters)}>
+          {sortedGroups.map(([year, publications]) => (
+            <section key={year} className={styles.pubYearSection}>
+              <h2 className={styles.pubYearTitle} id={year}>
+                {year}
+              </h2>
 
-            <div className={styles.pubYearList}>
-              {publications.map((pub) => (
-                <PublicationItemView pub={pub} key={pub.title} />
-              ))}
-            </div>
-          </section>
-        ))}
+              <div className={styles.pubYearList}>
+                {publications.map((pub) => (
+                  <PublicationItemView pub={pub} key={pub.title} />
+                ))}
+              </div>
+            </section>
+          ))}
+        </FilteredList>
       </section>
     </div>
   );
@@ -62,19 +65,17 @@ export default function PublicationList({ publications }: PublicationListProps) 
 
 const filterLabels = ['researchTopic', 'publicationType'] as const;
 const publicationFiltersSchema = {
-  publicationType: parseAsString.withDefault(''),
-  researchTopic: parseAsString.withDefault(''),
+  publicationType: parseAsArrayOf(parseAsString).withDefault([]),
+  researchTopic: parseAsArrayOf(parseAsString).withDefault([]),
 };
 
 type PublicationFilter = {
-  [K in keyof typeof publicationFiltersSchema]: ReturnType<
-    (typeof publicationFiltersSchema)[K]['parseServerSide']
+  [K in keyof typeof publicationFiltersSchema]: NonNullable<
+    ReturnType<(typeof publicationFiltersSchema)[K]['parseServerSide']>
   >;
 };
 type PublicationFilterOptions = {
-  [K in keyof typeof publicationFiltersSchema]: NonNullable<
-    ReturnType<(typeof publicationFiltersSchema)[K]['parseServerSide']>
-  >[];
+  [K in keyof typeof publicationFiltersSchema]: string[];
 } & { year: string[] };
 
 function filterPublications(
@@ -83,14 +84,14 @@ function filterPublications(
 ): PublicationItem[] {
   return publications.filter((pub) => {
     if (
-      filters.publicationType &&
-      !pub.publicationType.some((v) => filters.publicationType === v)
+      filters.publicationType.length > 0 &&
+      !pub.publicationType.some((v) => filters.publicationType.includes(v))
     ) {
       return false;
     }
     if (
-      filters.researchTopic &&
-      !pub.researchTopic.some((researchTopic) => filters.researchTopic === researchTopic)
+      filters.researchTopic.length > 0 &&
+      !pub.researchTopic.some((v) => filters.researchTopic.includes(v))
     ) {
       return false;
     }
@@ -183,12 +184,18 @@ function PublicationFilterController({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const handleSelect = (filterName: keyof PublicationFilterOptions, value: string) => {
-    setFilters((prev) => ({
-      ...prev,
-      [filterName]: value,
-    }));
-    setOpenFilter(null); // Close after selection
+  const toggleOption = (filterName: (typeof filterLabels)[number], value: string) => {
+    setFilters((prev) => {
+      const current = prev[filterName];
+      const next = current.includes(value)
+        ? current.filter((v) => v !== value)
+        : [...current, value];
+      return { ...prev, [filterName]: next };
+    });
+  };
+
+  const clearFilter = (filterName: (typeof filterLabels)[number]) => {
+    setFilters((prev) => ({ ...prev, [filterName]: [] }));
   };
 
   const toggleDropdown = (label: string) => {
@@ -198,8 +205,9 @@ function PublicationFilterController({
   return (
     <div className={styles.filtersWrapper} ref={containerRef}>
       {filterLabels.map((l) => {
-        const currentValue = (filters as any)[l] || '';
+        const currentValues = filters[l];
         const isOpen = openFilter === l;
+        const displayText = currentValues.length === 0 ? 'All' : currentValues.join(', ');
 
         return (
           <div key={l} className={styles.filterGroup}>
@@ -210,23 +218,31 @@ function PublicationFilterController({
                 className={`${styles.filterDropdown} ${isOpen ? styles.active : ''}`}
                 onClick={() => toggleDropdown(l)}
               >
-                {currentValue || 'All'}
+                {displayText}
               </div>
 
               {isOpen && (
                 <ul className={styles.optionsList}>
-                  <li className={styles.optionItem} onClick={() => handleSelect(l, '')}>
-                    All
+                  <li
+                    className={`${styles.optionItem} ${currentValues.length === 0 ? styles.optionItemSelected : ''}`}
+                    onClick={() => clearFilter(l)}
+                  >
+                    <span className={styles.optionLabel}>All</span>
+                    {currentValues.length === 0 && <CheckIcon />}
                   </li>
-                  {options[l].map((o) => (
-                    <li
-                      key={o}
-                      className={styles.optionItem}
-                      onClick={() => handleSelect(l, o)}
-                    >
-                      {o}
-                    </li>
-                  ))}
+                  {options[l].map((o) => {
+                    const selected = currentValues.includes(o);
+                    return (
+                      <li
+                        key={o}
+                        className={`${styles.optionItem} ${selected ? styles.optionItemSelected : ''}`}
+                        onClick={() => toggleOption(l, o)}
+                      >
+                        <span className={styles.optionLabel}>{o}</span>
+                        {selected && <CheckIcon />}
+                      </li>
+                    );
+                  })}
                 </ul>
               )}
             </div>
@@ -237,19 +253,82 @@ function PublicationFilterController({
   );
 }
 
+function CheckIcon() {
+  return (
+    <svg
+      className={styles.optionCheck}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="3"
+      strokeLinecap="square"
+      strokeLinejoin="miter"
+      aria-hidden="true"
+    >
+      <polyline points="4 12 10 18 20 6" />
+    </svg>
+  );
+}
+
+function FilteredList({
+  signature,
+  children,
+}: {
+  signature: string;
+  children: React.ReactNode;
+}) {
+  const [displayed, setDisplayed] = useState({ signature, children });
+  const [phase, setPhase] = useState<'in' | 'out'>('in');
+
+  useEffect(() => {
+    if (signature === displayed.signature) return;
+    setPhase('out');
+    const timeout = setTimeout(() => {
+      setDisplayed({ signature, children });
+      setPhase('in');
+    }, 400);
+    return () => clearTimeout(timeout);
+  }, [signature, children, displayed.signature]);
+
+  return (
+    <div className={`${styles.filteredList} ${phase === 'out' ? styles.fadingOut : ''}`}>
+      {displayed.children}
+    </div>
+  );
+}
+
+const MAX_VISIBLE_AUTHORS = 8;
+
+function formatAuthors(authors: string[]): string {
+  if (authors.length <= MAX_VISIBLE_AUTHORS) return authors.join(', ');
+  return `${authors.slice(0, MAX_VISIBLE_AUTHORS).join(', ')}, et al.`;
+}
+
 function PublicationItemView({ pub }: { pub: PublicationItem }) {
+  const authorsText = formatAuthors(pub.authors);
+  const thumbnailUrl = pub.thumbnailUrl;
   return (
     <article className={styles.article}>
       <div className={styles.imageTitleWrapper}>
         <div className={styles.imageWrapper}>
-          <img src={pub.thumbnailUrl} className={styles.image} />
+          <Image
+            src={thumbnailUrl}
+            alt={pub.title}
+            fill
+            sizes="(max-width: 1024px) 9rem, 14rem"
+            className={styles.image}
+          />
         </div>
-        <p className={styles.articleTitle}>{pub.title}</p>
+        <div className={styles.mobileDetailsWrapper}>
+          <p className={styles.articleTitle}>{pub.title}</p>
+          <p className={styles.authorsText}>{authorsText}</p>
+          <p className={styles.journalsText}>{pub.journalsInfo}</p>
+        </div>
       </div>
       <div className={styles.infoWrapper}>
         <div className={styles.detailsWrapper}>
           <p className={styles.articleTitle}>{pub.title}</p>
-          <p className={styles.authorsText}>{pub.authors.join(', ')}</p>
+          <p className={styles.authorsText}>{authorsText}</p>
           <p className={styles.journalsText}>{pub.journalsInfo}</p>
         </div>
         <div className={styles.linksWrapper}>

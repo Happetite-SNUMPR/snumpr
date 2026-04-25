@@ -10,6 +10,80 @@
   }
 }
 
+.contentWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 6.4rem;
+  width: 100%;
+  position: relative;
+}
+
+.anchorPanel {
+  width: 18rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--nav-height);
+  padding-top: 1.4rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+  .contentWrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  .anchorPanel {
+    display: none;
+  }
+  .mainContent {
+    width: 100%;
+  }
+}
+
+.anchorWrapper {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.anchorTitle {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.anchorList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.anchorLink {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: var(--text-gray);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.anchorLink:hover {
+  color: var(--blue);
+}
+
 .section {
   margin-bottom: 6.4rem;
 }
@@ -24,6 +98,7 @@
   font-size: 2.4rem;
   margin-bottom: 3.2rem;
   font-weight: 500;
+  scroll-margin-top: calc(var(--nav-height) + 2rem);
 }
 
 @media screen and (max-width: 1024px) {
@@ -35,7 +110,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 3.2rem 0.8rem;
 }
 
@@ -60,6 +135,21 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
+.card:hover .name,
+.card:hover .position {
+  color: var(--blue);
+}
+
+.cardClickable {
+  cursor: pointer;
+}
+
+.cardLink {
+  display: contents;
+  color: inherit;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1024px) {
   .card {
     padding-bottom: 3.6rem;
@@ -67,6 +157,7 @@
 }
 
 .imageWrapper {
+  position: relative;
   width: 100%;
   aspect-ratio: 1;
   overflow: hidden;
@@ -86,6 +177,7 @@
   font-weight: 600;
   margin-bottom: 0.6rem;
   letter-spacing: -0.02rem;
+  transition: color 0.2s ease;
 }
 
 .position {
@@ -93,6 +185,7 @@
   color: var(--text-gray);
   letter-spacing: 0;
   margin-bottom: 1.2rem;
+  transition: color 0.2s ease;
 }
 
 .links {
@@ -111,6 +204,11 @@
 .linkIcon {
   width: 100%;
   height: 100%;
+  transition: filter 0.2s ease;
+}
+
+.linkBox:hover .linkIcon {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .alumniSection {
@@ -191,7 +289,15 @@
 
 .alumniTextLink {
   color: var(--black);
-  text-decoration: underline;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 1px;
+  transition: background-size 0.3s ease;
+}
+.alumniTextLink:hover {
+  background-size: 100% 1px;
 }
 
 @media screen and (max-width: 1024px) {
