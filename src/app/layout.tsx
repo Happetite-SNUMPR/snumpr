@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Figtree, Work_Sans } from 'next/font/google';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import Navbar from '@/components/Navbar';
@@ -8,6 +8,13 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'SNUMPR Lab',
   description: 'We study visual perception and machine reasoning.',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 const figtree = Figtree({
@@ -27,9 +34,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${figtree.variable} ${workSans.variable}`}>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
       <body>
         <NuqsAdapter>
           <Navbar />

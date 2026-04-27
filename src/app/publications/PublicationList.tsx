@@ -1,6 +1,7 @@
 'use client';
 
 import { PublicationItem } from '@/types';
+import { smoothScrollToElement } from '@/utils/smoothScroll';
 import styles from './Publication.module.css';
 import { parseAsArrayOf, parseAsString, useQueryStates } from 'nuqs';
 import { useMemo, useEffect, useRef, useState } from 'react';
@@ -130,16 +131,10 @@ type PublicationFilterControllerProps = {
 
 function YearAnchors({ options }: { options: PublicationFilterOptions }) {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault(); // Prevent the harsh URL jump
-
+    e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start', // Aligns the top of the element to the top of the viewport
-      });
-
-      // Optional: Update URL hash without jumping
+      smoothScrollToElement(element);
       window.history.pushState(null, '', `#${id}`);
     }
   };
@@ -315,7 +310,7 @@ function PublicationItemView({ pub }: { pub: PublicationItem }) {
             src={thumbnailUrl}
             alt={pub.title}
             fill
-            sizes="(max-width: 1024px) 9rem, 14rem"
+            sizes="(max-width: 900px) 9rem, 14rem"
             className={styles.image}
           />
         </div>

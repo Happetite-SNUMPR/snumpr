@@ -24,7 +24,7 @@ export default function HighlightsPage() {
                     src={item.imageUrl}
                     alt={item.title}
                     fill
-                    sizes="(max-width: 1024px) 50vw, 28rem"
+                    sizes="(max-width: 900px) 50vw, 28rem"
                     className={styles.image}
                     priority={idx < 4}
                   />

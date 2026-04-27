@@ -70,7 +70,7 @@ export default function Home() {
                           src={item.imageUrl}
                           alt={item.title}
                           fill
-                          sizes="(max-width: 1024px) 100vw, 1280px"
+                          sizes="(max-width: 900px) 100vw, 1280px"
                           className={styles.image}
                           priority={idx === 0}
                         />
@@ -91,13 +91,6 @@ export default function Home() {
                   style={{ transform: 'rotate(180deg)' }}
                 />
               </button>
-            </div>
-
-            <div className={styles.infoRow}>
-              <div className={styles.info}>
-                <h3 className={styles.title}>{news[currentIndex].title}</h3>
-                <p className={styles.details}>{news[currentIndex].details}</p>
-              </div>
 
               <div className={styles.dots} role="tablist" aria-label="News pagination">
                 {news.map((item, idx) => (
@@ -111,6 +104,13 @@ export default function Home() {
                     role="tab"
                   />
                 ))}
+              </div>
+            </div>
+
+            <div className={styles.infoRow}>
+              <div className={styles.info}>
+                <h3 className={styles.title}>{news[currentIndex].title}</h3>
+                <p className={styles.details}>{news[currentIndex].details}</p>
               </div>
             </div>
           </section>
@@ -147,7 +147,7 @@ export default function Home() {
                     src={item.imageUrl}
                     alt={item.title}
                     fill
-                    sizes="(max-width: 1024px) 50vw, 28rem"
+                    sizes="(max-width: 900px) 50vw, 28rem"
                     className={styles.image}
                     priority={idx < 2}
                   />

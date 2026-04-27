@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Title from '@/components/Title';
 import FadeIn from '@/components/FadeIn';
+import { smoothScrollToElement } from '@/utils/smoothScroll';
 import styles from './page.module.css';
 import peopleData from '../../../public/data/people.json';
 
@@ -48,7 +49,7 @@ function MemberCard({ member }: { member: Member }) {
           src={member.image}
           alt={member.name}
           fill
-          sizes="(max-width: 1024px) 33vw, 22rem"
+          sizes="(max-width: 900px) 33vw, 22rem"
           className={styles.image}
         />
       </div>
@@ -117,17 +118,30 @@ function AlumniSection({
                     href={member.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`${styles.alumniText} ${styles.alumniTextLink}`}
+                    className={`${styles.alumniName} ${styles.alumniNameLink}`}
                   >
                     {member.name}
                   </a>
                 ) : (
-                  <span className={styles.alumniText}>{member.name}</span>
+                  <span className={styles.alumniName}>{member.name}</span>
                 )}
               </span>
-              <span className={styles.alumniText}>
-                ({member.degree}) {member.current}
+              <span className={styles.alumniDegree}>
+                {(() => {
+                  const match = member.degree.match(/^(.*?)[,.]?\s*(Co-advised.*)$/i);
+                  if (match) {
+                    return (
+                      <>
+                        {match[1]}
+                        <br />
+                        <span className={styles.alumniDegreeSub}>{match[2]}</span>
+                      </>
+                    );
+                  }
+                  return member.degree;
+                })()}
               </span>
+              <span className={styles.alumniCurrent}>{member.current}</span>
             </div>
           ))}
         </div>
@@ -141,7 +155,7 @@ function SectionAnchors() {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      smoothScrollToElement(element);
       window.history.pushState(null, '', `#${id}`);
     }
   };

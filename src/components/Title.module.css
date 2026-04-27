@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .titleContainer {
     height: 9rem;
   }
@@ -22,7 +22,7 @@
   font-size: 5.2rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .title {
     font-size: 3.6rem;
   }

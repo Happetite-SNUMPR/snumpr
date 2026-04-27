@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .main {
     padding: 0 1.8rem;
   }
@@ -31,7 +31,7 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .container {
     flex-direction: column;
     gap: 0;
@@ -46,7 +46,7 @@
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .publications {
     width: 100%;
   }
@@ -74,7 +74,7 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .article {
     height: fit-content;
     padding: 1.2rem;
@@ -96,7 +96,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .articleTitle {
     font-size: 1.7rem;
     font-weight: 500;
@@ -115,7 +115,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .mobileDetailsWrapper {
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@
   border: 1px solid #c8c8c8;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .imageWrapper {
     height: 9rem;
     width: 9rem;
@@ -188,15 +188,15 @@
   font-family: var(--font-secondary);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .detailsWrapper {
     gap: 0.5rem;
   }
   .authorsText {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .journalsText {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -239,7 +239,7 @@
   margin-top: 0.2rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .linksWrapper {
     height: 1.5rem;
     gap: 0.6rem;
@@ -250,7 +250,7 @@
     height: 1rem;
   }
   .linkLabel {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-top: 0;
   }
 }
@@ -408,11 +408,11 @@
   color: var(--blue);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .yearTitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .yearLink {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }

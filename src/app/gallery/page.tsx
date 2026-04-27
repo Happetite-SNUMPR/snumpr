@@ -36,7 +36,7 @@ function GalleryCard({ item, onClick }: { item: GalleryItem; onClick: () => void
                 src={src}
                 alt={`${item.title} ${i + 1}`}
                 fill
-                sizes="(max-width: 1024px) 100vw, 33vw"
+                sizes="(max-width: 900px) 100vw, 33vw"
                 className={styles.carouselImage}
                 loading={i === 0 ? undefined : 'lazy'}
               />
@@ -122,7 +122,7 @@ function GalleryModal({ item, onClose }: { item: GalleryItem; onClose: () => voi
                   src={src}
                   alt={`${item.title} ${i + 1}`}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 900px"
+                  sizes="(max-width: 900px) 100vw, 900px"
                   className={styles.modalImage}
                   loading={i === 0 ? undefined : 'lazy'}
                 />

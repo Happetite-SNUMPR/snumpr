@@ -129,7 +129,7 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .header {
     flex-direction: row; /* Keep logo and hamburger on one line */
     justify-content: space-between;

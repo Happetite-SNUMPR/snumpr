@@ -28,7 +28,7 @@ export default function JoinUsPage() {
               alt={joinUsData.titleSection.featuredImage.caption}
               width={1600}
               height={1067}
-              sizes="(max-width: 1024px) 100vw, 80vw"
+              sizes="(max-width: 900px) 100vw, 80vw"
               className={styles.image}
             />
             <div className={styles.captionArea}>
