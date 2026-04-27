@@ -1,0 +1,100 @@
+/* =============================================================================
+ * THEME COLORS
+ * -----------------------------------------------------------------------------
+ * 이 파일에서 사이트 전체의 색을 변경할 수 있습니다.
+ * 각 변수는 사이트 곳곳의 CSS에서 var(--이름) 형태로 참조됩니다.
+ * 색만 바꾸고 저장하면 모든 페이지에 즉시 반영됩니다.
+ * ========================================================================== */
+
+:root {
+  /* ---------- Brand / Primary ----------------------------------------------
+   * 링크, 강조 텍스트, 활성 메뉴 등에 사용되는 브랜드 색입니다.
+   * ----------------------------------------------------------------------- */
+  --color-primary: #2e33d1; /* 기본 브랜드 블루 */
+  --color-primary-accent: #3939f5; /* 하이라이트(살짝 밝은 블루) */
+
+  /* ---------- Neutrals (Text) ----------------------------------------------
+   * 일반 텍스트, 보조 텍스트 색입니다.
+   * ----------------------------------------------------------------------- */
+  --color-text: #000000; /* 본문 기본 */
+  --color-text-muted: #3b3b3b; /* 보조 본문 (회색 톤) */
+  --color-text-faint: #8b8b8b; /* 더 흐린 라벨/캡션 */
+
+  /* ---------- Surfaces / Backgrounds --------------------------------------
+   * 배경, 카드, 리스트 등의 면(surface) 색입니다.
+   * ----------------------------------------------------------------------- */
+  --color-white: #ffffff; /* 기본 흰색 (페이지 배경 등) */
+  --color-black: #000000; /* 기본 검정 */
+  --color-bg-soft: #f3f3f8; /* 옅은 회색 배경 */
+  --color-bg-card: #e9e9e9; /* 카드/박스 배경 */
+  --color-bg-list: #e8ebf0; /* Publication 리스트 배경 */
+
+  /* ---------- Borders / Dividers ------------------------------------------
+   * 구분선, 테두리에 사용됩니다.
+   * ----------------------------------------------------------------------- */
+  --color-divider: #d9d9d9; /* 일반 구분선 */
+  --color-border-soft: #c8c8c8; /* 약간 진한 테두리 */
+  --color-border-faint: #f5f5f5; /* 매우 옅은 구분선 (모바일 메뉴) */
+
+  /* ---------- Scrollbar ----------------------------------------------------
+   * 페이지 스크롤바 색입니다.
+   * ----------------------------------------------------------------------- */
+  --color-scrollbar-track: #f0f0f0;
+  --color-scrollbar-thumb: #b0b0b0;
+  --color-scrollbar-thumb-hover: #888888;
+
+  /* ---------- Color Swatches (8 pastel tones) ----------------------------
+   * 8가지 공용 파스텔 색. Publication 링크 태그와 Gallery 카테고리 배지가
+   * 이 색들을 공유합니다. 카테고리 배지에 색을 지정할 때 아래 8개 중에서
+   * 하나를 골라 쓰면 됩니다 (red, orange, yellow, green, teal, blue, purple, pink).
+   * ----------------------------------------------------------------------- */
+  --color-swatch-red: #fbe8e8;
+  --color-swatch-orange: #fce4d2;
+  --color-swatch-yellow: #fbf0d9;
+  --color-swatch-green: #e6f1e6;
+  --color-swatch-teal: #ddeef0;
+  --color-swatch-blue: #e4ebfa;
+  --color-swatch-purple: #ede4f7;
+  --color-swatch-pink: #f6e4ec;
+
+  /* ---------- Publication Tag Colors --------------------------------------
+   * Publications 페이지의 링크 태그(PDF, Code 등) 배경색입니다.
+   * 위 swatch 색을 참조하므로, 색만 바꾸려면 swatch 변수를 수정하거나
+   * 아래 매핑에서 다른 swatch를 가리키도록 바꾸면 됩니다.
+   * ----------------------------------------------------------------------- */
+  --color-tag-pdf: var(--color-swatch-blue); /* PDF */
+  --color-tag-code: var(--color-swatch-green); /* Code */
+  --color-tag-data: var(--color-swatch-yellow); /* Data */
+  --color-tag-page: var(--color-swatch-red); /* Page */
+  --color-tag-supp: var(--color-swatch-purple); /* Supp */
+  --color-tag-media: var(--color-swatch-teal); /* Media */
+  --color-tag-slides: var(--color-swatch-pink); /* Slides */
+
+  /* ---------- Overlays / Shadows ------------------------------------------
+   * 반투명 오버레이(글래스 효과)와 그림자에 사용되는 색입니다.
+   * 보통 변경할 일이 거의 없습니다.
+   * ----------------------------------------------------------------------- */
+  --color-overlay-light-strong: rgba(255, 255, 255, 0.95);
+  --color-overlay-light: rgba(255, 255, 255, 0.85);
+  --color-overlay-light-medium: rgba(255, 255, 255, 0.75);
+  --color-overlay-light-soft: rgba(255, 255, 255, 0.5);
+  --color-overlay-dark: rgba(0, 0, 0, 0.6);
+  --color-overlay-dark-medium: rgba(0, 0, 0, 0.5);
+
+  --color-shadow-strong: rgba(0, 0, 0, 0.3);
+  --color-shadow-medium: rgba(0, 0, 0, 0.25);
+  --color-shadow-soft: rgba(0, 0, 0, 0.15);
+  --color-shadow-faint: rgba(0, 0, 0, 0.12);
+  --color-shadow-subtle: rgba(0, 0, 0, 0.05);
+
+  /* ---------- Legacy aliases ----------------------------------------------
+   * 기존 코드 호환용. 직접 수정할 필요는 없습니다.
+   * ----------------------------------------------------------------------- */
+  --white: var(--color-white);
+  --black: var(--color-black);
+  --blue: var(--color-primary);
+  --text-gray: var(--color-text-muted);
+  --bg-gray: var(--color-bg-soft);
+  --divider-gray: var(--color-divider);
+  --gray: var(--color-text-faint);
+}

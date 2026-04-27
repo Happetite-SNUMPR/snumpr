@@ -337,8 +337,9 @@ function PublicationItemView({ pub }: { pub: PublicationItem }) {
 }
 
 function IconLink({ label, href }: { label: string; href: string }) {
+  const categoryClass = styles[getLinkCategoryClass(label)];
   return (
-    <a href={href} className={styles.iconLinkWrapper}>
+    <a href={href} className={`${styles.iconLinkWrapper} ${categoryClass}`}>
       <Icon label={label} />
       <span className={styles.linkLabel}>{label}</span>
     </a>
@@ -350,6 +351,17 @@ function Icon({ label }: { label: string }) {
     return <img src="/icons/publication/file.svg" alt={label} className={styles.icon} />;
   }
   return <img src="/icons/publication/globe.svg" alt={label} className={styles.icon} />;
+}
+
+function getLinkCategoryClass(label: string): string {
+  const l = label.toLowerCase();
+  if (l.startsWith('pdf') || l.includes('arxiv')) return 'linkPdf';
+  if (l === 'code') return 'linkCode';
+  if (l.includes('data') || l.includes('rain')) return 'linkData';
+  if (l.includes('supp')) return 'linkSupp';
+  if (l.includes('video') || l === 'demo' || l === 'talk') return 'linkMedia';
+  if (l === 'slides' || l === 'poster') return 'linkSlides';
+  return 'linkPage';
 }
 
 /**

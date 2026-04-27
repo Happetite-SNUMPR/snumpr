@@ -30,7 +30,7 @@
 }
 
 .card:hover .carouselWrapper {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px var(--color-shadow-strong);
 }
 
 .carouselTrack {
@@ -60,7 +60,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0.8rem;
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--color-overlay-light-medium);
   border: none;
   border-radius: 50%;
   width: 3.2rem;
@@ -73,7 +73,7 @@
 }
 
 .carouselArrow:hover {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-overlay-light-strong);
 }
 
 .carouselArrow:disabled {
@@ -96,7 +96,7 @@
   position: absolute;
   bottom: 0.8rem;
   right: 0.8rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--color-overlay-dark-medium);
   color: var(--white);
   font-size: 1.2rem;
   padding: 0.2rem 0.8rem;
@@ -131,6 +131,32 @@
   margin-bottom: 0.1rem;
 }
 
+/* Category badge color variants — pick one of these in gallery.json's `color` field */
+.badgeRed {
+  background-color: var(--color-swatch-red);
+}
+.badgeOrange {
+  background-color: var(--color-swatch-orange);
+}
+.badgeYellow {
+  background-color: var(--color-swatch-yellow);
+}
+.badgeGreen {
+  background-color: var(--color-swatch-green);
+}
+.badgeTeal {
+  background-color: var(--color-swatch-teal);
+}
+.badgeBlue {
+  background-color: var(--color-swatch-blue);
+}
+.badgePurple {
+  background-color: var(--color-swatch-purple);
+}
+.badgePink {
+  background-color: var(--color-swatch-pink);
+}
+
 .cardDescription {
   font-size: 1.4rem;
   color: var(--text-gray);
@@ -143,7 +169,7 @@
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--color-overlay-dark);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   display: flex;
@@ -193,7 +219,7 @@
   top: 1.2rem;
   right: 1.2rem;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--color-overlay-light);
   border: none;
   border-radius: 50%;
   width: 3.6rem;
@@ -208,7 +234,7 @@
 }
 
 .modalCloseBtn:hover {
-  background: rgba(255, 255, 255, 1);
+  background: var(--color-white);
 }
 
 /* Modal image area */
@@ -247,7 +273,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 1.2rem;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--color-overlay-light);
   border: none;
   border-radius: 50%;
   width: 4rem;
@@ -260,7 +286,7 @@
 }
 
 .modalArrow:hover {
-  background: rgba(255, 255, 255, 1);
+  background: var(--color-white);
 }
 
 .modalArrow:disabled {
@@ -282,7 +308,7 @@
   position: absolute;
   bottom: 1.2rem;
   right: 1.2rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--color-overlay-dark-medium);
   color: var(--white);
   font-size: 1.3rem;
   padding: 0.3rem 1rem;

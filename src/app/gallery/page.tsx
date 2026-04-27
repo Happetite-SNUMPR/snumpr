@@ -4,11 +4,22 @@ import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
 import galleryData from '../../../public/data/gallery.json';
-import { GalleryItem } from '../../types';
+import { BadgeColor, GalleryItem } from '../../types';
 import Title from '../../components/Title';
 import FadeIn from '../../components/FadeIn';
 
-const gallery: GalleryItem[] = galleryData;
+const gallery: GalleryItem[] = galleryData as GalleryItem[];
+
+const badgeColorClass: Record<BadgeColor, string> = {
+  red: styles.badgeRed,
+  orange: styles.badgeOrange,
+  yellow: styles.badgeYellow,
+  green: styles.badgeGreen,
+  teal: styles.badgeTeal,
+  blue: styles.badgeBlue,
+  purple: styles.badgePurple,
+  pink: styles.badgePink,
+};
 
 function GalleryCard({ item, onClick }: { item: GalleryItem; onClick: () => void }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,7 +83,11 @@ function GalleryCard({ item, onClick }: { item: GalleryItem; onClick: () => void
 
       <div className={styles.cardInfo}>
         <h3 className={styles.cardTitle}>{item.title}</h3>
-        <span className={styles.categoryBadge}>{item.category}</span>
+        <span
+          className={`${styles.categoryBadge} ${item.color ? badgeColorClass[item.color] : ''}`}
+        >
+          {item.category}
+        </span>
         <p className={styles.cardDescription}>{item.description}</p>
       </div>
     </article>

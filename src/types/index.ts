@@ -12,11 +12,22 @@ export interface HighlightItem {
   imageUrl: string;
 }
 
+export type BadgeColor =
+  | 'red'
+  | 'orange'
+  | 'yellow'
+  | 'green'
+  | 'teal'
+  | 'blue'
+  | 'purple'
+  | 'pink';
+
 export interface GalleryItem {
   id: string;
   title: string;
   description: string;
   category: string;
+  color?: BadgeColor;
   date: string;
   location: string;
   images: string[];

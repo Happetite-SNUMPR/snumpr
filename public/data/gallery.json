@@ -4,6 +4,7 @@
     "title": "2025 Annual Workshop",
     "description": "Organizing the Lab Annual Workshop",
     "category": "Lab Events",
+    "color": "blue",
     "date": "January 15, 2025",
     "location": "Seoul, Korea",
     "images": [
@@ -18,6 +19,7 @@
     "title": "EMNLP 2025",
     "description": "Attending to EMNLP 2025 at Suzhou, China",
     "category": "Conference",
+    "color": "purple",
     "date": "November 5, 2025",
     "location": "Suzhou, China",
     "images": [
@@ -30,6 +32,7 @@
     "title": "2025 Autumn Picnic",
     "description": "Lab Autumn Picnic",
     "category": "Social Events",
+    "color": "green",
     "date": "October 20, 2025",
     "location": "Seoul, Korea",
     "images": [

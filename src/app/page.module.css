@@ -43,7 +43,7 @@
   right: 0;
   width: 55%;
   height: 100%;
-  background: linear-gradient(to right, #fff 0%, transparent 70%);
+  background: linear-gradient(to right, var(--color-white) 0%, transparent 70%);
 }
 
 .heroContent {
@@ -75,7 +75,7 @@
 }
 
 .accent {
-  color: #3939f5;
+  color: var(--color-primary-accent);
 }
 
 .heroSubtitle {
@@ -208,7 +208,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 2%;
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--color-overlay-light-medium);
   border: none;
   border-radius: 50%;
   width: 3.2rem;
@@ -222,7 +222,7 @@
 }
 
 .arrowBtn:hover {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-overlay-light-strong);
 }
 
 .arrowBtn:disabled {
@@ -307,7 +307,7 @@
   padding: 0;
   border: none;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--color-overlay-light-soft);
   cursor: pointer;
   transition:
     background-color 0.3s ease,
@@ -315,16 +315,16 @@
 }
 
 .dot:hover {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: var(--color-overlay-light);
 }
 
 .dot.dotActive {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   transform: scale(1.2);
 }
 
 .dot.dotActive:hover {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 @media screen and (max-width: 900px) {
@@ -351,7 +351,7 @@
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 500;
-  color: #8b8b8b;
+  color: var(--color-text-faint);
   text-decoration: none;
   margin-bottom: 1.2rem;
   transition: color 0.2s ease;
