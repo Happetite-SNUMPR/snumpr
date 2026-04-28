@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Title from '@/components/Title';
 import FadeIn from '@/components/FadeIn';
 import joinUsData from '../../../public/data/join-us.json';
+import links from '../../../public/data/links.json';
 import styles from './page.module.css';
 import { FormIcon } from '@/components/Icons';
 
@@ -91,7 +92,7 @@ export default function JoinUsPage() {
           <h2 className={styles.sectionTitle}>{joinUsData.howToJoinSection.title}</h2>
           <p className={styles.description}>{joinUsData.howToJoinSection.description}</p>
           <a
-            href={joinUsData.howToJoinSection.googleFormUrl}
+            href={links.googleForm}
             className={styles.linkButton}
             target="_blank"
             rel="noreferrer"

@@ -5,6 +5,7 @@ import styles from './Navbar.module.css';
 import { GithubIcon, HuggingFaceIcon } from './Icons';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import links from '../../public/data/links.json';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -32,10 +33,10 @@ export default function Navbar() {
         </button>
 
         <div className={styles.icons}>
-          <a href="https://github.com/snumprlab" target="_blank" rel="noopener noreferrer">
+          <a href={links.github} target="_blank" rel="noopener noreferrer">
             <GithubIcon className={styles.icon} />
           </a>
-          <a href="https://huggingface.co/SNUMPR" target="_blank" rel="noopener noreferrer">
+          <a href={links.huggingface} target="_blank" rel="noopener noreferrer">
             <HuggingFaceIcon className={styles.icon} />
           </a>
         </div>
