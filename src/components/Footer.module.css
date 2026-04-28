@@ -94,6 +94,11 @@
   width: 2.4rem;
   height: 2.4rem;
   object-fit: contain;
+  transition: filter 0.2s ease;
+}
+
+.snsLink:hover .snsIcon {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(98%) saturate(3717%) hue-rotate(240deg) brightness(85%) contrast(99%);
 }
 
 @media screen and (max-width: 900px) {
