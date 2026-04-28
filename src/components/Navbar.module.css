@@ -37,8 +37,8 @@
   height: 2.8rem;
   max-width: calc(100vw - 8rem);
   background-color: var(--black);
-  -webkit-mask: url('/logo_1.svg') no-repeat left center / contain;
-  mask: url('/logo_1.svg') no-repeat left center / contain;
+  -webkit-mask: url('/logo.svg') no-repeat left center / contain;
+  mask: url('/logo.svg') no-repeat left center / contain;
   transition: background-color 0.3s ease;
 }
 

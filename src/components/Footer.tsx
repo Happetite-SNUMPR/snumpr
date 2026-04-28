@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
         <Image
-          src="/logo_1.svg"
+          src="/logo.svg"
           alt="snumpr lab"
           className={styles.logo}
           width={500}
