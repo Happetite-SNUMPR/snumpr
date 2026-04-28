@@ -9,9 +9,9 @@
     "location": "Seoul, Korea",
     "images": [
       "/images/gallery/gallery1-1.jpg",
-      "/images/gallery/gallery2-1.jpg",
-      "/images/gallery/gallery3-1.jpg",
-      "/images/gallery/gallery1-1.jpg"
+      "/images/gallery/gallery1-2.jpg",
+      "/images/gallery/gallery1-3.jpg",
+      "/images/gallery/gallery1-4.jpg"
     ]
   },
   {
@@ -24,7 +24,7 @@
     "location": "Suzhou, China",
     "images": [
       "/images/gallery/gallery2-1.jpg",
-      "/images/gallery/gallery3-1.jpg"
+      "/images/gallery/gallery2-2.jpg"
     ]
   },
   {
@@ -36,7 +36,7 @@
     "date": "October 20, 2025",
     "location": "Seoul, Korea",
     "images": [
-      "/images/gallery/gallery1-1.jpg"
+      "/images/gallery/gallery3-1.jpg"
     ]
   }
 ]
