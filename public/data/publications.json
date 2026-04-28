@@ -2,938 +2,2237 @@
   {
     "title": "Modular Memory is the Key to Continual Learning Agents",
     "authors": [
-      "Vaggelis Dorovatas", "Malte Schwerin", "Andrew D. Bagdanov", "Lucas Caccia", "Antonio Carta", "Laurent Charlin", "Barbara Hammer", "Tyler L. Hayes", "Timm Hess", "Christopher Kanan", "Dhireesha Kudithipudi", "Xialei Liu", "Vincenzo Lomonaco", "Jorge Mendez-Mendez", "Darshan Patil", "Ameya Prabhu", "Elisa Ricci", "Tinne Tuytelaars", "Gido M. van de Ven", "Liyuan Wang", "Joost van de Weijer", "Jonghyun Choi", "Martin Mundt", "Rahaf Aljundi"
+      "Vaggelis Dorovatas",
+      "Malte Schwerin",
+      "Andrew D. Bagdanov",
+      "Lucas Caccia",
+      "Antonio Carta",
+      "Laurent Charlin",
+      "Barbara Hammer",
+      "Tyler L. Hayes",
+      "Timm Hess",
+      "Christopher Kanan",
+      "Dhireesha Kudithipudi",
+      "Xialei Liu",
+      "Vincenzo Lomonaco",
+      "Jorge Mendez-Mendez",
+      "Darshan Patil",
+      "Ameya Prabhu",
+      "Elisa Ricci",
+      "Tinne Tuytelaars",
+      "Gido M. van de Ven",
+      "Liyuan Wang",
+      "Joost van de Weijer",
+      "Jonghyun Choi",
+      "Martin Mundt",
+      "Rahaf Aljundi"
     ],
     "journalsInfo": "arXiv 2603",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
+    "thumbnailUrl": "/images/publications/arxiv2603-memory.jpg",
     "links": [
-      { "label": "PDF", "url": "https://arxiv.org/pdf/2603.xxxxx" }
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.01761"
+      }
     ],
-    "researchTopic": ["AI"],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "Preprint",
-    "publicationType": ["Journal"],
+    "publicationType": [
+      "Journal"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models",
-    "authors": ["Hyeonbeom Choi", "Daechul Ahn", "Youhan Lee", "Taewook Kang", "Seongwon Cho", "Jonghyun Choi"],
-    "journalsInfo": "arXiv 2602",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "https://arxiv.org/pdf/2602.xxxxx" }
+    "authors": [
+      "Hyeonbeom Choi",
+      "Daechul Ahn",
+      "Youhan Lee",
+      "Taewook Kang",
+      "Seongwon Cho",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "arXiv 2602",
+    "thumbnailUrl": "/images/publications/arxiv2602-scale.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.04208"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "Preprint",
-    "publicationType": ["Journal"],
+    "publicationType": [
+      "Journal"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Risk-adaptive Activation Steering for Safe Multimodal Large Language Models",
-    "authors": ["Jonghyun Park", "Minhyuk Seo", "Jonghyun Choi"],
-    "journalsInfo": "arXiv 2510 / CIKM 2025 Workshop of HCAI - Oral & Best Paper Award",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "https://arxiv.org/pdf/2510.xxxxx" },
-      { "label": "PDF (Workshop Version)", "url": "https://arxiv.org/pdf/2510.xxxxx_v1" },
-      { "label": "Workshop Page", "url": "https://snumpr.github.io/risk-adaptive" }
+    "authors": [
+      "Jonghyun Park",
+      "Minhyuk Seo",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Text"],
+    "journalsInfo": "arXiv 2510 / CIKM 2025 Workshop of HCAI - ORAL & Best Paper Award",
+    "thumbnailUrl": "/images/publications/arxiv2510-llmsafety.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2510.13698"
+      },
+      {
+        "label": "PDF (Workshop Version)",
+        "url": "https://xai.kaist.ac.kr/static/files/2025_hcai_workshop/paper_24.pdf"
+      },
+      {
+        "label": "Workshop Page",
+        "url": "https://xai.kaist.ac.kr/Workshop/hcai2025/"
+      }
+    ],
+    "researchTopic": [
+      "Text"
+    ],
     "year": "Preprint",
-    "publicationType": ["Workshop"],
+    "publicationType": [
+      "Workshop"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Long-Tailed Recognition on Binary Networks by Calibrating A Pre-trained Model",
-    "authors": ["Jihun Kim", "Dahyun Kim", "Hyungrok Jung", "Taeil Oh", "Jonghyun Choi"],
-    "journalsInfo": "arXiv 2404",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "https://arxiv.org/pdf/2404.xxxxx" }
+    "authors": [
+      "Jihun Kim",
+      "Dahyun Kim",
+      "Hyungrok Jung",
+      "Taeil Oh",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "arXiv 2404",
+    "thumbnailUrl": "/images/publications/arxiv2024-binary-lt.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2404.00285"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/sdp"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "Preprint",
-    "publicationType": ["Journal"],
+    "publicationType": [
+      "Journal"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "OASIS: Online Sample Selection for Continual Visual Instruction Tuning",
-    "authors": ["Minjae Lee", "Minhyuk Seo", "Tingyu Qu", "Tinne Tuytelaars", "Jonghyun Choi"],
-    "journalsInfo": "ACL 2026 - Main (To appear)",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "https://arxiv.org/pdf/2506.xxxxx" }
+    "authors": [
+      "Minjae Lee",
+      "Minhyuk Seo",
+      "Tingyu Qu",
+      "Tinne Tuytelaars",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Text"],
+    "journalsInfo": "ACL 2026 - Main (To appear)",
+    "thumbnailUrl": "/images/publications/arxiv2506-oasis.jpg",
+    "links": [
+      {
+        "label": "PDF-arxiv",
+        "url": "https://arxiv.org/pdf/2506.02011"
+      }
+    ],
+    "researchTopic": [
+      "Text"
+    ],
     "year": "2026",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "FALCON: Fast Adaptive Lightweight Computation of Intensities and Events for Depth Estimation",
-    "authors": ["Sankarshana Venugopal", "Mohammad Mostafavi", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2026 - Findings (To Appear)",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Sankarshana Venugopal",
+      "Mohammad Mostafavi",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2026 - Findings (To Appear)",
+    "thumbnailUrl": "/images/publications/cvprf26-falcon.jpg",
+    "links": [],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2026",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "DBMSolver: A Training-free Diffusion Bridge Sampler for High-Quality Image-to-Image Translation",
-    "authors": ["Sankarshana Venugopal", "Mohammad Mostafavi", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2026 (To Appear)",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Sankarshana Venugopal",
+      "Mohammad Mostafavi",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2026 (To Appear)",
+    "thumbnailUrl": "/images/publications/cvpr26-dbmsolver.jpg",
+    "links": [],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2026",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "BINDER: Instantly Adaptive Mobile Manipulation with Open-Vocabulary Commands",
-    "authors": ["Seongwon Cho", "Daechul Ahn", "Donghyun Shin", "Hyeonbeom Choi", "San Kim", "Jonghyun Choi"],
-    "journalsInfo": "ICRA 2026 (To Appear)",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Project Page", "url": "#" }
+    "authors": [
+      "Seongwon Cho",
+      "Daechul Ahn",
+      "Donghyun Shin",
+      "Hyeonbeom Choi",
+      "San Kim",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICRA 2026 (To Appear)",
+    "thumbnailUrl": "/images/publications/icra26-binder.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://www.arxiv.org/pdf/2511.22364"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://seongwon980.github.io/BINDER/"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2026",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "TRACE: Your Diffusion Model is Secretly an Instance Edge Detector",
-    "authors": ["Sanghyun Jo", "Ziseok Lee", "Wooyeol Lee", "Jonghyun Choi", "Jaesik Park", "Kyungsu Kim"],
-    "journalsInfo": "ICLR 2026 - Oral (To Appear)",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Sanghyun Jo",
+      "Ziseok Lee",
+      "Wooyeol Lee",
+      "Jonghyun Choi",
+      "Jaesik Park",
+      "Kyungsu Kim"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICLR 2026 - ORAL (To Appear)",
+    "thumbnailUrl": "/images/publications/arxiv2503-trace.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2503.07982"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2026",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Co-LoRA: Collaborative Model Personalization on Heterogeneous Multi-Modal Clients",
-    "authors": ["Minhyuk Seo", "Taeheon Kim", "Hankook Lee", "Jonghyun Choi", "Tinne Tuytelaars"],
-    "journalsInfo": "ICLR 2026 (To Appear) / AAAI 2026 Workshop of PerFM - Oral & Best Paper Award",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Minhyuk Seo",
+      "Taeheon Kim",
+      "Hankook Lee",
+      "Jonghyun Choi",
+      "Tinne Tuytelaars"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "ICLR 2026 (To Appear) / AAAI 2026 Workshop of PerFM - ORAL & Best Paper Award",
+    "thumbnailUrl": "/images/publications/arxiv2506-nacae.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openreview.net/pdf?id=0g5Dk4Qfh0"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2026",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Becoming Experienced Judges: Selective Test-Time Learning for Evaluators",
-    "authors": ["Seungyeon Jwa", "Daechul Ahn", "Reokyoung Kim", "Dongyeop Kang", "Jonghyun Choi"],
-    "journalsInfo": "EACL 2026 (Short) - Oral",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Extended Version (arXiv)", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Seungyeon Jwa",
+      "Daechul Ahn",
+      "Reokyoung Kim",
+      "Dongyeop Kang",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Text"],
+    "journalsInfo": "EACL 2026 (Short) - ORAL",
+    "thumbnailUrl": "/images/publications/eacl26-exp-judge.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2026.eacl-short.50/"
+      },
+      {
+        "label": "An Extended Version (arXiv)",
+        "url": "https://arxiv.org/pdf/2512.06751"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/lwe"
+      }
+    ],
+    "researchTopic": [
+      "Text"
+    ],
     "year": "2026",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "What Happens When: Learning Temporal Order of Events in Videos",
-    "authors": ["Daechul Ahn", "Yura Choi", "Hyeonbeom Choi", "Seongwon Cho", "San Kim", "Jonghyun Choi"],
-    "journalsInfo": "WACV 2026",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF (arXiv)", "url": "#" }
+    "authors": [
+      "Daechul Ahn",
+      "Yura Choi",
+      "Hyeonbeom Choi",
+      "Seongwon Cho",
+      "San Kim",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "WACV 2026",
+    "thumbnailUrl": "/images/publications/wacv26-vector.jpg",
+    "links": [
+      {
+        "label": "PDF (arXiv)",
+        "url": "https://www.arxiv.org/pdf/2512.08979/"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/sdp"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2026",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "An Information Theoretic Evaluation Metric for Strong Unlearning",
-    "authors": ["Dongjae Jeon", "Wonje Jeung", "Taeheon Kim", "Albert No", "Jonghyun Choi"],
-    "journalsInfo": "AAAI 2026",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Dongjae Jeon",
+      "Wonje Jeung",
+      "Taeheon Kim",
+      "Albert No",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "AAAI 2026",
+    "thumbnailUrl": "/images/publications/arxiv24-itm-unlearn.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2405.17878"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/sdp"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2026",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "GenOL: Generating Diverse Examples for Name-only Online Learning",
-    "authors": ["Minhyuk Seo", "Seongwon Cho", "Minjae Lee", "Diganta Misra", "Hyeonbeom Choi", "Seon Joo Kim", "Jonghyun Choi"],
-    "journalsInfo": "TMLR 2025",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Minhyuk Seo",
+      "Seongwon Cho",
+      "Minjae Lee",
+      "Diganta Misra",
+      "Hyeonbeom Choi",
+      "Seon Joo Kim",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "TMLR 2025",
+    "thumbnailUrl": "/images/publications/tmlr2025-genol.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openreview.net/pdf?id=QPfVoTMLWq"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2025",
-    "publicationType": ["Journal"],
+    "publicationType": [
+      "Journal"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "DialNav: Multi-turn Dialog Navigation with a Remote Guide",
-    "authors": ["Leekyeung Han", "Hyunji Min", "Gyeom Hwangbo", "Jonghyun Choi", "Paul Hongsuck Seo"],
-    "journalsInfo": "ICCV 2025",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Code", "url": "#" },
-      { "label": "RAIN Dataset", "url": "#" }
+    "authors": [
+      "Leekyeung Han",
+      "Hyunji Min",
+      "Gyeom Hwangbo",
+      "Jonghyun Choi",
+      "Paul Hongsuck Seo"
     ],
-    "researchTopic": ["Text"],
+    "journalsInfo": "ICCV 2025",
+    "thumbnailUrl": "/images/publications/iccv25-dialnav.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Han_DialNav_Multi-turn_Dialog_Navigation_with_a_Remote_Guide_ICCV_2025_paper.pdf"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://happilee12.github.io/DialNav/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/happilee12/DialNav"
+      },
+      {
+        "label": "RAIN Dataset",
+        "url": "https://drive.google.com/drive/folders/1Pp_HOUDIo-uKQph18w-zqUMHcDJ6Gmg0"
+      }
+    ],
+    "researchTopic": [
+      "Text"
+    ],
     "year": "2025",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Online Generic Event Boundary Detection",
-    "authors": ["Hyung Rok Jung", "Daneul Kim", "Seunggyun Lim", "Jeany Son", "Jonghyun Choi"],
-    "journalsInfo": "ICCV 2025",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Project Page", "url": "#" }
+    "authors": [
+      "Hyung Rok Jung",
+      "Daneul Kim",
+      "Seunggyun Lim",
+      "Jeany Son",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICCV 2025",
+    "thumbnailUrl": "/images/publications/iccv25-gebd.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Jung_Online_Generic_Event_Boundary_Detection_ICCV_2025_paper.pdf"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://carpedkm.github.io/projects/online_gebd/index.html"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2025",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Society of Mind Meets Real-Time Strategy: A Hierarchical Multi-Agent Framework for Strategic Reasoning",
-    "authors": ["Daechul Ahn*", "San Kim*", "Jonghyun Choi"],
-    "journalsInfo": "COLM 2025",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Code", "url": "#" },
-      { "label": "Data", "url": "#" }
+    "authors": [
+      "Daechul Ahn*",
+      "San Kim*",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Text"],
+    "journalsInfo": "COLM 2025",
+    "thumbnailUrl": "/images/publications/colm2025-smmrts.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openreview.net/pdf?id=VYdbeSoXWD"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://dcahn12.github.io/projects/hima/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/hima"
+      },
+      {
+        "label": "Data",
+        "url": "https://huggingface.co/collections/SNUMPR/hima"
+      }
+    ],
+    "researchTopic": [
+      "Text"
+    ],
     "year": "2025",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Representation Bending for Large Language Model Safety",
-    "authors": ["Ashkan Yousefpour*", "Taeheon Kim*", "Ryan S. Kwon", "Seungbeen Lee", "Wonje Jeung", "Seungju Han", "Alvin Wan", "Harrison Ngan", "Youngjae Yu", "Jonghyun Choi"],
-    "journalsInfo": "ACL 2025 - Main",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Ashkan Yousefpour*",
+      "Taeheon Kim*",
+      "Ryan S. Kwon",
+      "Seungbeen Lee",
+      "Wonje Jeung",
+      "Seungju Han",
+      "Alvin Wan",
+      "Harrison Ngan",
+      "Youngjae Yu",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Text"],
+    "journalsInfo": "ACL 2025 - Main",
+    "thumbnailUrl": "/images/publications/arxiv25-repbend.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2025.acl-long.1173.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/aim-intelligence/repbend"
+      }
+    ],
+    "researchTopic": [
+      "Text"
+    ],
     "year": "2025",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Large Language Models Still Exhibit Bias in Long Text",
-    "authors": ["Wonje Jeung", "Dongjae Jeon", "Ashkan Yousefpour", "Jonghyun Choi"],
-    "journalsInfo": "ACL 2025 - Findings",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Wonje Jeung",
+      "Dongjae Jeon",
+      "Ashkan Yousefpour",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Text"],
+    "journalsInfo": "ACL 2025 - Findings",
+    "thumbnailUrl": "/images/publications/arxiv24-llm.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2025.findings-acl.1341.pdf"
+      }
+    ],
+    "researchTopic": [
+      "Text"
+    ],
     "year": "2025",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Budgeted Online Continual Learning by Adaptive Layer Freezing and Frequency-based Sampling",
-    "authors": ["Minhyuk Seo", "Hyunseo Koh", "Jonghyun Choi"],
-    "journalsInfo": "ICLR 2025 - Spotlight (Top 5.1%)",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Minhyuk Seo",
+      "Hyunseo Koh",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "ICLR 2025 - Spotlight (Top 5.1%)",
+    "thumbnailUrl": "/images/publications/iclr25-alsar.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openreview.net/pdf?id=dOAkHmsjRX"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/budgeted-cl"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2025",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Multi-Modal Grounded Planning and Efficient Replanning For Learning Embodied Agents with A Few Examples",
-    "authors": ["Taewoong Kim", "Byeonghwi Kim", "Jonghyun Choi"],
-    "journalsInfo": "AAAI 2025 - Oral",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Taewoong Kim",
+      "Byeonghwi Kim",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "AAAI 2025 - ORAL",
+    "thumbnailUrl": "/images/publications/aaai25-flare.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/32455/34610"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://twoongg.github.io/projects/flare/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/flare"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2025",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "ISR-DPO: Aligning Large Multimodal Models for Videos by Iterative Self-Retrospective DPO",
-    "authors": ["Daechul Ahn", "Yura Choi", "San Kim", "Youngjae Yu", "Dongyeop Kang", "Jonghyun Choi"],
-    "journalsInfo": "AAAI 2025",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Daechul Ahn",
+      "Yura Choi",
+      "San Kim",
+      "Youngjae Yu",
+      "Dongyeop Kang",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "AAAI 2025",
+    "thumbnailUrl": "/images/publications/aaai25-isrdpo.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/32166/34321"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://dcahn12.github.io/projects/isr-dpo/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/isr-dpo"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2025",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "MimiQ: Low-Bit Data-Free Quantization of Vision Transformers with Encouraging Inter-Head Attention Similarity",
-    "authors": ["Kanghyun Choi", "Hyeyoon Lee", "Dain Kwon", "SunJong Park", "Kyuyeun Kim", "Noseong Park", "Jonghyun Choi", "Jinho Lee"],
-    "journalsInfo": "AAAI 2025",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Kanghyun Choi",
+      "Hyeyoon Lee",
+      "Dain Kwon",
+      "SunJong Park",
+      "Kyuyeun Kim",
+      "Noseong Park",
+      "Jonghyun Choi",
+      "Jinho Lee"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "AAAI 2025",
+    "thumbnailUrl": "/images/publications/aaai25-mimiq.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/33761/35916"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/isr-dpo"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2025",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Pre-emptive Action Revision by Environmental Feedback for Embodied Instruction Following Agents",
-    "authors": ["Jinyeon Kim*", "Cheolhong Min*", "Byeonghwi Kim", "Jonghyun Choi"],
-    "journalsInfo": "CoRL 2024",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Jinyeon Kim*",
+      "Cheolhong Min*",
+      "Byeonghwi Kim",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CoRL 2024",
+    "thumbnailUrl": "/images/publications/corl24-pred.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openreview.net/pdf?id=cq2uB30uBM"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://twoongg.github.io/projects/realfred/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/pred"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2024",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "ReALFRED: An Embodied Instruction Following Benchmark in Photo-Realistic Environments",
-    "authors": ["Taewoong Kim*", "Cheolhong Min*", "Byeonghwi Kim", "Jinyeon Kim", "Wonje Jeung", "Jonghyun Choi"],
-    "journalsInfo": "ECCV 2024",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Code", "url": "#" },
-      { "label": "Data-1", "url": "#" },
-      { "label": "Data-2", "url": "#" }
+    "authors": [
+      "Taewoong Kim*",
+      "Cheolhong Min*",
+      "Byeonghwi Kim",
+      "Jinyeon Kim",
+      "Wonje Jeung",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ECCV 2024",
+    "thumbnailUrl": "/images/publications/eccv24-realfred.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2407.18550"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://twoongg.github.io/projects/realfred/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/realfred"
+      },
+      {
+        "label": "Data-1",
+        "url": "https://huggingface.co/datasets/SNUMPR/realfred_json"
+      },
+      {
+        "label": "Data-2",
+        "url": "https://huggingface.co/datasets/SNUMPR/realfred_feat"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2024",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "SyncVSR: Data-Efficient Visual Speech Recognition with End-to-End Crossmodal Audio Token Synchronization",
-    "authors": ["Young Jin Ahn", "Jungwoo Park", "Sangha Park", "Jonghyun Choi", "Kee-Eung Kim"],
-    "journalsInfo": "Interspeech 2024",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Young Jin Ahn",
+      "Jungwoo Park",
+      "Sangha Park",
+      "Jonghyun Choi",
+      "Kee-Eung Kim"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "Interspeech 2024",
+    "thumbnailUrl": "/images/publications/interspeech24-syncvsr.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2406.12233"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/sync-vsr"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2024",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback",
-    "authors": ["Daechul Ahn", "Yura Choi", "Youngjae Yu", "Dongyeop Kang", "Jonghyun Choi"],
-    "journalsInfo": "ACL 2024 - Oral",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Code", "url": "#" },
-      { "label": "Demo", "url": "#" }
+    "authors": [
+      "Daechul Ahn",
+      "Yura Choi",
+      "Youngjae Yu",
+      "Dongyeop Kang",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ACL 2024 - ORAL",
+    "thumbnailUrl": "/images/publications/acl2024-rlaif.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://aclanthology.org/2024.acl-long.52.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://dcahn12.github.io/projects/vlm-rlaif/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/vlm-rlaif"
+      },
+      {
+        "label": "Demo (Running per request)",
+        "url": "https://huggingface.co/spaces/SNUMPR/vlm-rlaif-demo"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2024",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "DataFreeShield: Defending Adversarial Attacks without Training Data",
-    "authors": ["Hyeyoon Lee", "Kanghyun Choi", "Dain Kwon", "SunJong Park", "Mayoore Selvarasa Jaiswal", "Noseong Park", "Jonghyun Choi", "Jinho Lee"],
-    "journalsInfo": "ICML 2024",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Hyeyoon Lee",
+      "Kanghyun Choi",
+      "Dain Kwon",
+      "SunJong Park",
+      "Mayoore Selvarasa Jaiswal",
+      "Noseong Park",
+      "Jonghyun Choi",
+      "Jinho Lee"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "ICML 2024",
+    "thumbnailUrl": "/images/publications/icml24-dfs.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2406.15635"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/sdp"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2024",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Learning Equi-angular Representations for Online Continual Learning",
-    "authors": ["Minhyuk Seo", "Hyunseo Koh", "Wonje Jeung", "Min Jae Lee", "San Kim", "Hankook Lee", "Sungjun Cho", "Sungik Choi", "Hyunwoo Kim", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2024",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Minhyuk Seo",
+      "Hyunseo Koh",
+      "Wonje Jeung",
+      "Min Jae Lee",
+      "San Kim",
+      "Hankook Lee",
+      "Sungjun Cho",
+      "Sungik Choi",
+      "Hyunwoo Kim",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "CVPR 2024",
+    "thumbnailUrl": "/images/publications/cvpr2024-etf.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2404.01628"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/snumprlab/earl"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2024",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Online Continual Learning for Interactive Instruction Following Agents",
-    "authors": ["Byeonghwi Kim*", "Minhyuk Seo*", "Jonghyun Choi"],
-    "journalsInfo": "ICLR 2024",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Project Page", "url": "#" }
+    "authors": [
+      "Byeonghwi Kim*",
+      "Minhyuk Seo*",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "ICLR 2024",
+    "thumbnailUrl": "/images/publications/iclr2024-embodied-cl.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openreview.net/pdf?id=7M0EzjugaN"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/sdp"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2024",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "PAC-FNO: Parallel-Structured All-Component Fourier Neural Operators for Recognizing Low-Quality Images",
-    "authors": ["Jinsung Jeon", "Hyundong Jin", "Jonghyun Choi", "Sanghyun Hong", "Dongeun Lee", "Kookjin Lee", "Noseong Park"],
-    "journalsInfo": "ICLR 2024",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Jinsung Jeon",
+      "Hyundong Jin",
+      "Jonghyun Choi",
+      "Sanghyun Hong",
+      "Dongeun Lee",
+      "Kookjin Lee",
+      "Noseong Park"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICLR 2024",
+    "thumbnailUrl": "/images/publications/iclr2024-pacfno.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openreview.net/pdf?id=Cf4FJGmHRQ"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CL-ALFRED/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/sdp"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2024",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Operator-learning-inspired Modeling of Neural Ordinary Differential Equations",
-    "authors": ["Woojin Cho", "Seunghyeon Cho", "Hyundong Jin", "Jinsung Jeon", "Kookjin Lee", "Sanghyun Hong", "Dongeun Lee", "Jonghyun Choi", "Noseong Park"],
-    "journalsInfo": "AAAI 2024",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Woojin Cho",
+      "Seunghyeon Cho",
+      "Hyundong Jin",
+      "Jinsung Jeon",
+      "Kookjin Lee",
+      "Sanghyun Hong",
+      "Dongeun Lee",
+      "Jonghyun Choi",
+      "Noseong Park"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "AAAI 2024",
+    "thumbnailUrl": "/images/publications/aaai2024-node.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2312.10274v1.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CAPEAM/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/sdp"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2024",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Context-Aware Planning and Environment-Aware Memory for Instruction Following Embodied Agents",
-    "authors": ["Byeonghwi Kim", "Jinyeon Kim", "Yuyeong Kim", "Cheolhong Min", "Jonghyun Choi"],
-    "journalsInfo": "ICCV 2023 (CVPR 2023 Embodied AI Workshop - 1st Place Winner)",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supp", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Workshop Challenge Page", "url": "#" }
+    "authors": [
+      "Byeonghwi Kim",
+      "Jinyeon Kim",
+      "Yuyeong Kim",
+      "Cheolhong Min",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICCV 2023 (CVPR 2023 Embodied AI Workshop - 1st Place Winner)",
+    "thumbnailUrl": "/images/publications/iccv2023-capeam.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Kim_Context-Aware_Planning_and_Environment-Aware_Memory_for_Instruction_Following_Embodied_Agents_ICCV_2023_paper.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Kim_Context-Aware_Planning_and_ICCV_2023_supplemental.zip"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://bhkim94.github.io/projects/CAPEAM/"
+      },
+      {
+        "label": "CVPR 2023 Workshop Challenge Page",
+        "url": "https://askforalfred.com/EAI23/"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2023",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Story Visualization by Online Text Augmentation with Context Memory",
-    "authors": ["Daechul Ahn", "Daneul Kim", "Gwangmo Song", "Seung Hwan Kim", "Honglak Lee", "Dongyeop Kang", "Jonghyun Choi"],
-    "journalsInfo": "ICCV 2023",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supp", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Daechul Ahn",
+      "Daneul Kim",
+      "Gwangmo Song",
+      "Seung Hwan Kim",
+      "Honglak Lee",
+      "Dongyeop Kang",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICCV 2023",
+    "thumbnailUrl": "/images/publications/iccv2023-cmota.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Ahn_Story_Visualization_by_Online_Text_Augmentation_with_Context_Memory_ICCV_2023_paper.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Ahn_Story_Visualization_by_ICCV_2023_supplemental.pdf"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://dcahn12.github.io/projects/CMOTA/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/cmota"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2023",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Online Continual Learning on Hierarchical Label Expansion",
-    "authors": ["Byung Hyun Lee", "Okchul Jung", "Jonghyun Choi", "Se Young Chun"],
-    "journalsInfo": "ICCV 2023",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supp", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Byung Hyun Lee",
+      "Okchul Jung",
+      "Jonghyun Choi",
+      "Se Young Chun"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "ICCV 2023",
+    "thumbnailUrl": "/images/publications/iccv2023-hiercl.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Lee_Online_Continual_Learning_on_Hierarchical_Label_Expansion_ICCV_2023_paper.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/supplemental/Lee_Online_Continual_Learning_ICCV_2023_supplemental.pdf"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://jokc28.github.io/okchul.github.io/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Hyun1A/HLE"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2023",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Cost-effective On-device Continual Learning over Memory Hierarchy with Miro",
-    "authors": ["Xinyue Ma", "Suyeon Jeong", "Minjia Zhang", "Di Wang", "Jonghyun Choi", "Myeongjae Jeon"],
-    "journalsInfo": "MobiCom 2023",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF (arXiv)", "url": "#" },
-      { "label": "ACM", "url": "#" }
+    "authors": [
+      "Xinyue Ma",
+      "Suyeon Jeong",
+      "Minjia Zhang",
+      "Di Wang",
+      "Jonghyun Choi",
+      "Myeongjae Jeon"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "MobiCom 2023",
+    "thumbnailUrl": "/images/publications/mobicom2023-miro.jpg",
+    "links": [
+      {
+        "label": "PDF (arXiv)",
+        "url": "https://arxiv.org/pdf/2308.06053.pdf"
+      },
+      {
+        "label": "(in ACM)",
+        "url": "https://dl.acm.org/doi/10.1145/3570361.3613297"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2023",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "MEnsA: Mix-up Ensemble Average for Unsupervised Multi Target Domain Adaptation on 3D Point Clouds",
-    "authors": ["Ashish Sinha", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2023 - Workshop on Continual Learning in Computer Vision",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Ashish Sinha",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2023 - Workshop on Continual Learning in Computer Vision",
+    "thumbnailUrl": "/images/publications/cvprw2023-mensa.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/CVPR2023W/L3D-IVU/papers/Sinha_MEnsA_Mix-Up_Ensemble_Average_for_Unsupervised_Multi_Target_Domain_Adaptation_CVPRW_2023_paper.pdf"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2023",
-    "publicationType": ["Workshop"],
+    "publicationType": [
+      "Workshop"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Online Boundary-Free Continual Learning by Scheduled Data Prior",
-    "authors": ["Hyunseo Koh", "Minhyuk Seo", "Jihwan Bang", "Hwanjun Song", "Deokki Hong", "Seulki Park", "Jung-Woo Ha", "Jonghyun Choi"],
-    "journalsInfo": "ICLR 2023",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Hyunseo Koh",
+      "Minhyuk Seo",
+      "Jihwan Bang",
+      "Hwanjun Song",
+      "Deokki Hong",
+      "Seulki Park",
+      "Jung-Woo Ha",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "ICLR 2023",
+    "thumbnailUrl": "/images/publications/iclr2023-sdp.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openreview.net/pdf?id=qco4ekz2Epm"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/sdp"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2023",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Multi-level Compositional Reasoning for Interactive Instruction Following",
-    "authors": ["Suvaansh Bhambri*", "Byeonghwi Kim*", "Jonghyun Choi"],
-    "journalsInfo": "AAAI 2023",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Suvaansh Bhambri*",
+      "Byeonghwi Kim*",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "AAAI 2023",
+    "thumbnailUrl": "/images/publications/aaai2023-mocha.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "http://ppolon.github.io/paper/aaai2023-alfred-mocha.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/mcr-agent"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2023",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Ask4Help: Learning to Leverage an Expert for Embodied Tasks",
-    "authors": ["Kunal Pratap Singh", "Luca Weihs", "Alvaro Herrasti", "Jonghyun Choi", "Aniruddha Kembhavi", "Roozbeh Mottaghi"],
-    "journalsInfo": "NeurIPS 2022",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Conference Page", "url": "#" }
+    "authors": [
+      "Kunal Pratap Singh",
+      "Luca Weihs",
+      "Alvaro Herrasti",
+      "Jonghyun Choi",
+      "Aniruddha Kembhavi",
+      "Roozbeh Mottaghi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "NeurIPS 2022",
+    "thumbnailUrl": "/images/publications/neurips2022-ask4help.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openreview.net/pdf?id=_bqtjfpj8h"
+      },
+      {
+        "label": "Conference page",
+        "url": "https://nips.cc/virtual/2022/poster/54883"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2022",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Learning visual representations for transfer learning by suppressing texture",
-    "authors": ["Shlok Mishra", "Anshul Shah", "Ankan Bansal", "Janit Anjaria", "Jonghyun Choi", "Abhinav Shrivastava", "Abhishek Sharma", "David Jacobs"],
-    "journalsInfo": "BMVC 2022",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Poster", "url": "#" },
-      { "label": "Video", "url": "#" }
+    "authors": [
+      "Shlok Mishra",
+      "Anshul Shah",
+      "Ankan Bansal",
+      "Janit Anjaria",
+      "Jonghyun Choi",
+      "Abhinav Shrivastava",
+      "Abhishek Sharma",
+      "David Jacobs"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "BMVC 2022",
+    "thumbnailUrl": "/images/publications/bmvc2022-texture.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://bmvc2022.mpi-inf.mpg.de/0300.pdf"
+      },
+      {
+        "label": "Poster",
+        "url": "https://bmvc2022.mpi-inf.mpg.de/0300_poster.pdf"
+      },
+      {
+        "label": "Video",
+        "url": "https://bmvc2022.mpi-inf.mpg.de/0300_video.mp4"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2022",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "CarM: Hierarchical Episodic Memory for Continual Learning",
-    "authors": ["Soobee Lee", "Minindu Weerakoon", "Jonghyun Choi", "Minjia Zhang", "Di Wang", "Myeongjae Jeon"],
-    "journalsInfo": "DAC 2022",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Soobee Lee",
+      "Minindu Weerakoon",
+      "Jonghyun Choi",
+      "Minjia Zhang",
+      "Di Wang",
+      "Myeongjae Jeon"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "DAC 2022",
+    "thumbnailUrl": "/images/publications/arxiv2021_carm.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "/research-pdfs/dac2022-carm.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/supersoob/CarM"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2022",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Unsupervised Representation Learning for Binary Networks by Joint Classifier Learning",
-    "authors": ["Dahyun Kim", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2022",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supp", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Dahyun Kim",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2022",
+    "thumbnailUrl": "/images/publications/arxiv2021_bssl.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Kim_Unsupervised_Representation_Learning_for_Binary_Networks_by_Joint_Classifier_Learning_CVPR_2022_paper.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Kim_Unsupervised_Representation_Learning_CVPR_2022_supplemental.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/naver-ai/burn"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2022",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Online Continual Learning on a Contaminated Data Stream with Blurry Task Boundaries",
-    "authors": ["Jihwan Bang", "Hyunseo Koh", "Seulki Park", "Hwanjun Song", "Jung-Woo Ha", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2022",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supp", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Jihwan Bang",
+      "Hyunseo Koh",
+      "Seulki Park",
+      "Hwanjun Song",
+      "Jung-Woo Ha",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "CVPR 2022",
+    "thumbnailUrl": "/images/publications/cvpr2022_noisycl.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Bang_Online_Continual_Learning_on_a_Contaminated_Data_Stream_With_Blurry_CVPR_2022_paper.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Bang_Online_Continual_Learning_CVPR_2022_supplemental.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/clovaai/puridiver"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2022",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Stereo Depth from Events Cameras: Concentrate and Focus on the Future",
-    "authors": ["YeongWoo Nam", "Mohammad Mostafavi", "Kuk-Jin Yoon", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2022",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supp", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "YeongWoo Nam",
+      "Mohammad Mostafavi",
+      "Kuk-Jin Yoon",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2022",
+    "thumbnailUrl": "/images/publications/cvpr2022_eventstereo.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Nam_Stereo_Depth_From_Events_Cameras_Concentrate_and_Focus_on_the_CVPR_2022_paper.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Nam_Stereo_Depth_From_CVPR_2022_supplemental.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yonseivnl/se-cff"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2022",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Attentive Fine-Grained Structured Sparsity for Image Restoration",
-    "authors": ["Junghun Oh", "Heewon Kim", "Seungjun Nah", "Cheeun Hong", "Jonghyun Choi", "Kyoung Mu Lee"],
-    "journalsInfo": "CVPR 2022",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supp", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Junghun Oh",
+      "Heewon Kim",
+      "Seungjun Nah",
+      "Cheeun Hong",
+      "Jonghyun Choi",
+      "Kyoung Mu Lee"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2022",
+    "thumbnailUrl": "/images/publications/cvpr2022_structsparse.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Oh_Attentive_Fine-Grained_Structured_Sparsity_for_Image_Restoration_CVPR_2022_paper.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Oh_Attentive_Fine-Grained_Structured_CVPR_2022_supplemental.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/JungHunOh/SLS_CVPR2022"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2022",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Language Guided Meta-Control for Embodied Instruction Following",
-    "authors": ["Divyam Goel", "Kunal Pratap Singh", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2022 - Workshop on Embodied AI (EAI-2022)",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Divyam Goel",
+      "Kunal Pratap Singh",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2022 - Workshop on Embodied AI (EAI-2022)",
+    "thumbnailUrl": "/images/publications/cvprw2022_lgmc.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://embodied-ai.org/papers/2022/23.pdf"
+      },
+      {
+        "label": "Poster",
+        "url": "/research-pdfs/cvprw21_poster_bnas_v2.pdf"
+      },
+      {
+        "label": "Talk Slide",
+        "url": "/research-pdfs/cvprw21_slide_bnas_v2.pdf"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2022",
-    "publicationType": ["Workshop"],
+    "publicationType": [
+      "Workshop"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Online Continual Learning on Class Incremental Blurry Task Configuration with Anytime Inference",
-    "authors": ["Hyunseo Koh", "Dahyun Kim", "Jung-Woo Ha", "Jonghyun Choi"],
-    "journalsInfo": "ICLR 2022",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Hyunseo Koh",
+      "Dahyun Kim",
+      "Jung-Woo Ha",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "ICLR 2022",
+    "thumbnailUrl": "/images/publications/arxiv2021_iblurry.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2110.10031.pdf"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2022",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Iconary: A Pictionary-based Game for Testing Multimodal Communication with Drawings and Text",
-    "authors": ["Christopher Clark", "Jordi Salvador", "Dustin Schwenk", "Derrick Bonafilia", "Mark Yatskar", "Eric Kolve", "Alvaro Herrasti", "Jonghyun Choi", "Sachin Mehta", "Sam Skjonsberg", "Carissa Schoenick", "Aaron Sarnat", "Hannaneh Hajishirzi", "Aniruddha Kembhavi", "Oren Etzioni", "Ali Farhadi"],
-    "journalsInfo": "EMNLP 2021 - Oral",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Christopher Clark",
+      "Jordi Salvador",
+      "Dustin Schwenk",
+      "Derrick Bonafilia",
+      "Mark Yatskar",
+      "Eric Kolve",
+      "Alvaro Herrasti",
+      "Jonghyun Choi",
+      "Sachin Mehta",
+      "Sam Skjonsberg",
+      "Carissa Schoenick",
+      "Aaron Sarnat",
+      "Hannaneh Hajishirzi",
+      "Aniruddha Kembhavi",
+      "Oren Etzioni",
+      "Ali Farhadi"
     ],
-    "researchTopic": ["Text"],
+    "journalsInfo": "EMNLP 2021 - ORAL",
+    "thumbnailUrl": "/images/publications/emnlp2021_iconary.jpg",
+    "links": [],
+    "researchTopic": [
+      "Text"
+    ],
     "year": "2021",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Zero-Shot Natural Language Video Localization",
-    "authors": ["Jinwoo Nam*", "Daechul Ahn*", "Dongyeop Kang", "Seong Jong Ha", "Jonghyun Choi"],
-    "journalsInfo": "ICCV 2021 - Oral",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "SuppMat", "url": "#" }
+    "authors": [
+      "Jinwoo Nam*",
+      "Daechul Ahn*",
+      "Dongyeop Kang",
+      "Seong Jong Ha",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICCV 2021 - ORAL",
+    "thumbnailUrl": "/images/publications/iccv2021_zsnlvl.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Nam_Zero-Shot_Natural_Language_Video_Localization_ICCV_2021_paper.pdf"
+      },
+      {
+        "label": "SuppMat",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/supplemental/Nam_Zero-Shot_Natural_Language_ICCV_2021_supplemental.zip"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2021",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Factorizing Perception and Policy for Interactive Instruction Following",
-    "authors": ["Kunal Pratap Singh*", "Suvaansh Bhambri*", "Byeonghwi Kim*", "Roozbeh Mottaghi", "Jonghyun Choi"],
-    "journalsInfo": "ICCV 2021 (CVPR Embodied AI Workshop 2021 - 2nd Place winner)",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "SuppMat", "url": "#" },
-      { "label": "Code", "url": "#" },
-      { "label": "Project Page", "url": "#" }
+    "authors": [
+      "Kunal Pratap Singh*",
+      "Suvaansh Bhambri*",
+      "Byeonghwi Kim*",
+      "Roozbeh Mottaghi",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICCV 2021 (CVPR Embodied AI Workshop 2021 - 2nd Place winner)",
+    "thumbnailUrl": "/images/publications/arxiv2020_moca.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Singh_Factorizing_Perception_and_Policy_for_Interactive_Instruction_Following_ICCV_2021_paper.pdf"
+      },
+      {
+        "label": "SuppMat",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/supplemental/Singh_Factorizing_Perception_and_ICCV_2021_supplemental.zip"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/gistvision/moca"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://prior.allenai.org/projects/moca"
+      },
+      {
+        "label": "MOCA: A Modular Object-Centric Approach for Interactive Instruction Following",
+        "url": "https://arxiv.org/pdf/2012.03208.pdf"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2021",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Rethinking Deep Image Prior for Denoising",
-    "authors": ["Yeonsik Jo", "Se Young Chun", "Jonghyun Choi"],
-    "journalsInfo": "ICCV 2021",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "SuppMat", "url": "#" }
+    "authors": [
+      "Yeonsik Jo",
+      "Se Young Chun",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICCV 2021",
+    "thumbnailUrl": "/images/publications/iccv2021_denoising.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Jo_Rethinking_Deep_Image_Prior_for_Denoising_ICCV_2021_paper.pdf"
+      },
+      {
+        "label": "SuppMat",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/supplemental/Jo_Rethinking_Deep_Image_ICCV_2021_supplemental.pdf"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2021",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Event-Intensity Stereo: Estimating Depth by the Best of Both Worlds",
-    "authors": ["S. Mohammad Mostafavi I.", "Kuk-Jin Yoon", "Jonghyun Choi"],
-    "journalsInfo": "ICCV 2021 (CVPR Event Vision Workshop 2021 - 1st Place winner)",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "S. Mohammad Mostafavi I.",
+      "Kuk-Jin Yoon",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ICCV 2021 (CVPR Event Vision Workshop 2021 - 1st Place winner)",
+    "thumbnailUrl": "/images/publications/iccv2021_ei_stereo.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Mostafavi_Event-Intensity_Stereo_Estimating_Depth_by_the_Best_of_Both_Worlds_ICCV_2021_paper.pdf"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2021",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "E2SRI: Learning to Super Resolve Intensity Images from Events",
-    "authors": ["S. Mohammad Mostafavi I.", "Yeong-woo Nam", "Jonghyun Choi", "Kuk-Jin Yoon"],
-    "journalsInfo": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "S. Mohammad Mostafavi I.",
+      "Yeong-woo Nam",
+      "Jonghyun Choi",
+      "Kuk-Jin Yoon"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "thumbnailUrl": "/images/publications/cvpr2020_esr.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/document/9485034"
+      },
+      {
+        "label": "Supp-Mat.",
+        "url": "https://openaccess.thecvf.com/content_CVPR_2020/supplemental/I._Learning_to_Super_CVPR_2020_supplemental.zip"
+      },
+      {
+        "label": "Code (in prep.)",
+        "url": "https://github.com/gistvision/e2sri"
+      },
+      {
+        "label": "Video",
+        "url": "https://www.youtube.com/watch?v=ZMFAseI1DM8"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=1h23m9s&end=1h27m16s"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=4996&end=5236"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2021",
-    "publicationType": ["Journal"],
+    "publicationType": [
+      "Journal"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Rainbow Memory: Continual Learning with a Memory of Diverse Samples",
-    "authors": ["Jihwan Bang*", "Heesu Kim*", "Youngjoon Yoo", "Jung-Woo Ha", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2021",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "SuppMat", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Jihwan Bang*",
+      "Heesu Kim*",
+      "Youngjoon Yoo",
+      "Jung-Woo Ha",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "CVPR 2021",
+    "thumbnailUrl": "/images/publications/cvpr2021_rm.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Bang_Rainbow_Memory_Continual_Learning_With_a_Memory_of_Diverse_Samples_CVPR_2021_paper.pdf"
+      },
+      {
+        "label": "SuppMat",
+        "url": "https://openaccess.thecvf.com/content/CVPR2021/supplemental/Bang_Rainbow_Memory_Continual_CVPR_2021_supplemental.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/clovaai/rainbow-memory/"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2021",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "BNAS v2: Learning Architectures for Binary Networks with Empirical Improvements",
-    "authors": ["Dahyun Kim", "Kunal Pratap Singh", "Jonghyun Choi"],
-    "journalsInfo": "CVPR 2021 Workshop for Binary Networks for Computer Vision",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Dahyun Kim",
+      "Kunal Pratap Singh",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2021 Workshop for Binary Networks for Computer Vision",
+    "thumbnailUrl": "/images/publications/arxiv2021_bnas_v2.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2110.08562.pdf"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2021",
-    "publicationType": ["Workshop"],
+    "publicationType": [
+      "Workshop"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Acceleration of Semiconductor Device Simulation With Approximate Solutions Predicted by Trained Neural Networks",
-    "authors": ["Seung-Cheol Han", "Jonghyun Choi", "Sung-Min Hong"],
-    "journalsInfo": "IEEE Transactions on Electron Devices 2021",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Seung-Cheol Han",
+      "Jonghyun Choi",
+      "Sung-Min Hong"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "IEEE Transactions on Electron Devices 2021",
+    "thumbnailUrl": "/images/publications/ieee_ed2021.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9426452"
+      },
+      {
+        "label": "Supp-Mat.",
+        "url": "https://openaccess.thecvf.com/content_CVPR_2020/supplemental/I._Learning_to_Super_CVPR_2020_supplemental.zip"
+      },
+      {
+        "label": "Code (in prep.)",
+        "url": "https://github.com/gistvision/e2sri"
+      },
+      {
+        "label": "Video",
+        "url": "https://www.youtube.com/watch?v=ZMFAseI1DM8"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=1h23m9s&end=1h27m16s"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=4996&end=5236"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2021",
-    "publicationType": ["Journal"],
+    "publicationType": [
+      "Journal"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Learning Architectures for Binary Networks",
-    "authors": ["Dahyun Kim*", "Kunal Pratap Singh*", "Jonghyun Choi"],
-    "journalsInfo": "ECCV 2020 / Samsung Humantech Paper Award 2020 - Bronze",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supp-Mat", "url": "#" },
-      { "label": "Code", "url": "#" }
+    "authors": [
+      "Dahyun Kim*",
+      "Kunal Pratap Singh*",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "ECCV 2020 / Samsung Humantech Paper Award 2020 - Bronze",
+    "thumbnailUrl": "/images/publications/eccv2020_bnas.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123570562.pdf"
+      },
+      {
+        "label": "Supp-Mat",
+        "url": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123570562-supp.zip"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/gistvision/bnas/"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2020",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Learning to Super Resolve Intensity Images from Events",
-    "authors": ["S. Mohammad Mostafavi I.", "Jonghyun Choi", "Kuk-Jin Yoon"],
-    "journalsInfo": "CVPR 2020 - Oral",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supp-Mat", "url": "#" },
-      { "label": "Code", "url": "#" },
-      { "label": "Video", "url": "#" }
+    "authors": [
+      "S. Mohammad Mostafavi I.",
+      "Jonghyun Choi",
+      "Kuk-Jin Yoon"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2020 - ORAL",
+    "thumbnailUrl": "/images/publications/cvpr2020_esr.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content_CVPR_2020/papers/I._Learning_to_Super_Resolve_Intensity_Images_From_Events_CVPR_2020_paper.pdf"
+      },
+      {
+        "label": "Supp-Mat.",
+        "url": "https://openaccess.thecvf.com/content_CVPR_2020/supplemental/I._Learning_to_Super_CVPR_2020_supplemental.zip"
+      },
+      {
+        "label": "Code (in prep.)",
+        "url": "https://github.com/gistvision/e2sri"
+      },
+      {
+        "label": "Video",
+        "url": "https://www.youtube.com/watch?v=ZMFAseI1DM8"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=1h23m9s&end=1h27m16s"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=4996&end=5236"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2020",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Confidence Calibration for Incremental Learning",
-    "authors": ["Dongmin Kang", "Yeonsik Jo", "Yeongwoo Nam", "Jonghyun Choi"],
-    "journalsInfo": "IEEE Access",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "Dongmin Kang",
+      "Yeonsik Jo",
+      "Yeongwoo Nam",
+      "Jonghyun Choi"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "IEEE Access",
+    "thumbnailUrl": "/images/publications/ieee_access2020_incre.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9133417"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=1h23m9s&end=1h27m16s"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=4996&end=5236"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2020",
-    "publicationType": ["Journal"],
+    "publicationType": [
+      "Journal"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Event-based High Dynamic Range Image and Very High Frame Rate Video Generation using Conditional Generative Adversarial Networks",
-    "authors": ["S. Mohammad Mostafavi I.", "Lin Wang", "Yo-Sung Ho", "Kuk-Jin Yoon"],
-    "journalsInfo": "CVPR 2019",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" }
+    "authors": [
+      "S. Mohammad Mostafavi I.",
+      "Lin Wang",
+      "Yo-Sung Ho",
+      "Kuk-Jin Yoon"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2019",
+    "thumbnailUrl": "/images/publications/cvpr2019_ehdr.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Event-Based_High_Dynamic_Range_Image_and_Very_High_Frame_Rate_CVPR_2019_paper.pdf"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://allenai.github.io/one-shot-part-labeling/"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=1h23m9s&end=1h27m16s"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=4996&end=5236"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2019",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Structured Set Matching Networks for One-Shot Part Labeling",
-    "authors": ["Jonghyun Choi", "Jayant Krishnamurthy", "Aniruddha Kembhavi", "Ali Farhadi"],
-    "journalsInfo": "CVPR 2018 - Spotlight",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "SuppMat", "url": "#" },
-      { "label": "Project Page", "url": "#" },
-      { "label": "Talk", "url": "#" }
+    "authors": [
+      "Jonghyun Choi",
+      "Jayant Krishnamurthy",
+      "Aniruddha Kembhavi",
+      "Ali Farhadi"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2018 - Spotlight",
+    "thumbnailUrl": "/images/publications/cvpr2018_ssmn.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "http://openaccess.thecvf.com/content_cvpr_2018/papers/Choi_Structured_Set_Matching_CVPR_2018_paper.pdf"
+      },
+      {
+        "label": "SuppMat",
+        "url": "https://openaccess.thecvf.com/content_cvpr_2018/Supplemental/2732-supp.pdf"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://allenai.github.io/one-shot-part-labeling/"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=1h23m9s&end=1h27m16s"
+      },
+      {
+        "label": "Talk",
+        "url": "https://youtu.be/Jl1NeziAHFY?start=4996&end=5236"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2018",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Are You Smarter Than A Sixth Grader? Textbook Question Answering for Multimodal Machine Comprehension",
-    "authors": ["Aniruddha Kembhavi", "Minjoon Seo", "Dustin Schwenk", "Jonghyun Choi", "Ali Farhadi", "Hannaneh Hajishirzi"],
-    "journalsInfo": "CVPR 2017 - Spotlight",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Talk", "url": "#" },
-      { "label": "Dataset Explorer", "url": "#" }
+    "authors": [
+      "Aniruddha Kembhavi",
+      "Minjoon Seo",
+      "Dustin Schwenk",
+      "Jonghyun Choi",
+      "Ali Farhadi",
+      "Hannaneh Hajishirzi"
     ],
-    "researchTopic": ["Text"],
+    "journalsInfo": "CVPR 2017 - Spotlight",
+    "thumbnailUrl": "/images/publications/cvpr2017_tqa.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "http://openaccess.thecvf.com/content_cvpr_2017/papers/Kembhavi_Are_You_Smarter_CVPR_2017_paper.pdf"
+      },
+      {
+        "label": "Talk",
+        "url": "https://www.youtube.com/watch?v=gPGeTUmKxrg"
+      },
+      {
+        "label": "Dataset Explorer",
+        "url": "http://textbookqa.org/"
+      }
+    ],
+    "researchTopic": [
+      "Text"
+    ],
     "year": "2017",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "recognized"
   },
   {
     "title": "Learning Temporal Regularity in Video Sequences",
-    "authors": ["Mahmudul Hasan", "Jonghyun Choi", "Jan Neumann", "Amit K. Roy-Chowdhury", "Larry S. Davis"],
-    "journalsInfo": "CVPR 2016",
-    "thumbnailUrl": "/images/publications/pub1.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Supplementary", "url": "#" },
-      { "label": "Code", "url": "#" },
-      { "label": "Video1", "url": "#" },
-      { "label": "Video2", "url": "#" },
-      { "label": "Poster", "url": "#" }
+    "authors": [
+      "Mahmudul Hasan",
+      "Jonghyun Choi",
+      "Jan Neumann",
+      "Amit K. Roy-Chowdhury",
+      "Larry S. Davis"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2016",
+    "thumbnailUrl": "/images/publications/cvpr2016_anomaly.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "http://openaccess.thecvf.com/content_cvpr_2016/papers/Hasan_Learning_Temporal_Regularity_CVPR_2016_paper.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/mhasa004/caffe"
+      },
+      {
+        "label": "Video1",
+        "url": "https://www.youtube.com/watch?v=RQ7dg6wCrQc"
+      },
+      {
+        "label": "Video2",
+        "url": "https://www.youtube.com/watch?v=UXEndaBFq6s"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2016",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Mining Discriminative Triplets of Patches for Fine-Grained Classification",
-    "authors": ["Yaming Wang", "Jonghyun Choi", "Vlad I. Morariu", "Larry S. Davis"],
-    "journalsInfo": "CVPR 2016",
-    "thumbnailUrl": "/images/publications/pub2.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Poster", "url": "#" }
+    "authors": [
+      "Yaming Wang",
+      "Jonghyun Choi",
+      "Vlad I. Morariu",
+      "Larry S. Davis"
     ],
-    "researchTopic": ["Vision"],
+    "journalsInfo": "CVPR 2016",
+    "thumbnailUrl": "/images/publications/cvpr2016_discpatch.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "http://openaccess.thecvf.com/content_cvpr_2016/papers/Wang_Mining_Discriminative_Triplets_CVPR_2016_paper.pdf"
+      }
+    ],
+    "researchTopic": [
+      "Vision"
+    ],
     "year": "2016",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   },
   {
     "title": "Knowledge Transfer with Interactive Learning of Semantic Relationships",
-    "authors": ["Jonghyun Choi", "Sung Ju Hwang", "Leonid Sigal", "Larry S. Davis"],
-    "journalsInfo": "AAAI 2016",
-    "thumbnailUrl": "/images/publications/pub3.jpg",
-    "links": [
-      { "label": "PDF", "url": "#" },
-      { "label": "Slides", "url": "#" }
+    "authors": [
+      "Jonghyun Choi",
+      "Sung Ju Hwang",
+      "Leonid Sigal",
+      "Larry S. Davis"
     ],
-    "researchTopic": ["AI"],
+    "journalsInfo": "AAAI 2016",
+    "thumbnailUrl": "/images/publications/aaai2016_sal.jpg",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "/research-pdfs/aaai2016_sal.pdf"
+      },
+      {
+        "label": "Slides",
+        "url": "/research-pdfs/aaai2016_sal_slide.pdf"
+      }
+    ],
+    "researchTopic": [
+      "AI"
+    ],
     "year": "2016",
-    "publicationType": ["Conference"],
+    "publicationType": [
+      "Conference"
+    ],
     "recognized": "unrecognized"
   }
 ]

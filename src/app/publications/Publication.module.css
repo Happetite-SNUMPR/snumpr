@@ -188,6 +188,11 @@
   font-family: var(--font-secondary);
 }
 
+.journalsHighlight {
+  color: var(--color-highlight);
+  font-weight: 700;
+}
+
 @media screen and (max-width: 900px) {
   .detailsWrapper {
     gap: 0.5rem;

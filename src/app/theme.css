@@ -57,6 +57,12 @@
   --color-swatch-purple: #ede4f7;
   --color-swatch-pink: #f6e4ec;
 
+  /* ---------- Emphasis / Highlight ----------------------------------------
+   * 강조 텍스트(예: Publications의 ORAL, Best Paper Award)에 사용되는
+   * 진한 빨간색입니다.
+   * ----------------------------------------------------------------------- */
+  --color-highlight: #ea4836;
+
   /* ---------- Publication Tag Colors --------------------------------------
    * Publications 페이지의 링크 태그(PDF, Code 등) 배경색입니다.
    * 위 swatch 색을 참조하므로, 색만 바꾸려면 swatch 변수를 수정하거나

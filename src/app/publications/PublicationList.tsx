@@ -299,6 +299,21 @@ function formatAuthors(authors: string[]): string {
   return `${authors.slice(0, MAX_VISIBLE_AUTHORS).join(', ')}, et al.`;
 }
 
+const HIGHLIGHT_TERMS = ['ORAL', 'Best Paper Award'];
+const HIGHLIGHT_SPLIT = /(ORAL|Best Paper Award)/g;
+
+function renderJournalsInfo(text: string): React.ReactNode {
+  return text.split(HIGHLIGHT_SPLIT).map((part, i) =>
+    HIGHLIGHT_TERMS.includes(part) ? (
+      <span key={i} className={styles.journalsHighlight}>
+        {part}
+      </span>
+    ) : (
+      part
+    ),
+  );
+}
+
 function PublicationItemView({ pub }: { pub: PublicationItem }) {
   const authorsText = formatAuthors(pub.authors);
   const thumbnailUrl = pub.thumbnailUrl;
@@ -317,14 +332,14 @@ function PublicationItemView({ pub }: { pub: PublicationItem }) {
         <div className={styles.mobileDetailsWrapper}>
           <p className={styles.articleTitle}>{pub.title}</p>
           <p className={styles.authorsText}>{authorsText}</p>
-          <p className={styles.journalsText}>{pub.journalsInfo}</p>
+          <p className={styles.journalsText}>{renderJournalsInfo(pub.journalsInfo)}</p>
         </div>
       </div>
       <div className={styles.infoWrapper}>
         <div className={styles.detailsWrapper}>
           <p className={styles.articleTitle}>{pub.title}</p>
           <p className={styles.authorsText}>{authorsText}</p>
-          <p className={styles.journalsText}>{pub.journalsInfo}</p>
+          <p className={styles.journalsText}>{renderJournalsInfo(pub.journalsInfo)}</p>
         </div>
         <div className={styles.linksWrapper}>
           {pub.links.map(({ label, url }) => (
