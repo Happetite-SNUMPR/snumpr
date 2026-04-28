@@ -26,29 +26,6 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      {/* Hero - commented out
-      <FadeIn>
-        <section className={styles.hero}>
-          <img src="/images/hero.png" alt="" className={styles.bgImage} />
-          <div className={styles.bgOverlay} />
-          <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>
-              We study
-              <br />
-              <span className={styles.accent}>visual perception</span>
-              <br />
-              and <span className={styles.accent}>machine reasoning.</span>
-            </h1>
-            <p className={styles.heroSubtitle}>
-              We read, code, discuss and write about computer vision,
-              <br />
-              machine learning, natural language processing and robotics.
-            </p>
-          </div>
-        </section>
-      </FadeIn>
-      */}
-
       {/* Latest News */}
       {news.length > 0 && (
         <FadeIn>

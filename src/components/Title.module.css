@@ -4,33 +4,3 @@
   flex-direction: column;
   margin-bottom: 4.8rem;
 }
-
-.titleContainer {
-  width: 100%;
-  height: 20rem;
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 900px) {
-  .titleContainer {
-    height: 9rem;
-  }
-}
-
-.title {
-  font-size: 5.2rem;
-}
-
-@media screen and (max-width: 900px) {
-  .title {
-    font-size: 3.6rem;
-  }
-}
-
-.divider {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  height: 1px;
-  background-color: var(--divider-gray);
-}
